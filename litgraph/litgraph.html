@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Literature Graph</title>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <script src="saveGraph.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Funnel Display', sans-serif;
+      background-color: #ffffff;
+    }
+
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      pointer-events: none; 
+      font-family: 'Funnel Display', sans-serif;
+      font-size: 14px;
+      /*box-shadow: 0 4px 12px rgba(0,0,0,0.3);*/
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      max-width: 300px;
+      z-index: 10;
+    }
+
+    .tooltip .publisher {
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    text {
+      font-family: 'Funnel Display', sans-serif;
+      font-size: 12px;
+      pointer-events: none;
+    }
+
+    .save-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 8px 16px;
+      background-color: #ffffff;
+      color: #000000;
+      border: 2px solid #000000;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      z-index: 100;
+      font-family: 'Funnel Display', sans-serif;
+    }
+
+    line.link {
+      cursor: pointer;
+      stroke: #000000;
+    }
+
+    .info-box {
+      position: fixed;
+      transform: translateY(-50%); /* vertically centers based on top 50% */
+      top: 50%;
+      left: 20px;
+      width: 500px;
+      max-height: 80%;
+      overflow-y: auto;
+      padding: 15px;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+      border-radius: 8px;
+      text-align: justify; /* justify the text */
+      font-size: 14px;
+      font-family: 'Funnel Display', sans-serif;
+      /*box-shadow: 0 4px 12px rgba(0,0,0,0.3);*/
+      display: none;
+      z-index: 100;
+    }
+  </style>
+
+</head>
+<body>
+
+<button class="save-button">Save</button> <svg></svg>
+
+<div class="tooltip"></div>
+<div class="info-box" id="infoBox"></div>
+
+<script>
+const svg = d3.select("svg");
+let width = window.innerWidth;
+let height = window.innerHeight;
+svg.attr("width", width).attr("height", height);
+
+const tooltip = d3.select(".tooltip");
+const infoBox = d3.select("#infoBox");
+const g = svg.append("g");
+
+let lastRightClickedNode = null;
+
+// --- ZOOM ---
+const zoomBehavior = d3.zoom()
+  .scaleExtent([0.1, 5])
+  .on("zoom", (event) => g.attr("transform", event.transform));
+
+svg.call(zoomBehavior);
+
+const initialScale = 0.7;
+const initialTranslateX = width / 2 * (1 - initialScale);
+const initialTranslateY = height / 2 * (1 - initialScale);
+
+svg.call(zoomBehavior.transform, d3.zoomIdentity.translate(initialTranslateX, initialTranslateY).scale(initialScale));
+
+let selectedNode = null;
+let graphData = null;
+
+d3.json("graph.json").then(function(graph) {
+  graphData = graph;
+
+  function getUrl(d) {
+    const raw = d.url || d.URL || d.Url || "";
+    if (!raw) return null;
+    const trimmed = (""+raw).trim();
+    return trimmed === "" ? null : trimmed;
+  }
+
+  function getAuthors(d) {
+    return d.authors || d.author || "";
+  }
+
+  const simulation = d3.forceSimulation(graph.nodes)
+    .force("link", d3.forceLink(graph.links).id(d => d.id).distance(150))
+    .force("charge", d3.forceManyBody().strength(-300))
+    .force("center", d3.forceCenter(width/2, height/2));
+
+  const linkGroup = g.append("g").attr("stroke-opacity", 1);
+
+  function linkDash(d) {
+    const isExtra = (d.source.category === "Extra") || (d.target.category === "Extra");
+    return isExtra ? "2,4" : null;
+  }
+
+  let link = linkGroup.selectAll("line")
+    .data(graph.links)
+    .join("line")
+    .attr("class", "link")
+    .attr("stroke", "#000000")
+    .attr("stroke-width", 1)
+    .attr("stroke-dasharray", linkDash)
+    .on("click", (event, d) => {
+      event.stopPropagation();
+      graph.links = graph.links.filter(l => l !== d);
+      updateLinks();
+    });
+
+  const nodeGroup = g.append("g").selectAll("g")
+    .data(graph.nodes)
+    .join("g")
+    .attr("class", "node-group");
+
+  nodeGroup.append("circle")
+    .attr("class", "node-selection")
+    .attr("fill", "none")
+    .attr("stroke", "#000000")
+    .attr("stroke-width", 1)
+    .style("visibility", "hidden");
+
+  const node = nodeGroup.append("circle")
+    .attr("class", "node")
+    .attr("fill", d => d.category === "Selected" ? "#000000" : "#ffffff")
+    .attr("stroke", "#000000")
+    .attr("stroke-width", d => d.category === "Primary" ? 2 : 1)
+    .style("stroke-dasharray", d => d.category === "Extra" ? "2,4" : null)
+    .call(drag(simulation))
+    .on("mouseover", (event, d) => { tooltip.style("opacity", 1).html(formatTooltip(d)); })
+    .on("mousemove", (event) => { tooltip.style("left", (event.pageX + 15) + "px").style("top", (event.pageY + 15) + "px"); })
+    .on("mouseout", () => tooltip.style("opacity", 0))
+    .on("click", (event, d) => {
+      if (event.ctrlKey) {
+        const url = getUrl(d);
+        if (url) window.open(url, "_blank");
+        return;
+      }
+      g.selectAll(".node-selection").style("visibility", "hidden");
+      if (!selectedNode) {
+        selectedNode = d;
+        d3.select(event.currentTarget.parentNode).select(".node-selection").style("visibility", "visible");
+      } else if (selectedNode && selectedNode !== d) {
+        const newLink = { source: selectedNode.id, target: d.id };
+        graph.links.push(newLink);
+        updateLinks();
+        selectedNode = null;
+      } else {
+        selectedNode = null;
+      }
+    })
+    // Right-click toggles description box with author, year, and clickable URL
+    .on("contextmenu", (event, d) => {
+      event.preventDefault();
+
+      if (lastRightClickedNode === d) {
+        // Hide if same node
+        infoBox.style("display", "none");
+        lastRightClickedNode = null;
+      } else {
+        const authors = getAuthors(d);
+        const year = d.year ? `, ${d.year}` : "";
+        const url = getUrl(d);
+        const urlLink = url ? `<br/><a href="${url}" target="_blank" style="color:#ffffff;">DOI</a>` : "";
+
+        infoBox.style("display", "block")
+              .html(
+                `<strong>${d.title || "Untitled"}</strong><br/>` +
+                `<span>${authors || ""}${authors || year ? year : ""}</span><br/><br/>` +
+                `${d.Description || "No description available."}` +
+                urlLink
+              );
+
+        lastRightClickedNode = d;
+      }
+    });
+
+  const label = g.append("g")
+    .selectAll("text")
+    .data(graph.nodes)
+    .join("text")
+    .text(d => d.id);
+
+  function updateLinks() {
+    link = linkGroup.selectAll("line")
+      .data(graph.links)
+      .join("line")
+      .attr("class", "link")
+      .attr("stroke", "#000000")
+      .attr("stroke-width", 1)
+      .attr("stroke-dasharray", linkDash)
+      .on("click", (event, d) => {
+        event.stopPropagation();
+        graph.links = graph.links.filter(l => l !== d);
+        updateLinks();
+      });
+
+    updateNodeSizes();
+    simulation.force("link").links(graph.links);
+    simulation.alpha(1).restart();
+  }
+
+  function updateNodeSizes() {
+    const degreeMap = {};
+    graph.nodes.forEach(n => degreeMap[n.id] = 0);
+    graph.links.forEach(l => {
+      const sourceId = typeof l.source === "object" ? l.source.id : l.source;
+      const targetId = typeof l.target === "object" ? l.target.id : l.target;
+      degreeMap[sourceId] += 1;
+      degreeMap[targetId] += 1;
+    });
+
+    node.attr("r", d => 8 + (degreeMap[d.id] || 0) * 2);
+
+    nodeGroup.select(".node-selection")
+      .attr("r", d => 8 + (degreeMap[d.id] || 0) * 2 + 3);
+
+    label.attr("dx", d => (8 + (degreeMap[d.id] || 0) * 2) + 4)
+         .attr("dy", 4);
+  }
+
+  simulation.on("tick", () => {
+    link.attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+    nodeGroup.select(".node")
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+
+    nodeGroup.select(".node-selection")
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+
+    label.attr("x", d => d.x)
+         .attr("y", d => d.y);
+  });
+
+  function drag(simulation) {
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+    function dragged(event, d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+    function dragended(event, d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+    return d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended);
+  }
+
+  function formatTooltip(d) {
+    let html = `<strong>${d.title || "Untitled"}</strong><br/>`;
+    const authors = getAuthors(d);
+    if (authors || d.year) {
+      html += `<span>${authors}${authors && d.year ? ", " : ""}${d.year || ""}</span><br/>`;
+    }
+    if (d.publisher) html += `<span class="publisher">${d.publisher}</span>`;
+    return html;
+  }
+
+  updateNodeSizes();
+}).catch(err => console.error(err));
+
+d3.select(".save-button").on("click", () => saveGraph(graphData));
+
+svg.on("click", () => infoBox.style("display", "none"));
+
+window.addEventListener("resize", () => {
+  width = window.innerWidth;
+  height = window.innerHeight;
+  svg.attr("width", width).attr("height", height);
+});
+</script>
+
+</body>
+</html>
