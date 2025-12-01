@@ -35,7 +35,7 @@ def normalize_id(x):
 def build_graph(df):
     id_col   = "ID"
     link_col = "Link"
-    meta_cols = ["category","author","title","year","publisher","URL","Description"]
+    meta_cols = ["Theme","category","author","title","year","publisher","URL","Description"]
 
     df[id_col] = df[id_col].map(normalize_id)
 

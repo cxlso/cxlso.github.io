@@ -2,6 +2,7 @@
   "nodes": [
     {
       "id": "Gershenfeld, N. 2008",
+      "Theme": "Phygital Practices",
       "category": "Selected",
       "author": "Gershenfeld, N.",
       "title": "Fab: The Coming Revolution on Your Desktop — from Personal Computers to Personal Fabrication",
@@ -13,6 +14,7 @@
     },
     {
       "id": "Baudisch, P. et al. 2017",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Baudisch, P.; Mueller, S.",
       "title": "Personal Fabrication",
@@ -24,6 +26,7 @@
     },
     {
       "id": "Diamond, J. 1997",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Diamond, J. M.",
       "title": "Guns, Germs, and Steel: The Fates of Human Societies",
@@ -35,6 +38,7 @@
     },
     {
       "id": "Daggett, C. 2019",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Daggett, C. N.",
       "title": "The Birth of Energy: Fossil Fuels, Thermodynamics, and the Politics of Work",
@@ -46,6 +50,7 @@
     },
     {
       "id": "Chomsky, N. 1992",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Chomsky, N.",
       "title": "Year 501: The Conquest Continues",
@@ -57,6 +62,7 @@
     },
     {
       "id": "Fuller, R. 1969",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Selected",
       "author": "Fuller, R. B.",
       "title": "Operating Manual for Spaceship Earth",
@@ -68,6 +74,7 @@
     },
     {
       "id": "Fuller, R. et al. 1975",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Fuller, R. B.; Applewhite, E. J.; Loeb, A. L.",
       "title": "Synergetics: Explorations in the Geometry of Thinking",
@@ -79,6 +86,7 @@
     },
     {
       "id": "Huxley, A. 1932",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Huxley, A.",
       "title": "Brave New World",
@@ -90,6 +98,7 @@
     },
     {
       "id": "Weil, S. 1934",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Selected",
       "author": "Weil, S.",
       "title": "Réflexions sur les causes de la liberté et de l'oppression sociale (Liberty and oppression)",
@@ -101,6 +110,7 @@
     },
     {
       "id": "Lafargue, P. 1883",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Lafargue, P.",
       "title": "The Right to Be Lazy [Le droit à la paresse]",
@@ -112,6 +122,7 @@
     },
     {
       "id": "Meadows, D. et al. 1972",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Meadows, D. H.; Meadows, D. L.; Randers, J.; Behrens, W. W.",
       "title": "The Limits to Growth: A Report for the Club of Rome's Project on the Predicament of Mankind",
@@ -123,6 +134,7 @@
     },
     {
       "id": "Thomson, D. 1917",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Thomson, D. W.",
       "title": "On Growth and Form",
@@ -134,6 +146,7 @@
     },
     {
       "id": "Haeckel, E. 1899",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "Haeckel, E.",
       "title": "Art Forms in Nature [Kunstformen der Natur]",
@@ -145,6 +158,7 @@
     },
     {
       "id": "Stamets, P. 2005",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "Stamets, P.",
       "title": "Mycelium Running: How Mushrooms Can Help Save the World",
@@ -156,6 +170,7 @@
     },
     {
       "id": "Allen, S. 1997",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Allen, S.",
       "title": "From Object to Field",
@@ -167,6 +182,7 @@
     },
     {
       "id": "Allen, S. 1998",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Allen, S.",
       "title": "ANY 23: Diagram Work: Data Mechanics for a Topological Age",
@@ -178,6 +194,7 @@
     },
     {
       "id": "Snooks, R. 2017",
+      "Theme": "Computational Exploration",
       "category": "Selected",
       "author": "Snooks, R.",
       "title": "Behavioral Formation: Multi-Agent Algorithmic Design Strategies",
@@ -189,6 +206,7 @@
     },
     {
       "id": "Snooks, R. 2022",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Snooks, R.",
       "title": "Behavioral Formation: Volatile Design Processes and the Emergence of a Strange Specificity",
@@ -200,6 +218,7 @@
     },
     {
       "id": "Deleuze, G. 1993",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Deleuze, G.",
       "title": "The Fold: Leibniz and the Baroque",
@@ -211,6 +230,7 @@
     },
     {
       "id": "Cache, B. 1995",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Cache, B.",
       "title": "Earth Moves: The Furnishing of Territories",
@@ -222,6 +242,7 @@
     },
     {
       "id": "Negroponte, N. 1998",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Negroponte, N.",
       "title": "Beyond Digital",
@@ -233,6 +254,7 @@
     },
     {
       "id": "DeLanda, M. 2002",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "DeLanda, M.",
       "title": "Intensive Science and Virtual Philosophy",
@@ -244,9 +266,10 @@
     },
     {
       "id": "DeLanda, M. 2004",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "DeLanda, M.",
-      "title": "Material Complexity.",
+      "title": "Material Complexity",
       "year": 2004,
       "publisher": "Leach N, Turnbull D, Williams C, eds. Digital Tectonics. Wiley Academy",
       "URL": null,
@@ -255,6 +278,7 @@
     },
     {
       "id": "Mitchell, W. 2005",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Mitchell, W. J.",
       "title": "Constructing Complexity",
@@ -266,6 +290,7 @@
     },
     {
       "id": "Waldrop, M. 1993",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Waldrop, M. M.",
       "title": "Complexity: The Emerging Science at the Edge of Order and Chaos",
@@ -277,6 +302,7 @@
     },
     {
       "id": "Crolla, K. 2018",
+      "Theme": "Phygital Practices",
       "category": "Selected",
       "author": "Crolla, K.",
       "title": "Building Simplexity: The “More or Less” of Post-Digital Architecture Practice",
@@ -288,6 +314,7 @@
     },
     {
       "id": "Burry, M. 2011",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Burry, M.",
       "title": "Scripting Cultures: Architectural Design and Programming",
@@ -299,6 +326,7 @@
     },
     {
       "id": "Venturi, R. 1966",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Venturi, R.",
       "title": "Complexity and Contradiction in Architecture",
@@ -310,6 +338,7 @@
     },
     {
       "id": "Jandrić, P. 2023",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Jandrić, P.",
       "title": "Postdigital",
@@ -321,6 +350,7 @@
     },
     {
       "id": "Cramer, F. 2014",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Cramer, F.",
       "title": "What Is “Post-Digital”?",
@@ -332,6 +362,7 @@
     },
     {
       "id": "Yan, C. et al. 2024",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Yan, C.; Yuan, P. F.",
       "title": "Phygital Intelligence",
@@ -343,9 +374,10 @@
     },
     {
       "id": "Baudrillard, J. 1968",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Baudrillard, J.",
-      "title": "The System of Objects.",
+      "title": "The System of Objects",
       "year": 1968,
       "publisher": " Verso Books.",
       "URL": null,
@@ -354,6 +386,7 @@
     },
     {
       "id": "Wiener, N. 1948",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Wiener, N.",
       "title": "Cybernetics: Or Control and Communication in the Animal and the Machine",
@@ -365,6 +398,7 @@
     },
     {
       "id": "Licklider, J. 1960",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Licklider, J. C. R.",
       "title": "Man-Computer Symbiosis",
@@ -376,6 +410,7 @@
     },
     {
       "id": "Negroponte, N. 1970",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Negroponte, N.",
       "title": "The Architecture Machine: Toward a More Human Environment",
@@ -387,6 +422,7 @@
     },
     {
       "id": "Mitchell, W. 1979",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Mitchell, W. J.",
       "title": "Computer-Aided Architectural Design",
@@ -398,6 +434,7 @@
     },
     {
       "id": "Llach, D. 2007",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Llach, D. C.",
       "title": "A Generative Grammar for 2D Manufacturing of 3D Objects",
@@ -409,6 +446,7 @@
     },
     {
       "id": "Menges, A. 2013",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Menges, A.",
       "title": "Morphospaces of Robotic Fabrication",
@@ -420,6 +458,7 @@
     },
     {
       "id": "Carpo, M. 2024",
+      "Theme": "Phygital Practices",
       "category": "Selected",
       "author": "Carpo, M.",
       "title": "The Sustainable Lightness of Digital Fabrication",
@@ -431,6 +470,7 @@
     },
     {
       "id": "Carpo, M. 2017",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Carpo, M.",
       "title": "The Second Digital Turn: Design Beyond Intelligence",
@@ -442,6 +482,7 @@
     },
     {
       "id": "Carpo, M. 2023",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Carpo, M.",
       "title": "Beyond Digital: Design and Automation at the End of Modernity",
@@ -453,6 +494,7 @@
     },
     {
       "id": "Davis, D. et al. 2013",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Davis, D.; Peters, B.",
       "title": "Design Ecosystems: Customising the Architectural Design Environment with Software Plug-ins",
@@ -464,6 +506,7 @@
     },
     {
       "id": "Braumann, J. et al. 2012",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Braumann, J.; Cokcan, S. B.",
       "title": "Digital and Physical Tools for Industrial Robots in Architecture: Robotic Interaction and Interfaces",
@@ -475,6 +518,7 @@
     },
     {
       "id": "Mumford, L. 1959",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Primary",
       "author": "Mumford, L.",
       "title": "An Appraisal of Lewis Mumford ’ s “ Technics and Civilization ” (1934)",
@@ -486,6 +530,7 @@
     },
     {
       "id": "Schon, D. 1984",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Schon, D. A.",
       "title": " The Reflective Practitioner: How Professionals Think in Action.",
@@ -497,6 +542,7 @@
     },
     {
       "id": "Sennett, R. 2009",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Sennett, R.",
       "title": " The Craftsman",
@@ -508,6 +554,7 @@
     },
     {
       "id": "Witt, A. 2010",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Witt, A. J.",
       "title": "A Machine Epistemology in Architecture. Encapsulated Knowledge and the Instrumentation of Design",
@@ -519,6 +566,7 @@
     },
     {
       "id": "Gramazio, F. et al. 2014",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Gramazio, F.; Kohler, M.; Willmann, J.",
       "title": "The Robotic Touch: How Robots Change Architecture",
@@ -530,6 +578,7 @@
     },
     {
       "id": "Larsson, M. et al. 2019",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Larsson, M.; Yoshida, H.; Igarashi, T.",
       "title": "Human-in-the-loop Fabrication of 3D Surfaces with Natural Tree Branches",
@@ -541,17 +590,19 @@
     },
     {
       "id": "Vazquez, A. et al. 2016",
+      "Theme": "Phygital Practices",
       "category": "Selected",
       "author": "Vazquez, A. N.; Jabi, W.",
       "title": "RAF | A framework for symbiotic agencies in robotic – aided fabrication",
       "year": 2016,
-      "publisher": "Charrette, Volume 4, Number 1, Spring 2017, Pp 58-73(16) [Internet]; Available from: http://orca.cf.ac.uk/125334/ ",
+      "publisher": "Charrette, Volume 4, Number 1, Spring 2017, Pp 58-73(16)",
       "URL": "http://orca.cf.ac.uk/125334/",
       "Description": "<p>In RAF: A Framework for Symbiotic Agencies in Robotic-Aided Fabrication (2016), Alicia Nahmad Vázquez and Wassim Jabi propose a paradigm shift in digital fabrication, reframing robots not as tools of automated execution but as co-agents within a dynamic, feedback-rich design ecology. Their framework challenges inherited industrial hierarchies—where designers conceive, machines execute, and materials passively comply—by redistributing agency across humans, robots, and matter during fabrication.</p><p>RAF centers on the idea of symbiotic agency: real-time, bidirectional exchanges among computational models, robotic behaviors, and material responses. Rather than treating fabrication as the fixed realization of a predetermined digital form, RAF situates making as an unfolding negotiation. Sensors, adaptive robotic routines, and live material feedback enable the robotic system to adjust paths, respond to contingencies, and influence design intent as fabrication occurs. This “phygital” environment dissolves the boundary between digital simulation and physical performance: emergence happens materially, not just computationally.</p><p>Conceptually, RAF synthesizes two dominant post-digital trajectories. From agent-based design research, it inherits the logic of encoded environments—rule-based systems that generate form through behavioral interaction. From fabrication-oriented approaches, it adopts the insistence on material reciprocity—recognition that matter itself participates in shaping outcomes. RAF fuses these into a continuous ecology where virtual and physical agents co-evolve.</p><p>By proposing a framework in which autonomy, adaptation, and intelligibility operate across both code and material, Vázquez and Jabi articulate a model of post-digital authorship rooted in collaboration rather than control. RAF thus reframes robotic fabrication as an environment of shared decision-making, expanding design beyond representation toward a materially enacted, symbiotic emergence.</p>",
       "index": 49
     },
     {
       "id": "Gannon, M. 2018",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Gannon, M.",
       "title": "Human-centered Interfaces for Autonomous Fabrication Machines (Doctoral dissertation)",
@@ -563,6 +614,7 @@
     },
     {
       "id": "Braumann, J. et al. 2021",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Braumann, J.; Singline, K.",
       "title": "Towards Real-Time Interaction with Industrial Robots in the Creative Industries",
@@ -574,6 +626,7 @@
     },
     {
       "id": "Menges, A. et al. 2008",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Menges, A.; Hengel, M.",
       "title": "Inclusive Performance: Efficiency Versus Effectiveness Towards a Morpho-Ecological Approach for Design",
@@ -585,6 +638,7 @@
     },
     {
       "id": "Gulay, E. et al. 2019",
+      "Theme": "Phygital Practices",
       "category": "Primary",
       "author": "Gulay, E.; Lucero, A.",
       "title": "Integrated Workflows: Generating Feedback Between Digital and Physical Realms",
@@ -596,6 +650,7 @@
     },
     {
       "id": "Hughes, F. 2014",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Hughes, F.",
       "title": "The Architecture of Error: Matter, Measure, and the Misadventures of Precision",
@@ -607,6 +662,7 @@
     },
     {
       "id": "Ball, P. 2004",
+      "Theme": "Computational Exploration",
       "category": "Primary",
       "author": "Ball, P.",
       "title": "Critical Mass: How One Thing Leads to Another",
@@ -618,6 +674,7 @@
     },
     {
       "id": "Oxman, N. 2012",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "Oxman, N.",
       "title": "Programming Matter",
@@ -629,6 +686,7 @@
     },
     {
       "id": "Zhou, J. et al. 2021",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "Zhou, J.; Barati, B.; Wu, J.; Scherer, D.; Karana, E.",
       "title": "Digital biofabrication to realize the potentials of plant roots for product design",
@@ -640,6 +698,7 @@
     },
     {
       "id": "Ramsgaard Thomsen, M. et al. 2022",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "Ramsgaard Thomsen, M.; Tamke, M.",
       "title": "Towards a transformational eco-metabolistic bio-based design framework in architecture",
@@ -651,6 +710,7 @@
     },
     {
       "id": "López‐Durán, F. et al. 2010",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "López‐Durán, F.; Moore, N.",
       "title": "(Ut)opiates: Rethinking Nature",
@@ -662,6 +722,7 @@
     },
     {
       "id": "Watson, J. 2019",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "Watson, J.",
       "title": "Lo-TEK: Design by Radical Indigenism",
@@ -673,6 +734,7 @@
     },
     {
       "id": "Cojocaru, A. et al. 2021",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Primary",
       "author": "Cojocaru, A.; Isopescu, D. N.",
       "title": "Passive Strategies of Vernacular Architecture for Energy Efficiency",
@@ -684,6 +746,7 @@
     },
     {
       "id": "Calixto, V. et al. 2024",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Selected",
       "author": "Calixto, V.; Croffi, J.",
       "title": "Back to Black Boxes? An Urgent Call for Discussing the Impacts of the Emergent AI-Driven Tools in the Architecture Design Education",
@@ -695,6 +758,7 @@
     },
     {
       "id": "Leach, N. 2016",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Leach, N.",
       "title": "The Culture of the Copy",
@@ -706,6 +770,7 @@
     },
     {
       "id": "Ng, P. 2025",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Selected",
       "author": "Ng, P.",
       "title": "Decentralise Indexing in Common Data Environments for Collective Actions in Urban Design: A Blockchain Proposal",
@@ -717,6 +782,7 @@
     },
     {
       "id": "Bingham‐Hall, J. 2017",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Primary",
       "author": "Bingham‐Hall, J.",
       "title": "Imagined community and networked hyperlocal publics",
@@ -728,6 +794,7 @@
     },
     {
       "id": "Diamond, J. 2004",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Secondary",
       "author": "Diamond, J. M.",
       "title": "Collapse: How Societies Choose to Fail or Succeed",
@@ -739,6 +806,7 @@
     },
     {
       "id": "Say, J. B. 1803",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Say, J.B.",
       "title": "Traité d'économie politique",
@@ -750,6 +818,7 @@
     },
     {
       "id": "Poincaré, H. 1890",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Poincaré, H.",
       "title": "Sur le problème des trois corps et les équations de la dynamique",
@@ -761,6 +830,7 @@
     },
     {
       "id": "Prigogine, I. et al. 1984",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Prigogine, I.; Stengers, I.",
       "title": "Order Out of Chaos: Man’s New Dialogue with Nature",
@@ -772,6 +842,7 @@
     },
     {
       "id": "Reynolds, C. 1987",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Reynolds, C. W.",
       "title": "Flocks, Herds, and Schools: A Distributed Behavioral Model",
@@ -783,6 +854,7 @@
     },
     {
       "id": "Deleuze, G. et al. 1987",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Secondary",
       "author": "Deleuze, G.; Guattari, F.",
       "title": "A Thousand Plateaus: Capitalism and Schizophrenia",
@@ -794,6 +866,7 @@
     },
     {
       "id": "Lynn, G. 1993",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Lynn, G.",
       "title": "Folding in Architecture",
@@ -805,6 +878,7 @@
     },
     {
       "id": "Lorenz, E. 1963",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Lorenz, E. N.",
       "title": "Deterministic Nonperiodic Flow",
@@ -816,6 +890,7 @@
     },
     {
       "id": "Turing, A. 1952",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Turing, A. M.",
       "title": "The Chemical Basis of Morphogenesis",
@@ -827,6 +902,7 @@
     },
     {
       "id": "Weaver, W. 1948",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Weaver, W.",
       "title": "Science and Complexity",
@@ -838,6 +914,7 @@
     },
     {
       "id": "Jacobs, J. 1961",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Jacobs, J.",
       "title": "The Death and Life of Great American Cities",
@@ -849,6 +926,7 @@
     },
     {
       "id": "Conway, J. 1970",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Conway, J. H.",
       "title": "The Game of Life",
@@ -860,6 +938,7 @@
     },
     {
       "id": "Wolfram, S. 2002",
+      "Theme": "Computational Exploration",
       "category": "Secondary",
       "author": "Wolfram, S.",
       "title": "A New Kind of Science",
@@ -871,6 +950,7 @@
     },
     {
       "id": "Jandrić, P. et al. 2018",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Jandrić, P.; al., et",
       "title": "Postdigital Science and Education",
@@ -882,6 +962,7 @@
     },
     {
       "id": "Goidea, A. 2023",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Secondary",
       "author": "Goidea, A.",
       "title": "Transcalar design: Biological principles in architecture through computational design and additive fabrication",
@@ -893,6 +974,7 @@
     },
     {
       "id": "Agarwala, N. et al. 2021",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Agarwala, N.; Chaudhary, R. D.",
       "title": "‘Made in China 2025’: Poised for Success?",
@@ -904,6 +986,7 @@
     },
     {
       "id": "Watts, D. et al. 1998",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Watts, D. J.; Strogatz, S. H.",
       "title": "Collective dynamics of ‘small-world’ networks",
@@ -915,6 +998,7 @@
     },
     {
       "id": "Andréen, D. et al. 2022",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Secondary",
       "author": "Andréen, D.; Goidea, A.",
       "title": "Principles of biological design as a model for biodesign and biofabrication in architecture",
@@ -926,6 +1010,7 @@
     },
     {
       "id": "Goodbun, J. et al. 2012",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Secondary",
       "author": "Goodbun, J.; Jaschke, K.",
       "title": "Architecture and relational Resources: towards a new Materialist practice",
@@ -937,6 +1022,7 @@
     },
     {
       "id": "Ramsgaard Thomsen, M. 2022",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Secondary",
       "author": "Ramsgaard Thomsen, M. ",
       "title": "Computational design logics for bio‑based design",
@@ -948,6 +1034,7 @@
     },
     {
       "id": "Imhof, B. et al. 2015",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Secondary",
       "author": "Imhof, B.; Gruber, P.",
       "title": "Built to grow: Blending Architecture and Biology",
@@ -959,6 +1046,7 @@
     },
     {
       "id": "Wigley, M. 1993",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Wigley, M. A.",
       "title": "The Architecture of Deconstruction: Derrida’s Haunt",
@@ -970,6 +1058,7 @@
     },
     {
       "id": "Sweet, K. 2015",
+      "Theme": "Phygital Practices",
       "category": "Secondary",
       "author": "Sweet, K.",
       "title": "ROBOTIC WORKFLOW An Architectural Pedagogical Approach",
@@ -981,6 +1070,7 @@
     },
     {
       "id": "Walter-Herrmann, J. et al. 2014",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Walter-Herrmann, J.; Büching, C.",
       "title": "Fablab: Of Machines, Makers and Inventors",
@@ -992,6 +1082,7 @@
     },
     {
       "id": "Bechthold, M. 2014",
+      "Theme": "Phygital Practices",
       "category": "Secondary",
       "author": "Bechthold, M.",
       "title": "Design Robotics: A New Paradigm in Process-Based Design",
@@ -1003,6 +1094,7 @@
     },
     {
       "id": "Fuller, R. 1963",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Fuller, R. B.",
       "title": "Utopia or Oblivion The Prospects for Humanity",
@@ -1014,6 +1106,7 @@
     },
     {
       "id": "Sharma, S. 2020",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Secondary",
       "author": "Sharma, S.",
       "title": "Designing the organism-environment relationship",
@@ -1025,6 +1118,7 @@
     },
     {
       "id": "Mitchell, T. 2011",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Secondary",
       "author": "Mitchell, T.",
       "title": "Carbon Democracy: Political Power in the Age of Oil",
@@ -1036,6 +1130,7 @@
     },
     {
       "id": "Asimov, I. 1951",
+      "Theme": "Decentralized Governance & Commons",
       "category": "Secondary",
       "author": "Asimov, I.",
       "title": "Foundation",
@@ -1047,6 +1142,7 @@
     },
     {
       "id": "Zhou, J. 2019",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Secondary",
       "author": "Zhou, J",
       "title": "Interwoven: Designing Biodigital Objects with Plant Roots",
@@ -1058,6 +1154,7 @@
     },
     {
       "id": "Del Castillo Lopez, G. et al. 2019",
+      "Theme": "Phygital Practices",
       "category": "Secondary",
       "author": "Del Castillo Lopez, G.; Luis, J.",
       "title": "Enactive Robotics: An Action-State Model for Concurrent Machine Control",
@@ -1069,6 +1166,7 @@
     },
     {
       "id": "Weil, S. 1949",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
       "author": "Weil, S.",
       "title": "The Need for Roots [L'enracinement]",
@@ -1080,6 +1178,7 @@
     },
     {
       "id": "Smith, A. 1776",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
       "author": "Smith, A.",
       "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
@@ -1091,6 +1190,7 @@
     },
     {
       "id": "Marx, K. et al. 1848",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
       "author": "Marx, K.; Engels, F.",
       "title": "The Communist Manifesto",
@@ -1102,6 +1202,7 @@
     },
     {
       "id": "Huxley, A. 1962",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
       "author": "Huxley, A.",
       "title": "Island",
@@ -1113,6 +1214,7 @@
     },
     {
       "id": "Orwell, G. 1949",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
       "author": "Orwell, G.",
       "title": "Nineteen Eighty-Four",
@@ -1124,6 +1226,7 @@
     },
     {
       "id": "Ballard, J. 1962",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
       "author": "Ballard, J. G.",
       "title": "Vermillion Sand – The Thousand Dreams of Stellavista",
@@ -1135,17 +1238,19 @@
     },
     {
       "id": "Amtsberg, F. et al. 2021",
+      "Theme": "Phygital Practices",
       "category": "Extra",
       "author": "Amtsberg, F.; Mueller, C.; Raspall, F.",
       "title": "Di-terial – Matching Digital Fabrication and Natural Grown Resources for the Development of Resource Efficient Structures",
       "year": 2021,
-      "publisher": "https://doi.org/10.1007/978-981-16-5983-6_30",
+      "publisher": "CDRF 2021",
       "URL": "https://doi.org/10.1007/978-981-16-5983-6_30",
       "Description": null,
       "index": 103
     },
     {
       "id": "Diniz, N. et al. 2023",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Extra",
       "author": "Diniz, N.; Melendez, F.",
       "title": "Symbiont Substrate: A Bio-Digital Fabrication Method for Large Scale 3D Printing Of Bioreceptive Clay Modules And Automated Colonization Of Lichen Communities",
@@ -1157,6 +1262,7 @@
     },
     {
       "id": "Capra, F. 1975",
+      "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
       "author": "Capra, F.",
       "title": "The Tao of Physics: An Exploration of the Parallels Between Modern Physics and Eastern Mysticism",
@@ -1168,6 +1274,7 @@
     },
     {
       "id": "Hilbert, D. 1902",
+      "Theme": "Computational Exploration",
       "category": "Extra",
       "author": "Hilbert, D.",
       "title": "Mathematical Problems",
@@ -1179,6 +1286,7 @@
     },
     {
       "id": "Turing, A. 1936",
+      "Theme": "Computational Exploration",
       "category": "Extra",
       "author": "Turing, A. M.",
       "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
@@ -1190,6 +1298,7 @@
     },
     {
       "id": "Gödel, K. 1931",
+      "Theme": "Computational Exploration",
       "category": "Extra",
       "author": "Gödel, K.",
       "title": "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I",
@@ -1201,6 +1310,7 @@
     },
     {
       "id": "Goidea, A. et al. 2022",
+      "Theme": "Symbiotic Material Ecologies",
       "category": "Extra",
       "author": "Goidea, A.; Floudas, D.; Andréen, D.",
       "title": "Transcalar Design: An Approach to Biodesign in the Built Environment",
@@ -1212,6 +1322,7 @@
     },
     {
       "id": "Von Neumann, J. 1966",
+      "Theme": "Computational Exploration",
       "category": "Extra",
       "author": "Von Neumann, J.",
       "title": "The Theory of Self-Reproducing Automata",
@@ -1938,6 +2049,10 @@
     {
       "source": "Weil, S. 1934",
       "target": "Mumford, L. 1959"
+    },
+    {
+      "source": "Wigley, M. 1993",
+      "target": "Jacobs, J. 1961"
     }
   ]
 }

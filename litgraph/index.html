@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Literature Graph</title>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
-
   <script src="saveGraph.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -26,25 +24,16 @@
       padding: 10px 14px;
       border-radius: 8px;
       pointer-events: none; 
-      font-family: 'Funnel Display', sans-serif;
       font-size: 14px;
-      /*box-shadow: 0 4px 12px rgba(0,0,0,0.3);*/
       opacity: 0;
       transition: opacity 0.2s ease;
       max-width: 300px;
       z-index: 10;
     }
 
-    .tooltip .publisher {
-      font-size: 12px;
-      color: #ccc;
-    }
+    .tooltip .publisher { font-size: 12px; color: #ccc; }
 
-    text {
-      font-family: 'Funnel Display', sans-serif;
-      font-size: 12px;
-      pointer-events: none;
-    }
+    text { font-family: 'Funnel Display', sans-serif; font-size: 12px; pointer-events: none; }
 
     .save-button {
       position: absolute;
@@ -58,17 +47,16 @@
       cursor: pointer;
       font-size: 14px;
       z-index: 100;
-      font-family: 'Funnel Display', sans-serif;
     }
 
-    line.link {
-      cursor: pointer;
-      stroke: #000000;
-    }
+    line.link { cursor: pointer; stroke: #000000; }
 
+    /* -------------------------------
+       INFO BOX with transition (0.2s)
+       ------------------------------- */
     .info-box {
       position: fixed;
-      transform: translateY(-50%); /* vertically centers based on top 50% */
+      transform: translateY(-50%);
       top: 50%;
       left: 20px;
       width: 500px;
@@ -78,24 +66,140 @@
       background-color: rgba(0,0,0,0.8);
       color: #fff;
       border-radius: 8px;
-      text-align: justify; /* justify the text */
+      text-align: justify;
       font-size: 14px;
-      font-family: 'Funnel Display', sans-serif;
-      /*box-shadow: 0 4px 12px rgba(0,0,0,0.3);*/
-      display: none;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
       z-index: 100;
     }
-  </style>
 
+    .info-box.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* holder for centering slider (not rotated) */
+    #sliderHolder {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      z-index: 999;
+    }
+
+    /* rotated slider */
+    #colorSlider {
+      transform-origin: right center;
+      transform: translateY(-175px) rotate(-90deg);
+      width: 350px;
+      height: 30px;
+
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    /* Track */
+    #colorSlider::-webkit-slider-runnable-track {
+      height: 2px;
+      background: rgba(0,0,0,0.9);
+    }
+    #colorSlider::-moz-range-track {
+      height: 2px;
+      background: rgba(0,0,0,0.9);
+    }
+
+    /* Thumb */
+    #colorSlider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background: rgb(0, 0, 0);
+      margin-top: -8px;
+    }
+    #colorSlider::-moz-range-thumb {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background: rgba(30, 30, 30, 0.941);
+      border: none;
+    }
+
+    /* ------------------------------------------------------
+       THEME LEGEND with transition (0.2s)
+       ------------------------------------------------------ */
+    #themeLegend {
+      position: fixed;
+      right: 45px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 1000;
+    }
+
+    #themeLegend.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .themeRow {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      white-space: nowrap;
+    }
+
+    .themeRow:last-child { margin-bottom: 0; }
+
+    .themeColor {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+      flex: 0 0 auto;
+    }
+
+  </style>
 </head>
 <body>
 
-<button class="save-button">Save</button> <svg></svg>
-
+<button class="save-button">Save</button>
+<svg></svg>
 <div class="tooltip"></div>
 <div class="info-box" id="infoBox"></div>
 
+<div id="sliderHolder">
+  <input id="colorSlider" type="range" min="0" max="1" value="0" step="0.01">
+</div>
+
+<!-- THEME LEGEND -->
+<div id="themeLegend" aria-hidden="true">
+  <div class="themeRow"><span class="themeColor" style="background:#FF0000"></span> Phygital Practices</div>
+  <div class="themeRow"><span class="themeColor" style="background:#CC0033"></span> Computational Exploration</div>
+  <div class="themeRow"><span class="themeColor" style="background:#990066"></span> Symbiotic Material Ecologies</div>
+  <div class="themeRow"><span class="themeColor" style="background:#660099"></span> Decentralized Governance & Commons</div>
+  <div class="themeRow"><span class="themeColor" style="background:#0000FF"></span> Ethics & Philosophical Frameworks</div>
+</div>
+
 <script>
+/* ============================================================
+   GLOBAL STATE
+   ============================================================ */
+let simulation = null;
+let collisionEnabled = false;
+
 const svg = d3.select("svg");
 let width = window.innerWidth;
 let height = window.innerHeight;
@@ -106,47 +210,69 @@ const infoBox = d3.select("#infoBox");
 const g = svg.append("g");
 
 let lastRightClickedNode = null;
+let selectedNode = null;
+let graphData = null;
 
-// --- ZOOM ---
+/* --- THEME COLORS --- */
+const themeColors = {
+  "Phygital Practices": d3.rgb("#FF0000"),
+  "Computational Exploration": d3.rgb("#CC0033"),
+  "Symbiotic Material Ecologies": d3.rgb("#990066"),
+  "Decentralized Governance & Commons": d3.rgb("#660099"),
+  "Ethics & Philosophical Frameworks": d3.rgb("#0000FF")
+};
+
+let colorBlend = 0;
+
+function blendedColor(d) {
+  const base = d.category === "Selected" ? d3.rgb("#000000") : d3.rgb("#FFFFFF");
+  const target = themeColors[d.Theme] || base;
+  return d3.interpolateRgb(base, target)(colorBlend);
+}
+
+/* ZOOM */
 const zoomBehavior = d3.zoom()
-  .scaleExtent([0.1, 5])
+  .scaleExtent([0.1, 5.0])
   .on("zoom", (event) => g.attr("transform", event.transform));
 
 svg.call(zoomBehavior);
 
-const initialScale = 0.7;
+const initialScale = 0.5;
 const initialTranslateX = width / 2 * (1 - initialScale);
 const initialTranslateY = height / 2 * (1 - initialScale);
 
-svg.call(zoomBehavior.transform, d3.zoomIdentity.translate(initialTranslateX, initialTranslateY).scale(initialScale));
+svg.call(
+  zoomBehavior.transform,
+  d3.zoomIdentity.translate(initialTranslateX, initialTranslateY).scale(initialScale)
+);
 
-let selectedNode = null;
-let graphData = null;
-
+/* LOAD GRAPH */
 d3.json("graph.json").then(function(graph) {
   graphData = graph;
 
-  function getUrl(d) {
-    const raw = d.url || d.URL || d.Url || "";
-    if (!raw) return null;
-    const trimmed = (""+raw).trim();
-    return trimmed === "" ? null : trimmed;
+  function getUrl(d) { 
+    const raw = d.url || d.URL || d.Url || ""; 
+    if (!raw) return null; 
+    const trimmed = (""+raw).trim(); 
+    return trimmed === "" ? null : trimmed; 
   }
 
-  function getAuthors(d) {
-    return d.authors || d.author || "";
-  }
+  function getAuthors(d) { return d.authors || d.author || ""; }
 
-  const simulation = d3.forceSimulation(graph.nodes)
+  /* SIMULATION */
+  simulation = d3.forceSimulation(graph.nodes)
     .force("link", d3.forceLink(graph.links).id(d => d.id).distance(150))
-    .force("charge", d3.forceManyBody().strength(-300))
-    .force("center", d3.forceCenter(width/2, height/2));
+    .force("charge", d3.forceManyBody().strength(-600))
+    .force("center", d3.forceCenter(width/2, height/2))
+    .force("collide", d3.forceCollide().radius(d => collisionEnabled ? 20 : 1));
+
+  simulation.force("themeCluster", themeClusterForce());
+  simulation.force("themeRepel", themeRepelForce());
 
   const linkGroup = g.append("g").attr("stroke-opacity", 1);
 
   function linkDash(d) {
-    const isExtra = (d.source.category === "Extra") || (d.target.category === "Extra");
-    return isExtra ? "2,4" : null;
+    return (d.source.category === "Extra" || d.target.category === "Extra") ? "2,4" : null;
   }
 
   let link = linkGroup.selectAll("line")
@@ -162,7 +288,8 @@ d3.json("graph.json").then(function(graph) {
       updateLinks();
     });
 
-  const nodeGroup = g.append("g").selectAll("g")
+  const nodeGroup = g.append("g")
+    .selectAll("g")
     .data(graph.nodes)
     .join("g")
     .attr("class", "node-group");
@@ -176,64 +303,48 @@ d3.json("graph.json").then(function(graph) {
 
   const node = nodeGroup.append("circle")
     .attr("class", "node")
-    .attr("fill", d => d.category === "Selected" ? "#000000" : "#ffffff")
+    .attr("fill", d => blendedColor(d))
     .attr("stroke", "#000000")
     .attr("stroke-width", d => d.category === "Primary" ? 2 : 1)
     .style("stroke-dasharray", d => d.category === "Extra" ? "2,4" : null)
     .call(drag(simulation))
-    .on("mouseover", (event, d) => { tooltip.style("opacity", 1).html(formatTooltip(d)); })
-    .on("mousemove", (event) => { tooltip.style("left", (event.pageX + 15) + "px").style("top", (event.pageY + 15) + "px"); })
+    .on("mouseover", (event, d) => tooltip.style("opacity", 1).html(formatTooltip(d)))
+    .on("mousemove", (event) => tooltip.style("left", (event.pageX + 15) + "px").style("top", (event.pageY + 15) + "px"))
     .on("mouseout", () => tooltip.style("opacity", 0))
-    .on("click", (event, d) => {
-      if (event.ctrlKey) {
-        const url = getUrl(d);
-        if (url) window.open(url, "_blank");
-        return;
-      }
-      g.selectAll(".node-selection").style("visibility", "hidden");
-      if (!selectedNode) {
-        selectedNode = d;
-        d3.select(event.currentTarget.parentNode).select(".node-selection").style("visibility", "visible");
-      } else if (selectedNode && selectedNode !== d) {
-        const newLink = { source: selectedNode.id, target: d.id };
-        graph.links.push(newLink);
-        updateLinks();
-        selectedNode = null;
-      } else {
-        selectedNode = null;
-      }
-    })
-    // Right-click toggles description box with author, year, and clickable URL
-    .on("contextmenu", (event, d) => {
-      event.preventDefault();
-
-      if (lastRightClickedNode === d) {
-        // Hide if same node
-        infoBox.style("display", "none");
-        lastRightClickedNode = null;
-      } else {
-        const authors = getAuthors(d);
-        const year = d.year ? `, ${d.year}` : "";
-        const url = getUrl(d);
-        const urlLink = url ? `<br/><a href="${url}" target="_blank" style="color:#ffffff;">DOI</a>` : "";
-
-        infoBox.style("display", "block")
-              .html(
-                `<strong>${d.title || "Untitled"}</strong><br/>` +
-                `<span>${authors || ""}${authors || year ? year : ""}</span><br/><br/>` +
-                `${d.Description || "No description available."}` +
-                urlLink
-              );
-
-        lastRightClickedNode = d;
-      }
-    });
+    .on("click", handleNodeClick)
+    .on("contextmenu", handleRightClick);
 
   const label = g.append("g")
     .selectAll("text")
     .data(graph.nodes)
     .join("text")
     .text(d => d.id);
+
+  function updateNodeSizes() {
+    const degreeMap = {};
+    graph.nodes.forEach(n => degreeMap[n.id] = 0);
+    graph.links.forEach(l => {
+      const s = typeof l.source === "object" ? l.source.id : l.source;
+      const t = typeof l.target === "object" ? l.target.id : l.target;
+      degreeMap[s] += 1;
+      degreeMap[t] += 1;
+    });
+
+    node.attr("r", d => 8 + (degreeMap[d.id] || 0) * 2);
+    nodeGroup.select(".node-selection").attr("r", d => 8 + (degreeMap[d.id] || 0) * 2 + 3);
+    label.attr("dx", d => (8 + (degreeMap[d.id] || 0) * 2) + 4).attr("dy", 4);
+  }
+
+  updateNodeSizes();
+
+  simulation.on("tick", () => {
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+
+    nodeGroup.select(".node").attr("cx", d => d.x).attr("cy", d => d.y);
+    nodeGroup.select(".node-selection").attr("cx", d => d.x).attr("cy", d => d.y);
+    label.attr("x", d => d.x).attr("y", d => d.y);
+  });
 
   function updateLinks() {
     link = linkGroup.selectAll("line")
@@ -254,86 +365,192 @@ d3.json("graph.json").then(function(graph) {
     simulation.alpha(1).restart();
   }
 
-  function updateNodeSizes() {
-    const degreeMap = {};
-    graph.nodes.forEach(n => degreeMap[n.id] = 0);
-    graph.links.forEach(l => {
-      const sourceId = typeof l.source === "object" ? l.source.id : l.source;
-      const targetId = typeof l.target === "object" ? l.target.id : l.target;
-      degreeMap[sourceId] += 1;
-      degreeMap[targetId] += 1;
-    });
-
-    node.attr("r", d => 8 + (degreeMap[d.id] || 0) * 2);
-
-    nodeGroup.select(".node-selection")
-      .attr("r", d => 8 + (degreeMap[d.id] || 0) * 2 + 3);
-
-    label.attr("dx", d => (8 + (degreeMap[d.id] || 0) * 2) + 4)
-         .attr("dy", 4);
-  }
-
-  simulation.on("tick", () => {
-    link.attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
-
-    nodeGroup.select(".node")
-      .attr("cx", d => d.x)
-      .attr("cy", d => d.y);
-
-    nodeGroup.select(".node-selection")
-      .attr("cx", d => d.x)
-      .attr("cy", d => d.y);
-
-    label.attr("x", d => d.x)
-         .attr("y", d => d.y);
-  });
 
   function drag(simulation) {
-    function dragstarted(event, d) {
-      if (!event.active) simulation.alphaTarget(0.3).restart();
-      d.fx = d.x;
-      d.fy = d.y;
-    }
-    function dragged(event, d) {
-      d.fx = event.x;
-      d.fy = event.y;
-    }
-    function dragended(event, d) {
-      if (!event.active) simulation.alphaTarget(0);
-      d.fx = null;
-      d.fy = null;
-    }
     return d3.drag()
-      .on("start", dragstarted)
-      .on("drag", dragged)
-      .on("end", dragended);
+      .on("start", (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on("drag", (event, d) => { d.fx = event.x; d.fy = event.y; })
+      .on("end", (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; });
   }
 
   function formatTooltip(d) {
     let html = `<strong>${d.title || "Untitled"}</strong><br/>`;
     const authors = getAuthors(d);
-    if (authors || d.year) {
-      html += `<span>${authors}${authors && d.year ? ", " : ""}${d.year || ""}</span><br/>`;
-    }
+    if (authors || d.year) html += `<span>${authors}${authors && d.year ? ", " : ""}${d.year || ""}</span><br/>`;
     if (d.publisher) html += `<span class="publisher">${d.publisher}</span>`;
     return html;
   }
 
-  updateNodeSizes();
+  function handleNodeClick(event, d) {
+    if (event.ctrlKey) { const url = getUrl(d); if (url) window.open(url, "_blank"); return; }
+    g.selectAll(".node-selection").style("visibility", "hidden");
+    if (!selectedNode) { selectedNode = d; d3.select(event.currentTarget.parentNode).select(".node-selection").style("visibility", "visible"); }
+    else if (selectedNode && selectedNode !== d) { graph.links.push({ source: selectedNode.id, target: d.id }); updateLinks(); selectedNode = null; }
+    else selectedNode = null;
+  }
+
+  function handleRightClick(event, d) {
+    event.preventDefault();
+    if (lastRightClickedNode === d) { 
+      infoBox.classed("visible", false);
+      lastRightClickedNode = null; 
+    } else {
+      const authors = getAuthors(d);
+      const year = d.year ? `, ${d.year}` : "";
+      const url = getUrl(d);
+      const urlLink = url ? `<br/><a href="${url}" target="_blank" style="color:#ffffff;">DOI</a>` : "";
+
+      infoBox.html(
+        `<strong>${d.title || "Untitled"}</strong><br/>` +
+        `<span>${authors || ""}${authors || year ? year : ""}</span><br/><br/>` +
+        `${d.Description || "No description available."}` +
+        urlLink
+      );
+
+      infoBox.classed("visible", true);
+      lastRightClickedNode = d;
+    }
+  }
+
 }).catch(err => console.error(err));
 
+/* ============================================================
+   CLUSTER FORCES
+   ============================================================ */
+function themeClusterForce() {
+  let nodes;
+  function force(alpha) {
+    if (!nodes || colorBlend <= 0) return;
+
+    const groups = {};
+    nodes.forEach(n => {
+      const key = n.Theme || "__none__";
+      (groups[key] ||= []).push(n);
+    });
+
+    const centroids = {};
+    for (const key in groups) {
+      const arr = groups[key];
+      let sx = 0, sy = 0;
+      arr.forEach(n => { sx += n.x; sy += n.y; });
+      centroids[key] = { x: sx / arr.length, y: sy / arr.length };
+    }
+
+    const pull = 0.4 * colorBlend;
+
+    nodes.forEach(n => {
+      const c = centroids[n.Theme];
+      if (!c) return;
+      n.vx += (c.x - n.x) * pull * alpha;
+      n.vy += (c.y - n.y) * pull * alpha;
+    });
+  }
+  force.initialize = _ => nodes = _;
+  return force;
+}
+
+function themeRepelForce() {
+  let nodes;
+  function force(alpha) {
+    if (!nodes || colorBlend <= 0) return;
+
+    const groups = {};
+    nodes.forEach(n => {
+      const key = n.Theme || "__none__";
+      (groups[key] ||= []).push(n);
+    });
+
+    const centroids = {};
+    for (const key in groups) {
+      const arr = groups[key];
+      let sx = 0, sy = 0;
+      arr.forEach(n => { sx += n.x; sy += n.y; });
+      centroids[key] = { x: sx / arr.length, y: sy / arr.length };
+    }
+
+    const repel = 800 * colorBlend;
+
+    nodes.forEach(n => {
+      for (const key in centroids) {
+        if (key === n.Theme) continue;
+        const c = centroids[key];
+
+        let dx = n.x - c.x;
+        let dy = n.y - c.y;
+        let dist = Math.sqrt(dx*dx + dy*dy);
+
+        if (dist === 0) { dx = 1e-6; dy = 0; dist = 1e-6; }
+
+        const mag = (repel * alpha) / (dist + 60);
+
+        n.vx += (dx / dist) * mag;
+        n.vy += (dy / dist) * mag;
+      }
+    });
+  }
+  force.initialize = _ => nodes = _;
+  return force;
+}
+
+/* SLIDER */
+d3.select("#colorSlider").on("input", (event) => {
+  colorBlend = +event.target.value;
+  d3.selectAll(".node").attr("fill", d => blendedColor(d));
+  if (simulation) simulation.alpha(0.8).restart();
+});
+
+/* SAVE BUTTON */
 d3.select(".save-button").on("click", () => saveGraph(graphData));
 
-svg.on("click", () => infoBox.style("display", "none"));
+/* CLICK OUTSIDE */
+svg.on("click", () => infoBox.classed("visible", false));
 
+/* RESIZE */
 window.addEventListener("resize", () => {
   width = window.innerWidth;
   height = window.innerHeight;
   svg.attr("width", width).attr("height", height);
 });
+
+/* ============================
+   LEGEND SHOW/HIDE WITH EASING
+   ============================ */
+(function attachLegendHandlers() {
+  const slider = document.getElementById("colorSlider");
+  const legend = document.getElementById("themeLegend");
+  if (!slider || !legend) return;
+
+  let pointerDown = false;
+
+  function showLegend() {
+    legend.classList.add("visible");
+  }
+  function hideLegend() {
+    legend.classList.remove("visible");
+  }
+
+  slider.addEventListener("pointerenter", () => showLegend());
+  slider.addEventListener("pointerleave", () => { if (!pointerDown) hideLegend(); });
+
+  slider.addEventListener("pointerdown", (e) => {
+    pointerDown = true;
+    showLegend();
+    try { slider.setPointerCapture(e.pointerId); } catch(e){}
+  });
+
+  slider.addEventListener("pointerup", (e) => {
+    pointerDown = false;
+    hideLegend();
+    try { slider.releasePointerCapture(e.pointerId); } catch(e){}
+  });
+
+  slider.addEventListener("focus", () => showLegend());
+  slider.addEventListener("blur", () => hideLegend());
+
+  slider.addEventListener("input", () => showLegend());
+
+})();
+
 </script>
 
 </body>
