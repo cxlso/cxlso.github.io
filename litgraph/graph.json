@@ -1236,212 +1236,731 @@
   "links": [
     {
       "source": "Diamond, J. 1997",
-      "target": "Diamond, J. 2004",
-      "value": 1
+      "target": "Diamond, J. 2004"
     },
     {
       "source": "Fuller, R. 1969",
-      "target": "Fuller, R. 1963",
-      "value": 1
+      "target": "Fuller, R. 1963"
     },
     {
       "source": "Fuller, R. 1969",
-      "target": "Fuller, R. et al. 1975",
-      "value": 1
+      "target": "Fuller, R. et al. 1975"
     },
     {
       "source": "Fuller, R. et al. 1975",
-      "target": "Fuller, R. 1963",
-      "value": 1
+      "target": "Fuller, R. 1963"
     },
     {
       "source": "Huxley, A. 1932",
-      "target": "Huxley, A. 1962",
-      "value": 1
+      "target": "Huxley, A. 1962"
     },
     {
       "source": "Weil, S. 1934",
-      "target": "Weil, S. 1949",
-      "value": 1
+      "target": "Weil, S. 1949"
     },
     {
       "source": "Weil, S. 1934",
-      "target": "Fuller, R. 1969",
-      "value": 1
+      "target": "Fuller, R. 1969"
     },
     {
       "source": "Weil, S. 1934",
-      "target": "Huxley, A. 1932",
-      "value": 1
+      "target": "Huxley, A. 1932"
     },
     {
       "source": "Weil, S. 1934",
-      "target": "Lafargue, P. 1883",
-      "value": 1
+      "target": "Lafargue, P. 1883"
     },
     {
       "source": "Meadows, D. et al. 1972",
-      "target": "Weil, S. 1934",
-      "value": 1
+      "target": "Weil, S. 1934"
     },
     {
       "source": "Meadows, D. et al. 1972",
-      "target": "Daggett, C. 2019",
-      "value": 1
+      "target": "Daggett, C. 2019"
     },
     {
       "source": "Thomson, D. 1917",
-      "target": "Haeckel, E. 1899",
-      "value": 1
+      "target": "Haeckel, E. 1899"
     },
     {
       "source": "Allen, S. 1997",
-      "target": "Allen, S. 1998",
-      "value": 1
+      "target": "Allen, S. 1998"
     },
     {
       "source": "Snooks, R. 2017",
-      "target": "Snooks, R. 2022",
-      "value": 1
+      "target": "Snooks, R. 2022"
     },
     {
       "source": "Snooks, R. 2017",
-      "target": "Deleuze, G. 1993",
-      "value": 1
+      "target": "Deleuze, G. 1993"
     },
     {
       "source": "Snooks, R. 2017",
-      "target": "Cache, B. 1995",
-      "value": 1
+      "target": "Cache, B. 1995"
     },
     {
       "source": "Snooks, R. 2017",
-      "target": "Allen, S. 1997",
-      "value": 1
+      "target": "Allen, S. 1997"
     },
     {
       "source": "Snooks, R. 2022",
-      "target": "Allen, S. 1997",
-      "value": 1
+      "target": "Allen, S. 1997"
     },
     {
       "source": "Deleuze, G. 1993",
-      "target": "Deleuze, G. et al. 1987",
-      "value": 1
+      "target": "Deleuze, G. et al. 1987"
     },
     {
       "source": "Cache, B. 1995",
-      "target": "Deleuze, G. 1993",
-      "value": 1
+      "target": "Deleuze, G. 1993"
     },
     {
       "source": "Negroponte, N. 1998",
-      "target": "Negroponte, N. 1970",
-      "value": 1
-    },
-    {
-      "source": "DeLanda, M. 2002",
-      "target": "DeLanda, M. 2004",
-      "value": 1
+      "target": "Negroponte, N. 1970"
     },
     {
       "source": "Mitchell, W. 2005",
-      "target": "Mitchell, W. 1979",
-      "value": 1
+      "target": "Mitchell, W. 1979"
     },
     {
       "source": "Crolla, K. 2018",
-      "target": "Negroponte, N. 1998",
-      "value": 1
+      "target": "Negroponte, N. 1998"
     },
     {
       "source": "Crolla, K. 2018",
-      "target": "Mitchell, W. 2005",
-      "value": 1
+      "target": "Mitchell, W. 2005"
     },
     {
       "source": "Jandrić, P. 2023",
-      "target": "Jandrić, P. et al. 2018",
-      "value": 1
+      "target": "Jandrić, P. et al. 2018"
     },
     {
       "source": "Jandrić, P. 2023",
-      "target": "Negroponte, N. 1998",
-      "value": 1
+      "target": "Negroponte, N. 1998"
     },
     {
       "source": "Menges, A. 2013",
-      "target": "Menges, A. et al. 2008",
-      "value": 1
+      "target": "Menges, A. et al. 2008"
     },
     {
       "source": "Menges, A. 2013",
-      "target": "Thomson, D. 1917",
-      "value": 1
+      "target": "Thomson, D. 1917"
     },
     {
       "source": "Carpo, M. 2024",
-      "target": "Carpo, M. 2017",
-      "value": 1
+      "target": "Carpo, M. 2017"
     },
     {
       "source": "Carpo, M. 2024",
-      "target": "Carpo, M. 2023",
-      "value": 1
+      "target": "Carpo, M. 2023"
     },
     {
       "source": "Carpo, M. 2017",
-      "target": "Carpo, M. 2023",
-      "value": 1
-    },
-    {
-      "source": "Carpo, M. 2017",
-      "target": "Thomson, D. 1917",
-      "value": 1
+      "target": "Carpo, M. 2023"
     },
     {
       "source": "Braumann, J. et al. 2012",
-      "target": "Braumann, J. et al. 2021",
-      "value": 1
+      "target": "Braumann, J. et al. 2021"
     },
     {
       "source": "Menges, A. et al. 2008",
-      "target": "Thomson, D. 1917",
-      "value": 1
+      "target": "Thomson, D. 1917"
     },
     {
       "source": "Ramsgaard Thomsen, M. et al. 2022",
-      "target": "Ramsgaard Thomsen, M. 2022",
-      "value": 1
+      "target": "Ramsgaard Thomsen, M. 2022"
+    },
+    {
+      "source": "Turing, A. 1952",
+      "target": "Turing, A. 1936"
+    },
+    {
+      "source": "Goidea, A. 2023",
+      "target": "Andréen, D. et al. 2022"
+    },
+    {
+      "source": "Goidea, A. 2023",
+      "target": "Goidea, A. et al. 2022"
+    },
+    {
+      "source": "Goidea, A. 2023",
+      "target": "Thomson, D. 1917"
+    },
+    {
+      "source": "Andréen, D. et al. 2022",
+      "target": "Goidea, A. et al. 2022"
+    },
+    {
+      "source": "Baudisch, P. et al. 2017",
+      "target": "Gershenfeld, N. 2008"
+    },
+    {
+      "source": "Gramazio, F. et al. 2014",
+      "target": "Vazquez, A. et al. 2016"
+    },
+    {
+      "source": "Llach, D. 2007",
+      "target": "Thomson, D. 1917"
+    },
+    {
+      "source": "Leach, N. 2016",
+      "target": "Ng, P. 2025"
+    },
+    {
+      "source": "Stamets, P. 2005",
+      "target": "Watson, J. 2019"
+    },
+    {
+      "source": "Burry, M. 2011",
+      "target": "Mitchell, W. 1979"
+    },
+    {
+      "source": "Sweet, K. 2015",
+      "target": "Del Castillo Lopez, G. et al. 2019"
+    },
+    {
+      "source": "Del Castillo Lopez, G. et al. 2019",
+      "target": "Braumann, J. et al. 2012"
+    },
+    {
+      "source": "Calixto, V. et al. 2024",
+      "target": "Gershenfeld, N. 2008"
+    },
+    {
+      "source": "Gershenfeld, N. 2008",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Chomsky, N. 1992",
+      "target": "Daggett, C. 2019"
+    },
+    {
+      "source": "Carpo, M. 2017",
+      "target": "Thomson, D. 1917"
+    },
+    {
+      "source": "DeLanda, M. 2004",
+      "target": "DeLanda, M. 2002"
+    },
+    {
+      "source": "Zhou, J. et al. 2021",
+      "target": "Stamets, P. 2005"
+    },
+    {
+      "source": "Gramazio, F. et al. 2014",
+      "target": "Braumann, J. et al. 2012"
+    },
+    {
+      "source": "Davis, D. et al. 2013",
+      "target": "Calixto, V. et al. 2024"
+    },
+    {
+      "source": "Turing, A. 1952",
+      "target": "Thomson, D. 1917"
+    },
+    {
+      "source": "Venturi, R. 1966",
+      "target": "Mitchell, W. 2005"
+    },
+    {
+      "source": "Deleuze, G. 1993",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Deleuze, G. et al. 1987",
+      "target": "Fuller, R. 1963"
+    },
+    {
+      "source": "Carpo, M. 2024",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Oxman, N. 2012",
+      "target": "Ramsgaard Thomsen, M. et al. 2022"
+    },
+    {
+      "source": "Ramsgaard Thomsen, M. et al. 2022",
+      "target": "Carpo, M. 2017"
+    },
+    {
+      "source": "Yan, C. et al. 2024",
+      "target": "Larsson, M. et al. 2019"
+    },
+    {
+      "source": "Cojocaru, A. et al. 2021",
+      "target": "Carpo, M. 2024"
+    },
+    {
+      "source": "Ball, P. 2004",
+      "target": "Allen, S. 1997"
+    },
+    {
+      "source": "Cramer, F. 2014",
+      "target": "Jandrić, P. 2023"
+    },
+    {
+      "source": "Zhou, J. et al. 2021",
+      "target": "Oxman, N. 2012"
+    },
+    {
+      "source": "Vazquez, A. et al. 2016",
+      "target": "Snooks, R. 2022"
+    },
+    {
+      "source": "Amtsberg, F. et al. 2021",
+      "target": "Ramsgaard Thomsen, M. et al. 2022"
+    },
+    {
+      "source": "Watts, D. et al. 1998",
+      "target": "Ng, P. 2025"
+    },
+    {
+      "source": "Bechthold, M. 2014",
+      "target": "Gramazio, F. et al. 2014"
+    },
+    {
+      "source": "Smith, A. 1776",
+      "target": "Weil, S. 1934"
+    },
+    {
+      "source": "Walter-Herrmann, J. et al. 2014",
+      "target": "Gershenfeld, N. 2008"
+    },
+    {
+      "source": "Bingham‐Hall, J. 2017",
+      "target": "Ng, P. 2025"
+    },
+    {
+      "source": "Schon, D. 1984",
+      "target": "Sennett, R. 2009"
+    },
+    {
+      "source": "Mumford, L. 1959",
+      "target": "Agarwala, N. et al. 2021"
+    },
+    {
+      "source": "Mumford, L. 1959",
+      "target": "Ng, P. 2025"
+    },
+    {
+      "source": "Leach, N. 2016",
+      "target": "Diamond, J. 2004"
+    },
+    {
+      "source": "Lynn, G. 1993",
+      "target": "Deleuze, G. 1993"
+    },
+    {
+      "source": "Marx, K. et al. 1848",
+      "target": "Smith, A. 1776"
+    },
+    {
+      "source": "Marx, K. et al. 1848",
+      "target": "Weil, S. 1934"
+    },
+    {
+      "source": "Marx, K. et al. 1848",
+      "target": "Lafargue, P. 1883"
+    },
+    {
+      "source": "Poincaré, H. 1890",
+      "target": "Von Neumann, J. 1966"
+    },
+    {
+      "source": "Jacobs, J. 1961",
+      "target": "Mumford, L. 1959"
+    },
+    {
+      "source": "Fuller, R. 1969",
+      "target": "Gershenfeld, N. 2008"
+    },
+    {
+      "source": "Yan, C. et al. 2024",
+      "target": "Negroponte, N. 1998"
+    },
+    {
+      "source": "Menges, A. et al. 2008",
+      "target": "Cojocaru, A. et al. 2021"
+    },
+    {
+      "source": "Goidea, A. 2023",
+      "target": "Ramsgaard Thomsen, M. et al. 2022"
+    },
+    {
+      "source": "Goidea, A. 2023",
+      "target": "Oxman, N. 2012"
+    },
+    {
+      "source": "Zhou, J. 2019",
+      "target": "Zhou, J. et al. 2021"
+    },
+    {
+      "source": "Diamond, J. 1997",
+      "target": "Chomsky, N. 1992"
+    },
+    {
+      "source": "Ng, P. 2025",
+      "target": "Yan, C. et al. 2024"
+    },
+    {
+      "source": "Say, J. B. 1803",
+      "target": "Meadows, D. et al. 1972"
+    },
+    {
+      "source": "Say, J. B. 1803",
+      "target": "Smith, A. 1776"
+    },
+    {
+      "source": "Sennett, R. 2009",
+      "target": "Carpo, M. 2023"
+    },
+    {
+      "source": "Sennett, R. 2009",
+      "target": "Carpo, M. 2017"
+    },
+    {
+      "source": "Schon, D. 1984",
+      "target": "Vazquez, A. et al. 2016"
+    },
+    {
+      "source": "Gannon, M. 2018",
+      "target": "Vazquez, A. et al. 2016"
+    },
+    {
+      "source": "Gannon, M. 2018",
+      "target": "Del Castillo Lopez, G. et al. 2019"
+    },
+    {
+      "source": "Braumann, J. et al. 2021",
+      "target": "Gannon, M. 2018"
+    },
+    {
+      "source": "Gramazio, F. et al. 2014",
+      "target": "Gannon, M. 2018"
+    },
+    {
+      "source": "Conway, J. 1970",
+      "target": "Allen, S. 1998"
+    },
+    {
+      "source": "Diniz, N. et al. 2023",
+      "target": "Oxman, N. 2012"
+    },
+    {
+      "source": "Watson, J. 2019",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Asimov, I. 1951",
+      "target": "Ng, P. 2025"
+    },
+    {
+      "source": "Reynolds, C. 1987",
+      "target": "Wolfram, S. 2002"
+    },
+    {
+      "source": "Reynolds, C. 1987",
+      "target": "Allen, S. 1997"
+    },
+    {
+      "source": "Von Neumann, J. 1966",
+      "target": "Allen, S. 1997"
+    },
+    {
+      "source": "Reynolds, C. 1987",
+      "target": "Snooks, R. 2017"
+    },
+    {
+      "source": "Hughes, F. 2014",
+      "target": "Carpo, M. 2024"
+    },
+    {
+      "source": "Hughes, F. 2014",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Imhof, B. et al. 2015",
+      "target": "Zhou, J. et al. 2021"
+    },
+    {
+      "source": "López‐Durán, F. et al. 2010",
+      "target": "Ng, P. 2025"
+    },
+    {
+      "source": "López‐Durán, F. et al. 2010",
+      "target": "Imhof, B. et al. 2015"
+    },
+    {
+      "source": "Witt, A. 2010",
+      "target": "Burry, M. 2011"
+    },
+    {
+      "source": "Witt, A. 2010",
+      "target": "Schon, D. 1984"
+    },
+    {
+      "source": "Witt, A. 2010",
+      "target": "Sennett, R. 2009"
+    },
+    {
+      "source": "Wiener, N. 1948",
+      "target": "Poincaré, H. 1890"
+    },
+    {
+      "source": "Ng, P. 2025",
+      "target": "Fuller, R. et al. 1975"
+    },
+    {
+      "source": "Leach, N. 2016",
+      "target": "Fuller, R. 1969"
+    },
+    {
+      "source": "Licklider, J. 1960",
+      "target": "Wiener, N. 1948"
+    },
+    {
+      "source": "Licklider, J. 1960",
+      "target": "Yan, C. et al. 2024"
+    },
+    {
+      "source": "Negroponte, N. 1970",
+      "target": "Ng, P. 2025"
+    },
+    {
+      "source": "Haeckel, E. 1899",
+      "target": "Goidea, A. 2023"
+    },
+    {
+      "source": "Mitchell, T. 2011",
+      "target": "Daggett, C. 2019"
+    },
+    {
+      "source": "Orwell, G. 1949",
+      "target": "Huxley, A. 1932"
+    },
+    {
+      "source": "Weaver, W. 1948",
+      "target": "Conway, J. 1970"
+    },
+    {
+      "source": "Lorenz, E. 1963",
+      "target": "Poincaré, H. 1890"
+    },
+    {
+      "source": "Lorenz, E. 1963",
+      "target": "Weaver, W. 1948"
+    },
+    {
+      "source": "Weaver, W. 1948",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Baudrillard, J. 1968",
+      "target": "Calixto, V. et al. 2024"
+    },
+    {
+      "source": "Baudrillard, J. 1968",
+      "target": "Gannon, M. 2018"
+    },
+    {
+      "source": "Baudrillard, J. 1968",
+      "target": "Carpo, M. 2023"
+    },
+    {
+      "source": "Goodbun, J. et al. 2012",
+      "target": "Oxman, N. 2012"
+    },
+    {
+      "source": "Goodbun, J. et al. 2012",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Hughes, F. 2014",
+      "target": "Goodbun, J. et al. 2012"
+    },
+    {
+      "source": "Prigogine, I. et al. 1984",
+      "target": "Reynolds, C. 1987"
+    },
+    {
+      "source": "Wolfram, S. 2002",
+      "target": "Prigogine, I. et al. 1984"
+    },
+    {
+      "source": "Gulay, E. et al. 2019",
+      "target": "Yan, C. et al. 2024"
+    },
+    {
+      "source": "Gulay, E. et al. 2019",
+      "target": "Goodbun, J. et al. 2012"
+    },
+    {
+      "source": "Gulay, E. et al. 2019",
+      "target": "Vazquez, A. et al. 2016"
+    },
+    {
+      "source": "Wigley, M. 1993",
+      "target": "Snooks, R. 2017"
+    },
+    {
+      "source": "Wigley, M. 1993",
+      "target": "Snooks, R. 2022"
+    },
+    {
+      "source": "Wigley, M. 1993",
+      "target": "Venturi, R. 1966"
+    },
+    {
+      "source": "Mitchell, W. 2005",
+      "target": "Gershenfeld, N. 2008"
+    },
+    {
+      "source": "Weaver, W. 1948",
+      "target": "Jacobs, J. 1961"
+    },
+    {
+      "source": "DeLanda, M. 2004",
+      "target": "Deleuze, G. et al. 1987"
+    },
+    {
+      "source": "DeLanda, M. 2002",
+      "target": "Deleuze, G. et al. 1987"
+    },
+    {
+      "source": "DeLanda, M. 2002",
+      "target": "Snooks, R. 2017"
+    },
+    {
+      "source": "Braumann, J. et al. 2012",
+      "target": "Burry, M. 2011"
+    },
+    {
+      "source": "Burry, M. 2011",
+      "target": "Crolla, K. 2018"
+    },
+    {
+      "source": "Burry, M. 2011",
+      "target": "Davis, D. et al. 2013"
+    },
+    {
+      "source": "Negroponte, N. 1970",
+      "target": "Calixto, V. et al. 2024"
+    },
+    {
+      "source": "Waldrop, M. 1993",
+      "target": "Reynolds, C. 1987"
+    },
+    {
+      "source": "Waldrop, M. 1993",
+      "target": "Poincaré, H. 1890"
+    },
+    {
+      "source": "Ball, P. 2004",
+      "target": "Watts, D. et al. 1998"
+    },
+    {
+      "source": "Prigogine, I. et al. 1984",
+      "target": "Zhou, J. 2019"
+    },
+    {
+      "source": "Sharma, S. 2020",
+      "target": "Oxman, N. 2012"
+    },
+    {
+      "source": "Sharma, S. 2020",
+      "target": "Diniz, N. et al. 2023"
+    },
+    {
+      "source": "Sharma, S. 2020",
+      "target": "Goidea, A. et al. 2022"
+    },
+    {
+      "source": "Sharma, S. 2020",
+      "target": "Imhof, B. et al. 2015"
+    },
+    {
+      "source": "Imhof, B. et al. 2015",
+      "target": "Stamets, P. 2005"
+    },
+    {
+      "source": "Diniz, N. et al. 2023",
+      "target": "Stamets, P. 2005"
+    },
+    {
+      "source": "Hughes, F. 2014",
+      "target": "Wolfram, S. 2002"
+    },
+    {
+      "source": "Gödel, K. 1931",
+      "target": "Wolfram, S. 2002"
+    },
+    {
+      "source": "Gödel, K. 1931",
+      "target": "Turing, A. 1936"
+    },
+    {
+      "source": "Hilbert, D. 1902",
+      "target": "Turing, A. 1936"
+    },
+    {
+      "source": "Turing, A. 1936",
+      "target": "Von Neumann, J. 1966"
+    },
+    {
+      "source": "Capra, F. 1975",
+      "target": "Fuller, R. et al. 1975"
+    },
+    {
+      "source": "Ballard, J. 1962",
+      "target": "Deleuze, G. et al. 1987"
+    },
+    {
+      "source": "Daggett, C. 2019",
+      "target": "Agarwala, N. et al. 2021"
+    },
+    {
+      "source": "Carpo, M. 2023",
+      "target": "Gramazio, F. et al. 2014"
+    },
+    {
+      "source": "Witt, A. 2010",
+      "target": "Gramazio, F. et al. 2014"
+    },
+    {
+      "source": "Jandrić, P. et al. 2018",
+      "target": "Negroponte, N. 1998"
+    },
+    {
+      "source": "Jandrić, P. 2023",
+      "target": "Fuller, R. 1969"
+    },
+    {
+      "source": "Cramer, F. 2014",
+      "target": "Gershenfeld, N. 2008"
+    },
+    {
+      "source": "Diamond, J. 2004",
+      "target": "Weil, S. 1934"
+    },
+    {
+      "source": "López‐Durán, F. et al. 2010",
+      "target": "Weil, S. 1934"
+    },
+    {
+      "source": "Weil, S. 1934",
+      "target": "Mumford, L. 1959"
+    },
+    {
+      "source": "Wigley, M. 1993",
+      "target": "Jacobs, J. 1961"
+    },
+    {
+      "source": "Turing, A. 1952",
+      "target": "Prigogine, I. et al. 1984"
     },
     {
       "source": "Bratton, B. H. 2016",
       "target": "Ng, P. 2025",
-      "value": 1
-    },
-    {
-      "source": "Turing, A. 1952",
-      "target": "Turing, A. 1936",
-      "value": 1
-    },
-    {
-      "source": "Goidea, A. 2023",
-      "target": "Andréen, D. et al. 2022",
-      "value": 1
-    },
-    {
-      "source": "Goidea, A. 2023",
-      "target": "Goidea, A. et al. 2022",
-      "value": 1
-    },
-    {
-      "source": "Goidea, A. 2023",
-      "target": "Thomson, D. 1917",
-      "value": 1
-    },
-    {
-      "source": "Andréen, D. et al. 2022",
-      "target": "Goidea, A. et al. 2022",
       "value": 1
     }
   ]
