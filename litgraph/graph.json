@@ -1079,6 +1079,28 @@
       "Description": "<p>Jose Luis Del Castillo Lopez’s Enactive Robotics presents a critical rethinking of human–robot interaction, proposing a paradigm shift from the dominant “offline” control model of industrial robotics toward an enactive, concurrent, and cognitively accessible approach to machine control. The authors challenge the historical separation between design and execution that has defined automation since the mid-20th century—where robot behaviors are pre-scripted, unidirectional, and insulated from real-time feedback. Instead, they advocate for an action-state framework in which human operators can act and learn through direct engagement, allowing machine behavior to evolve in response to changing contexts, material conditions, and sensory inputs.</p><p>The dissertation situates this model within the lineage of constructivist and enactivist cognitive theories—from Bruner’s enactive-iconic-symbolic framework to Papert’s notion of “objects-to-think-with”—and translates these into a robotics methodology that privileges embodied learning, real-time feedback, and open-ended interaction. This cognitive grounding positions robotics not as an abstracted symbolic discipline but as a tangible medium for situated experimentation, blurring the distinction between user, tool, and environment. The “enactive” model thus reframes the robot as both agent and interlocutor, capable of mediating creative and improvisational forms of making.</p><p>Critically, the text aligns with the larger movement toward open and democratized technological infrastructures. Del Castillo Lopez emphasizes accessibility, openness, and the integration of robotics into creative and non-industrial domains such as art, architecture, and design. The proposed model aims to lower cognitive and technical barriers, allowing novice users to engage with robotic systems through immediate, sensory interaction rather than formalized code or proprietary software.</p><p>Ultimately, Enactive Robotics articulates a vital conceptual and practical bridge between computational reasoning and embodied making. It contributes not only to the field of human–robot interaction but also to broader discourses on participatory technologies, distributed fabrication, and post-disciplinary design practices that seek to dissolve the artificial divide between thinking, making, and living systems.</p>"
     },
     {
+      "id": "Allner, L. et al. 2021",
+      "Theme": "Symbiotic Material Ecologies",
+      "category": "Secondary",
+      "author": "Allner, L.; Kaltenbrunner, C.; Kröhnert, D.; Reinsberg, P.",
+      "title": "Conceptual Joining: Wood Structures from Detail to Utopia / Wood Structures in Experimentation",
+      "year": 2021,
+      "publisher": "De Gruyter",
+      "URL": "https://doi.org/10.1515/9783035624373",
+      "Description": "<p>APA citation: Allner, L., Kaltenbrunner, C., Kröhnert, D., & Reinsberg, P. (Eds.). (2021). Conceptual Joining: Wood Structures from Detail to Utopia / Wood Structures in Experimentation. De Gruyter. https://doi.org/10.1515/9783035624373</p><p>Conceptual Joining examines timber structures through the detail, treating joints not as neutral connections but as sites where material behavior, craft knowledge, structural logic, and architectural imagination meet. In relation to Post-Anthropogenic Design-to-Fabrication Practices Towards Global Symbiosis, the book strengthens the argument that design-to-fabrication is an ecological and relational continuum: wood, tools, assembly protocols, and speculative futures participate together in the production of tectonic knowledge. Its emphasis on experimentation helps frame Symbiotic Material Ecologies as practices that learn from material agency rather than simply imposing form.</p>"
+    },
+    {
+      "id": "Yuan, P. F. et al. 2018",
+      "Theme": "Phygital Practices",
+      "category": "Secondary",
+      "author": "Yuan, P. F.; Menges, A.; Leach, N.",
+      "title": "Digital Fabrication",
+      "year": 2018,
+      "publisher": "Tongji University Press Co., Ltd",
+      "URL": "https://openlibrary.org/isbn/9787560873343",
+      "Description": "<p>APA citation: Yuan, P. F., Menges, A., & Leach, N. (Eds.). (2018). Digital Fabrication. Tongji University Press Co., Ltd.</p><p>Digital Fabrication gathers architectural approaches in which computational design, materialization, and fabrication research operate as a coupled process. For the dissertation, it is a useful secondary reference for Phygital Practices because it situates fabrication as a hybrid field between digital protocols and physical matter: robotic tools, machine logics, craft, material feedback, and design intelligence become mutually conditioning agents. Read alongside the dissertation’s post-anthropogenic agenda, the book helps trace how digital fabrication can move beyond efficient production toward distributed, experimental, and materially responsive design ecologies.</p>"
+    },
+    {
       "id": "Weil, S. 1949",
       "Theme": "Ethics & Philosophical Frameworks",
       "category": "Extra",
