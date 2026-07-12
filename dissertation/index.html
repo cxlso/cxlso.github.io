@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dissertation by Celso Urroz" />
+  <title>Design-to-Fabrication Continuum — Celso Urroz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <button id="homeTitle" class="site-title" aria-label="Return to the title page">Toward Design-to-Fabrication Continuum</button>
+  </header>
+
+  <div id="viewport" class="viewport">
+    <div id="screenTrack" class="screen-track">
+      <section id="tocScreen" class="screen toc-screen" aria-label="Table of contents">
+        <div class="side-panel-scroll">
+          <h1>Table of Contents</h1>
+          <nav id="tocNav" class="toc-nav"></nav>
+        </div>
+      </section>
+
+      <section id="readerScreen" class="screen reader-screen" aria-label="Dissertation reader">
+        <main id="readerScroll" class="reader-scroll">
+          <article id="readerContent" class="reader-content" aria-live="polite"></article>
+        </main>
+        <footer id="readerFooter" class="reader-footer">
+          <span id="footerChapter" class="footer-chapter"></span>
+          <span id="footerSection" class="footer-section"></span>
+        </footer>
+        <div id="progressControl" class="progress-control" aria-label="Reading progress">
+          <div id="progressRail" class="progress-rail"><button id="progressDot" class="progress-dot" aria-label="Drag to scroll"></button></div>
+        </div>
+      </section>
+
+      <section id="bibliographyScreen" class="screen bibliography-screen" aria-label="Bibliography">
+        <div id="bibliographyScroll" class="side-panel-scroll bibliography-scroll">
+          <article id="bibliographyContent" class="bibliography-content"></article>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <button id="leftArrow" class="screen-arrow screen-arrow-left" aria-label="Open table of contents">‹</button>
+  <button id="rightArrow" class="screen-arrow screen-arrow-right" aria-label="Open bibliography">›</button>
+  <div id="citationPopup" class="citation-popup" role="dialog" aria-label="Citation details"></div>
+
+  <dialog id="figureDialog" class="figure-dialog">
+    <button id="closeFigure" class="close-figure" aria-label="Close figure">×</button>
+    <div class="figure-dialog-inner">
+      <img id="figureDialogImage" alt="" />
+      <p id="figureDialogCaption"></p>
+    </div>
+  </dialog>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

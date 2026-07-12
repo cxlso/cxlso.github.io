@@ -1,0 +1,1086 @@
+# Chapter 2 — Literature Review and Theoretical Framework
+
+Computational design and fabrication are examined as an epistemic and
+infrastructural transformation rather than as a linear technical
+progression from drawing to production. The relevant literature spans
+industrial and political theory, ecological systems thinking,
+computational design, robotic fabrication, open-source production,
+material ecology, and post-anthropocentric design. Across these fields,
+a common tension emerges: technical systems can reconnect design
+knowledge, material behavior, machine operation, and environmental
+feedback, but they can also reproduce the separations, abstractions, and
+concentrations of expertise inherited from industrial production.
+
+The theoretical framework develops through four related fields:
+industrial production and ecological limits; computational design and
+digital fabrication; open-source and distributed production; and
+post-anthropocentric agency. Their relations were mapped as a literature
+network rather than a strictly linear bibliography (Urroz, 2026; Figure
+2.1). The network makes visible the conceptual links among phygital
+practice, computational exploration, material ecology, commons-based
+governance, and ethical or philosophical frameworks. These relations
+provide the basis for defining the design-to-fabrication continuum as a
+feedback-based ecology in which design intent, material behavior,
+machinic operation, environmental conditions, and shared technical
+knowledge remain mutually responsive.
+
+<figure id="figure-2-1" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-1.jpeg" data-figure-src="figure/figure-2-1.jpeg" data-figure-number="Figure 2.1." data-figure-caption="Literature-review network developed for this dissertation. The diagram organizes the reviewed sources across five interconnected thematic fields: phygital practices, computational exploration, symbiotic material ecologies, decentralized governance and commons, and ethics and philosophical frameworks. Node classifications distinguish selected, primary, and secondary references.">
+    <img src="../figure/figure-2-1.jpeg" alt="Literature-review network developed for this dissertation. The diagram organizes the reviewed sources across five interconnected thematic fields: phygital practices, computational exploration, symbiotic material ecologies, decentralized governance and commons, and ethics and philosophical frameworks. Node classifications distinguish selected, primary, and secondary references." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.1.</strong> Literature-review network developed for this dissertation. The diagram organizes the reviewed sources across five interconnected thematic fields: phygital practices, computational exploration, symbiotic material ecologies, decentralized governance and commons, and ethics and philosophical frameworks. Node classifications distinguish selected, primary, and secondary references.</figcaption>
+</figure>
+
+## 2.1 Context
+
+The design-to-fabrication continuum responds to a historical condition
+in which production has separated design from execution, knowledge from
+labor, and matter from local and ecological relations. Computation
+introduced the possibility of reconnecting these domains through
+variation, simulation, feedback, and direct control of fabrication. That
+possibility remains contingent: when computational systems are organized
+through proprietary platforms, centralized expertise, standardized
+materials, or singular optimization objectives, they can extend rather
+than displace industrial abstraction.
+
+### 2.1.1 Industrial Production and Ecological Limits
+
+Industrial production established a model of making based on
+standardization, scale, repeatability, and the division of intellectual
+planning from material execution. Its power resided as much in the
+organization of knowledge as in machinery. Production was decomposed
+into specialized operations so that complex systems could be controlled
+centrally and executed through repeatable procedures. This increased
+productivity and coordination, but it also separated those who
+understood and directed the whole process from those who encountered
+only its individual tasks.
+
+The distinction between access to results and access to methods is
+therefore central to the politics of production. Industrial labor
+becomes alienating not only because workers lack ownership, but because
+they are denied intelligibility: they participate in operations whose
+larger organization remains inaccessible. Freedom, under these
+conditions, depends on the capacity to understand, intervene in, and
+transform the processes in which one participates (Weil, 1934). The
+mechanized labor represented in Figure 2.2 visualizes this asymmetry.
+The workers collectively operate a highly coordinated production
+environment, yet the logic governing that environment exceeds the agency
+of any individual participant.
+
+<figure id="figure-2-2" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-2.jpeg" data-figure-src="figure/figure-2-2.jpeg" data-figure-number="Figure 2.2." data-figure-caption="Adolph Menzel, The Iron Rolling Mill (Modern Cyclopes), 1872–1875. Industrial labor within a mechanized ironworks. Alte Nationalgalerie, Berlin.">
+    <img src="../figure/figure-2-2.jpeg" alt="Adolph Menzel, The Iron Rolling Mill (Modern Cyclopes), 1872–1875. Industrial labor within a mechanized ironworks. Alte Nationalgalerie, Berlin." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.2.</strong> Adolph Menzel, The Iron Rolling Mill (Modern Cyclopes), 1872–1875. Industrial labor within a mechanized ironworks. Alte Nationalgalerie, Berlin.</figcaption>
+</figure>
+
+Mechanization also contains a persistent contradiction. Machines were
+expected to reduce toil, yet industrial capitalism redirected their
+productive capacity toward intensified output, discipline, and
+accumulation rather than expanded leisure or autonomy (Lafargue, 1883).
+The contradiction is not resolved by automation alone. A machine can
+reduce physical effort while simultaneously concentrating technical
+knowledge, accelerating extraction, or increasing dependence on
+centralized infrastructure. The relevant question is therefore not
+whether machinery is inherently liberating or oppressive, but how
+technical capacity is organized, who can understand and modify it, and
+which social objectives it serves.
+
+Industrialization also reorganized matter. Materials were regularized so
+that they could circulate through centralized production with minimal
+resistance. Wood became dimensional stock; earth became engineered
+aggregate; biological variation became defect; craft knowledge became
+procedure; and fabrication became the execution of predefined
+instructions. Standardization enabled scale, interchangeability,
+predictable tolerances, and centralized quality control, but it severed
+material use from local ecologies, maintenance practices, and situated
+forms of knowledge. Irregularity and contextual difference were commonly
+treated as inefficiencies to be removed before production rather than as
+conditions capable of informing design.
+
+Architectural production continues to inherit this material regime. Many
+design and fabrication workflows assume normalized components,
+predictable stock, stable laboratory conditions, proprietary systems,
+and centralized fabrication infrastructures before design begins.
+Material complexity is abstracted at the outset and reintroduced later
+as a problem of detailing, tolerance, or construction management. This
+sequence preserves the industrial hierarchy in which conception precedes
+and governs execution, while matter is expected to conform to a
+predefined informational model.
+
+The ecological consequences of this organization became increasingly
+explicit during the twentieth century. The World3 model related
+population, industrial output, food production, nonrenewable resources,
+and pollution through interacting feedback loops rather than isolated
+trends (Meadows et al., 1972). Its stock-and-flow structure, reproduced
+in Figure 2.3, demonstrated that exponential expansion within finite
+systems produces systemic instability. Ecological crisis therefore
+appears not as an accidental externality of otherwise successful
+production, but as a consequence of the internal logic through which
+growth, extraction, and waste are organized.
+
+<figure id="figure-2-3" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-3.jpeg" data-figure-src="figure/figure-2-3.jpeg" data-figure-number="Figure 2.3." data-figure-caption="Stock-and-flow diagram of the World3 model, illustrating the interconnected feedback relationships among population, industrial production, agriculture, nonrenewable resources, and pollution. Source: Meadows et al. (1972).">
+    <img src="../figure/figure-2-3.jpeg" alt="Stock-and-flow diagram of the World3 model, illustrating the interconnected feedback relationships among population, industrial production, agriculture, nonrenewable resources, and pollution. Source: Meadows et al. (1972)." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.3.</strong> Stock-and-flow diagram of the World3 model, illustrating the interconnected feedback relationships among population, industrial production, agriculture, nonrenewable resources, and pollution. Source: Meadows et al. (1972).</figcaption>
+</figure>
+
+This systems perspective also demonstrates the ambivalence of
+computation. Modeling can expose relationships that industrial
+accounting obscures, revealing delayed effects, coupled variables, and
+limits that cannot be understood through isolated measures. The same
+computational capacity can nevertheless intensify extraction when
+directed toward productivity, prediction, and control alone. Computation
+is therefore not ecologically progressive by default; its consequence
+depends on which relations it makes visible and which objectives it is
+designed to serve.
+
+The political construction of energy illustrates this problem.
+Industrial thermodynamics converted bodies, materials, and environments
+into measurable capacities for work, thereby naturalizing productivity
+as a universal imperative rather than a historically specific
+organization of power (Daggett, 2019). Contemporary architectural
+performance metrics can reproduce this reduction when efficiency is
+detached from material origin, embodied impacts, labor, maintenance,
+replacement cycles, and ecological reciprocity. Lower operational energy
+within one bounded system does not necessarily account for extraction or
+displacement elsewhere.
+
+Comprehensive design offers a contrasting trajectory. Earth can be
+understood as a finite and interconnected system requiring coordination
+across technical, ecological, and social scales rather than fragmented
+specialization. The proposition that wealth lies in knowledge and
+process rather than material ownership relocates value in the capacity
+to understand, organize, and transform relations responsibly (Fuller,
+1969). This position remains productive for computational fabrication
+because it connects technical intelligence to planetary limits and
+emphasizes methods capable of doing more with finite resources.
+
+Such systemic optimism nevertheless requires qualification.
+Comprehensive design can become technocratic when universal coordination
+overrides cultural difference, local knowledge, political conflict, or
+material specificity. The alternative to fragmented specialization is
+not a single totalizing model, but a capacity to connect scales while
+remaining accountable to situated conditions. Systemic understanding
+must therefore be coupled with material engagement, procedural
+transparency, and the ability of participants to intervene in the
+systems that affect them.
+
+Industrial production can consequently be understood as both a material
+and an epistemic regime. It standardizes components and centralizes
+infrastructures while separating those who design systems from those who
+execute or inhabit them. The ecological problem is inseparable from this
+epistemic division because production systems cannot respond adequately
+to feedback they are organized not to perceive. A design-to-fabrication
+continuum must therefore address both the material organization of
+production and the distribution of access to its methods.
+
+### 2.1.2 Computational Design and Digital Fabrication
+
+Computational design and digital fabrication appear to challenge the
+industrial dependence on identical repetition. Numerically controlled
+production allows each component to be generated from variable digital
+information without requiring a unique mold, die, or dedicated
+production line. This shift was anticipated by Bernard Cache’s concept
+of the objectile: an object defined not by a single fixed form, but by a
+mathematical function capable of producing a continuous family of
+variations (Cache, 1995). Cache and Patrick Beaucé later operationalized
+this principle through Objectile, linking parametric models directly to
+CNC production. Differentiation can therefore occur through changes in
+data rather than through the complete reorganization of manufacturing
+equipment, weakening the economic necessity of sameness and enabling
+mass customization (Carpo, 2017). The early file-to-fabrication
+relationship shown in Figure 2.4 demonstrates this shift: parametric
+equations define a variable surface whose information directly controls
+the fabrication of a differentiated CNC-milled panel.
+
+<figure id="figure-2-4" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-4.jpeg" data-figure-src="figure/figure-2-4.jpeg" data-figure-number="Figure 2.4." data-figure-caption="Early customizable file-to-fabrication production. Objectile, Untitled, 1998. Left: computational model developed by Bernard Cache and Patrick Beaucé in TopSolid 5 through the manipulation of parametric equations. Right: the corresponding CNC-fabricated wood panel. Bernard Cache fonds, Canadian Centre for Architecture, Montréal; collection FRAC Centre-Val de Loire. © Bernard Cache.">
+    <img src="../figure/figure-2-4.jpeg" alt="Early customizable file-to-fabrication production. Objectile, Untitled, 1998. Left: computational model developed by Bernard Cache and Patrick Beaucé in TopSolid 5 through the manipulation of parametric equations. Right: the corresponding CNC-fabricated wood panel. Bernard Cache fonds, Canadian Centre for Architecture, Montréal; collection FRAC Centre-Val de Loire. © Bernard Cache." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.4.</strong> Early customizable file-to-fabrication production. Objectile, Untitled, 1998. Left: computational model developed by Bernard Cache and Patrick Beaucé in TopSolid 5 through the manipulation of parametric equations. Right: the corresponding CNC-fabricated wood panel. Bernard Cache fonds, Canadian Centre for Architecture, Montréal; collection FRAC Centre-Val de Loire. © Bernard Cache.</figcaption>
+</figure>
+
+The significance of this transformation exceeds formal variation.
+Architectural models, scripts, and toolpaths begin to participate
+directly in material production rather than merely represent a future
+object. Design information and construction information become
+increasingly continuous, allowing buildings to be understood as
+materialized digital information rather than as objects translated
+through a sequence of detached representational documents (Mitchell,
+2005). Complexity consequently shifts from visual intricacy toward the
+coordination of differentiated parts, variable geometry, performance
+criteria, fabrication tolerances, and assembly information.
+
+Parametric modeling also changes the status of variation. Instead of
+drawing each alternative independently, designers define relations
+through which alternatives can be generated, compared, and revised.
+Geometry becomes one state within a procedural system rather than a
+fixed endpoint. This expands architectural authorship from the
+composition of form to the construction of rules, dependencies, and
+decision spaces. It also introduces responsibility for the assumptions
+encoded in those procedures: which parameters are variable, which
+constraints are fixed, and which forms of knowledge remain outside the
+model.
+
+Scripting further relocates authorship from the use of software toward
+the modification of its operational environment. By constructing
+procedural tools rather than relying exclusively on predefined commands,
+designers can encode relationships among parameters, geometry, material
+behavior, fabrication output, and machine constraints. Scripting culture
+therefore treats the workflow itself as a designed artifact rather than
+a neutral means of producing geometry (Burry, 2011). The relevant
+contribution is not only the form generated, but the explicit procedure
+through which alternatives become possible.
+
+Robotic fabrication extends procedural authorship by bringing machine
+behavior directly into design reasoning. Industrial robots introduce
+joint configuration, reachability, singularities, tool orientation,
+collision, calibration, speed, payload, sequencing, controller
+communication, and end-effector behavior. These conditions do not merely
+limit a completed form; they define the field within which form can be
+conceived and materialized. Architectural robotics consequently shifts
+production from static component manufacture toward process-based
+materialization in which tool motion, machine choreography, and material
+transformation are part of design development (Bechthold, 2014; Braumann
+& Brell-Cokcan, 2012; Gramazio et al., 2014).
+
+The cooperative assembly shown in Figure 2.5 exemplifies this relation.
+Differentiated timber geometry cannot be separated from robotic access,
+grasping logic, sequencing, structural coordination, and the spatial
+organization of the fabrication environment. The machine does not simply
+reproduce a prior geometric intention; its kinematic and procedural
+requirements participate in defining how the structure is divided,
+positioned, and assembled.
+
+<figure id="figure-2-5" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-5.jpeg" data-figure-src="figure/figure-2-5.jpeg" data-figure-number="Figure 2.5." data-figure-caption="Cooperative robotic assembly of a differentiated cross-laminated timber pod for Semiramis, Gramazio Kohler Research, 2020–2022. Source: Gramazio Kohler Research, ETH Zurich.">
+    <img src="../figure/figure-2-5.jpeg" alt="Cooperative robotic assembly of a differentiated cross-laminated timber pod for Semiramis, Gramazio Kohler Research, 2020–2022. Source: Gramazio Kohler Research, ETH Zurich." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.5.</strong> Cooperative robotic assembly of a differentiated cross-laminated timber pod for Semiramis, Gramazio Kohler Research, 2020–2022. Source: Gramazio Kohler Research, ETH Zurich.</figcaption>
+</figure>
+
+Machine and material constraints also define the range of computational
+possibility. Machinic morphospace describes a design space constituted
+by the capacities and limitations of fabrication processes rather than
+by geometry alone (Menges, 2013). Toolpaths, fabrication resolution,
+material deformation, fixturing, reachability, and assembly order become
+generative parameters. This counters the assumption that digital form
+can be produced autonomously and rationalized only after generation.
+
+Simplexity extends this critique by challenging the equation of
+computational sophistication with technical escalation. Complex spatial
+or material outcomes do not necessarily require increasingly expensive
+machinery or opaque systems. They can emerge through the intelligent
+coordination of simple means, material behavior, craft knowledge, and
+constructible processes (Crolla, 2018). This position is particularly
+significant for accessible fabrication because it evaluates computation
+by the relations it clarifies and coordinates rather than by the
+technological novelty of its equipment.
+
+The computational turn nevertheless remains ambivalent. Proprietary
+software, closed robot interfaces, opaque algorithms, subscription
+platforms, and highly specialized workflows can reproduce the industrial
+separation between those who control methods and those who access only
+outputs. A designer may appear empowered by advanced software while
+remaining dependent on procedures that cannot be inspected, repaired, or
+adapted. Digital fabrication can therefore reconnect design and making
+at one level while creating new forms of technical enclosure at another.
+
+This ambiguity becomes particularly evident when workflows are
+distributed across multiple environments. Geometry may be generated in
+one platform, simulation conducted in another, robotic targets produced
+through a machine-specific plug-in, and controller code adjusted through
+tacit shop-floor knowledge. Every translation can introduce loss, hidden
+assumptions, or dependency. The digital chain may appear continuous from
+the perspective of the final artifact while remaining fragmented at the
+level of expertise, ownership, and reproducibility.
+
+Ecological claims require similar caution. Additive manufacturing,
+robotic deposition, parametric optimization, and performance simulation
+can reduce waste, increase geometric efficiency, or improve material
+allocation, but these capacities do not automatically establish
+ecological accountability. Formal complexity, production speed, or
+isolated efficiency gains can coexist with high energy demand, hardware
+dependency, short equipment lifecycles, and global supply chains. A more
+consequential ecological proposition is to use computational precision
+to economize matter, respond to material variability, extend the use of
+irregular resources, and adapt fabrication to situated conditions.
+
+The emphasis on informational intelligence and material lightness shifts
+attention from digital novelty toward resource consequence. Computation
+becomes environmentally relevant when greater procedural knowledge
+allows less material to be used more effectively, when fabrication
+responds to actual rather than idealized material conditions, and when
+design decisions account for the infrastructure needed to produce them
+(Carpo, 2023, 2024). Even then, material savings must be assessed
+alongside energy, equipment, maintenance, and logistics rather than
+treated as sufficient proof of sustainability.
+
+Computational design and digital fabrication therefore constitute a
+contested field rather than a completed break with industrial
+production. They enable variation, feedback, procedural authorship, and
+closer coordination between design and making, but they can also
+intensify opacity, specialization, and dependence. The
+design-to-fabrication continuum builds on their connective capacities
+while treating legibility, adaptability, material accountability, and
+transferability as necessary conditions of technical innovation.
+
+### 2.1.3 Open-source and Distributed Production
+
+Open-source and distributed production shift attention from technical
+capability to the ownership and circulation of methods. Access to a
+machine, executable file, or source-code repository does not ensure the
+ability to understand, modify, maintain, or redirect a workflow.
+Openness becomes operational when procedural knowledge can be inspected,
+reproduced, taught, and adapted across different contexts. The central
+distinction is therefore between availability and appropriation.
+
+Personal fabrication provides a foundational model for this
+redistribution. Fab Labs were conceived as infrastructures through which
+the democratizing effects of personal computing might extend to physical
+production (Gershenfeld, 2008). Their relevance lies less in the novelty
+of laser cutters, CNC routers, 3D printers, or microcontrollers than in
+the combination of machine access, project-based learning,
+documentation, and peer exchange. Fabrication becomes a distributed
+learning ecology in which technical knowledge is developed by making,
+testing, repairing, and sharing.
+
+This model challenges the exclusive concentration of production within
+factories and specialized institutions. It allows local users to move
+between digital information and physical fabrication without requiring
+industrial scale. Yet personal fabrication does not eliminate expertise;
+it reorganizes how expertise is acquired and circulated. The practical
+ability to fabricate still depends on interfaces, material knowledge,
+calibration, maintenance, safety procedures, and the capacity to
+diagnose failure.
+
+Persistent barriers include hardware cost, material limitations,
+embedded domain knowledge, interactive feedback, machine-specific
+abstraction, sustainability, and intellectual property (Baudisch &
+Mueller, 2017). These limitations show why distribution cannot be
+reduced to placing machines in more locations. Users require libraries,
+examples, calibration procedures, material settings, safety guidance,
+troubleshooting records, and intelligible interfaces that connect design
+intention to physical production.
+
+Fab Labs also operate as technological, educational, social, and
+economic institutions rather than autonomous workshops (Walter-Herrmann
+& Büching, 2014). They depend on software ecosystems, hardware supply
+chains, licensing arrangements, institutional support, training, and
+documentation standards. Their capacity to function as public
+infrastructure varies with funding, staffing, maintenance, and local
+technical literacy. Openness is consequently an infrastructural
+achievement that must be designed and sustained, not a property
+automatically conferred by a machine or a public license.
+
+The global distribution of Fab Labs demonstrates both the expansion and
+unevenness of this infrastructure (Figure 2.6). Geographic presence does
+not by itself eliminate disparities in equipment, funding, software
+access, technical support, or local capacity. Dense concentrations of
+laboratories coexist with large regions where fabrication access remains
+sparse, while nominally similar laboratories may possess very different
+resources and levels of continuity.
+
+<figure id="figure-2-6" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-6.jpeg" data-figure-src="figure/figure-2-6.jpeg" data-figure-number="Figure 2.6." data-figure-caption="Global distribution of Fab Labs, illustrating both the expansion of shared digital fabrication infrastructures and their uneven geographic distribution. Source: FabLabs.io.">
+    <img src="../figure/figure-2-6.jpeg" alt="Global distribution of Fab Labs, illustrating both the expansion of shared digital fabrication infrastructures and their uneven geographic distribution. Source: FabLabs.io." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.6.</strong> Global distribution of Fab Labs, illustrating both the expansion of shared digital fabrication infrastructures and their uneven geographic distribution. Source: FabLabs.io.</figcaption>
+</figure>
+
+Architectural robotics intensifies these difficulties. Robot
+programming, simulation, post-processing, controller communication,
+end-effector integration, calibration, material delivery, safety, and
+troubleshooting are frequently distributed across proprietary and
+hardware-specific systems. Even when a robot is physically available,
+its integration into a design workflow may depend on tacit expertise
+held by a small number of operators.
+
+Shared software infrastructures demonstrate how this concentration can
+be partially reduced. ROS allows researchers to build on reusable
+packages rather than repeatedly constructing isolated robotic solutions
+(Quigley et al., 2009). Architectural frameworks including COMPAS Fab,
+Robots for Grasshopper, BIRT, and Robot Ex Machina similarly connect
+design environments to simulation, robot control, and fabrication
+execution (Braumann & Brell-Cokcan, 2012; García del Castillo, 2019;
+Pacheco, 2024; Soler & Huyghe, 2016; Van Mele et al., 2019). These
+frameworks make portions of robotic integration more accessible and
+legible, but installation, configuration, adaptation, and
+troubleshooting can still require specialist knowledge. Source-code
+availability is therefore distinct from methodological transferability.
+
+The distinction between replication and appropriation is critical.
+Copying can function as technical and cultural transmission when a
+method migrates, mutates, and acquires new meaning in another context
+(Leach, 2016). A shared fabrication workflow should not require
+identical reproduction. It should preserve enough structure to
+communicate its logic while remaining open to different materials,
+machines, users, and environmental conditions. Standardization can
+support circulation by creating common interfaces or data structures;
+adaptability prevents circulation from becoming rigid duplication.
+
+This balance is especially important in architecture because fabrication
+knowledge is rarely universal. A workflow is situated in particular
+machines, materials, climates, workshops, budgets, institutional
+cultures, and levels of skill. Transfer therefore requires both stable
+elements and negotiable ones. Users must be able to identify which
+components are essential to the method, which assumptions are
+contextual, and which parameters can be recalibrated without destroying
+the underlying logic.
+
+Documentation mediates this balance. Industrial documentation often
+prescribes fixed operations to ensure repeatability and compliance.
+Open-source documentation must additionally explain why decisions were
+made, what assumptions they contain, which parameters can change, and
+how the workflow might be reconstructed under different conditions.
+Comments, diagrams, version histories, hardware lists, calibration data,
+fabrication settings, material recipes, safety notes, and failure
+reports become part of the designed infrastructure rather than
+supplementary records.
+
+Documentation also exposes tacit knowledge. A workflow that functions
+only because its author remembers undocumented adjustments is not yet
+transferable, even if the source file is publicly available. Attempts to
+explain or teach a process reveal where its structure remains too
+implicit, where terminology is unclear, and where machine- or
+material-specific knowledge has not been externalized. Documentation
+therefore participates in evaluation: it tests whether the method can
+survive beyond the immediate presence of its originator.
+
+Questions of governance extend beyond the workshop. Computation operates
+through layered infrastructures that organize identity, access,
+interface, platforms, and territory rather than as a neutral collection
+of tools (Bratton, 2016). When fabrication methods circulate through
+repositories, databases, and machine-readable protocols, openness
+includes provenance, authorship, versioning, reuse, maintenance, and
+accountability. A repository can make files accessible while still
+obscuring who produced them, how they changed, what they depend on, or
+whether they remain maintained.
+
+Decentralized indexing in shared design environments addresses some of
+these requirements by linking distributed information to traceable
+authorship and revision histories (Ng, 2025). Such systems do not solve
+governance automatically, but they clarify that technical commons
+require more than publication. They require mechanisms through which
+contributions can be attributed, dependencies documented, variations
+compared, and knowledge maintained over time.
+
+Distributed production must also preserve situatedness. Networked
+publics can connect local practices without erasing the conditions that
+make them distinct (Bingham-Hall, 2017). A transferable workflow should
+therefore be able to travel and change. A method developed in one
+laboratory may encounter different materials, machines, budgets, safety
+requirements, or cultural practices elsewhere. Its value lies not in
+producing the same artifact everywhere, but in enabling others to
+understand its logic and redirect it toward local conditions.
+
+Open-source production consequently offers a partial response to
+industrial opacity, not a complete solution. It can distribute tools and
+methods while reproducing exclusion through technical complexity,
+incomplete documentation, platform dependence, language, equipment
+costs, or uneven access to maintenance. It can support collective
+intelligence while still requiring governance structures capable of
+sustaining authorship, trust, and continuity.
+
+The relevant design problem is therefore to construct methods whose
+logic remains legible enough to support appropriation, whose
+dependencies are explicit enough to be assessed, and whose documentation
+allows situated adaptations to circulate. Under these conditions, design
+extends from the production of objects toward the production of
+technical and cultural infrastructures through which others can act.
+
+### 2.1.4 Post-Anthropocentric Design
+
+Post-anthropocentric design questions the assumption that agency belongs
+exclusively to a sovereign human designer. Conventional production
+frequently treats matter as passive substrate, machines as neutral
+instruments, environments as external contexts, and biological systems
+as resources or metaphors. A post-anthropocentric framework instead
+understands design as a negotiation among human intention, material
+tendencies, machinic capacities, biological processes, cultural
+knowledge, and ecological feedback. Human judgment remains necessary,
+but it no longer functions as the only source of form or intelligence.
+
+A central theoretical basis is the critique of hylomorphism: the model
+in which a preconceived form is imposed on inert matter. Material
+systems possess capacities, thresholds, and tendencies through which
+form emerges under specific energetic and relational conditions
+(DeLanda, 2002, 2004). Stiffness, anisotropy, grain, viscosity,
+shrinkage, elasticity, moisture, growth, and deformation are therefore
+not secondary constraints on an autonomous design. They participate in
+defining the field of possible outcomes.
+
+This distinction changes the meaning of fabrication. If matter actively
+modifies a process, fabrication cannot be understood as the neutral
+execution of a complete prior intention. It becomes a negotiation in
+which the behavior of material must be observed, interpreted, and
+incorporated into subsequent decisions. The designer still establishes
+goals and limits, but those goals are tested against capacities that
+cannot be fully known through abstraction alone.
+
+Biological and mathematical theories of form provide a longer lineage
+for this relational account. Morphology can be interpreted through
+forces, gradients, transformations, and geometric relations rather than
+through static types (Thompson, 1917). Reaction–diffusion demonstrates
+that organized patterns can emerge from local interactions without
+centralized command (Turing, 1952). Far-from-equilibrium systems produce
+order through fluctuation and dissipation (Prigogine & Stengers, 1984),
+while nonlinear dynamics show how small differences in initial
+conditions can produce divergent outcomes (Lorenz, 1963).
+
+These theories help distinguish complexity from mere complication.
+Complexity does not describe the accumulation of visual irregularity or
+computational operations. It concerns coherent behavior emerging from
+interactions among local rules, constraints, feedback, and environmental
+conditions (Waldrop, 1993). For design, this shifts attention from
+composing a final object toward constructing the conditions through
+which a family of outcomes can emerge.
+
+Architectural field conditions translate this movement from object to
+relation. Local rules, repetition, aggregation, and deformation can
+produce heterogeneous spatial organizations without a single dominant
+figure (Allen, 1997). Figure 2.7 illustrates how distributed operations
+generate order through relations among parts rather than through the
+imposition of one totalizing geometry. Behavioral formation extends this
+logic computationally by encoding local interactions from which larger
+configurations emerge (Snooks, 2017, 2022).
+
+<figure id="figure-2-7" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-7.jpeg" data-figure-src="figure/figure-2-7.jpeg" data-figure-number="Figure 2.7." data-figure-caption="Stan Allen, diagrammatic studies from “Field Conditions,” 1997, illustrating how local rules, repetition, aggregation, and deformation produce heterogeneous spatial organizations. Source: Allen (1997).">
+    <img src="../figure/figure-2-7.jpeg" alt="Stan Allen, diagrammatic studies from “Field Conditions,” 1997, illustrating how local rules, repetition, aggregation, and deformation produce heterogeneous spatial organizations. Source: Allen (1997)." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.7.</strong> Stan Allen, diagrammatic studies from “Field Conditions,” 1997, illustrating how local rules, repetition, aggregation, and deformation produce heterogeneous spatial organizations. Source: Allen (1997).</figcaption>
+</figure>
+
+Computational emergence remains incomplete when materialization is
+excluded. A simulated system may generate a large formal field while
+leaving structure, tolerance, craft, tooling, and assembly unresolved.
+Its apparent autonomy is bounded by the model and by the variables that
+the model includes. Once fabrication begins, material resistance,
+gravity, connection logic, machine access, and human handling narrow the
+space of viable outcomes.
+
+Simplexity describes a postdigital practice in which computational
+ambition is negotiated through simple means, material variability, craft
+knowledge, and constructible processes (Crolla, 2018). The ZCB Bamboo
+Pavilion demonstrates this relation between form-finding, irregular
+material, manual assembly, and Cantonese scaffolding practice (Figure
+2.8). Complexity arises from the coordination of heterogeneous
+constraints rather than from technical escalation alone. The project
+therefore grounds computational agency in material and cultural
+knowledge rather than treating computation as an autonomous source of
+form.
+
+<figure id="figure-2-8" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-8.jpeg" data-figure-src="figure/figure-2-8.jpeg" data-figure-number="Figure 2.8." data-figure-caption="Construction of the ZCB Bamboo Pavilion, Kristof Crolla, 2015. The project exemplifies simplexity by coupling computational form-finding with material variability, manual assembly, and Cantonese bamboo scaffolding craft. Source: CUHK School of Architecture.">
+    <img src="../figure/figure-2-8.jpeg" alt="Construction of the ZCB Bamboo Pavilion, Kristof Crolla, 2015. The project exemplifies simplexity by coupling computational form-finding with material variability, manual assembly, and Cantonese bamboo scaffolding craft. Source: CUHK School of Architecture." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.8.</strong> Construction of the ZCB Bamboo Pavilion, Kristof Crolla, 2015. The project exemplifies simplexity by coupling computational form-finding with material variability, manual assembly, and Cantonese bamboo scaffolding craft. Source: CUHK School of Architecture.</figcaption>
+</figure>
+
+Biological systems expand agency beyond nonliving matter. Early visual
+taxonomies revealed the systematic geometric richness of organisms,
+although their scientific and aesthetic value must be separated from the
+hierarchical and teleological ideologies with which some were associated
+(Haeckel, 1899). Their relevance lies in demonstrating that biological
+form can be examined through patterned organization and material
+contingency rather than used only as decorative analogy.
+
+Mycelial networks provide a more explicitly ecological model of
+distributed organization through decomposition, communication,
+adaptation, and regeneration (Stamets, 2005). Their relevance lies both
+in material potential and in the principle of intelligence distributed
+across a living network. Such systems challenge the assumption that
+coherent behavior requires a centralized author or controller.
+
+Material ecology and biofabrication translate these principles into
+design practice. Computational fabrication can coordinate material
+composition, environmental performance, and manufacturing processes
+across multiple scales, allowing material behavior to inform rather than
+merely receive geometry (Oxman, 2012). Bio-based design similarly links
+biological behavior, fabrication logic, and architectural performance
+(Ramsgaard Thomsen, 2022).
+
+Bioreceptive clay systems demonstrate how printed geometries can
+scaffold colonization and growth, positioning living matter as an active
+participant in formation rather than a passive resource (Diniz &
+Melendez, 2023; Figure 2.9). The designer does not directly specify
+every subsequent biological state. Instead, fabrication establishes a
+substrate, geometry, and material condition within which biological
+processes can continue to transform the artifact.
+
+<figure id="figure-2-9" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-2-9.jpeg" data-figure-src="figure/figure-2-9.jpeg" data-figure-number="Figure 2.9." data-figure-caption="bioMATTERS (Nancy Diniz and Frank Melendez), MYCO-CLAY. The 3D-printed clay-and-mycelium biocomposite demonstrates how computational fabrication can scaffold biological growth, positioning living matter as an active participant in material formation. Source: bioMATTERS.">
+    <img src="../figure/figure-2-9.jpeg" alt="bioMATTERS (Nancy Diniz and Frank Melendez), MYCO-CLAY. The 3D-printed clay-and-mycelium biocomposite demonstrates how computational fabrication can scaffold biological growth, positioning living matter as an active participant in material formation. Source: bioMATTERS." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 2.9.</strong> bioMATTERS (Nancy Diniz and Frank Melendez), MYCO-CLAY. The 3D-printed clay-and-mycelium biocomposite demonstrates how computational fabrication can scaffold biological growth, positioning living matter as an active participant in material formation. Source: bioMATTERS.</figcaption>
+</figure>
+
+Root-based and other biologically active systems further establish
+growth itself as a mode of fabrication (Zhou et al., 2021). These
+practices extend the temporal horizon of making: fabrication does not
+necessarily end when a machine stops operating, because living systems
+may continue to bind, grow, decay, or adapt. This temporal openness also
+complicates responsibility, since the designer must account for
+maintenance, containment, environmental interaction, and the
+unpredictability of biological development.
+
+More-than-human design also includes cultural and vernacular knowledge.
+Indigenous and traditional infrastructures frequently integrate ecology,
+maintenance, material use, and collective practice through long-term
+adaptation rather than isolated technical optimization (Watson, 2019).
+Vernacular passive systems similarly embed environmental feedback in
+orientation, air movement, thermal mass, water, material assembly, and
+occupation (Cojocaru & Isopescu, 2021). These practices prevent
+post-anthropocentric design from becoming narrowly technoscientific:
+ecological intelligence is carried by communities and intergenerational
+practices as well as by materials, organisms, and machines.
+
+This cultural dimension is essential because the redistribution of
+agency cannot treat all agents as equivalent. A material tendency,
+robotic constraint, biological process, and inherited cultural practice
+act in different ways and carry different ethical implications.
+Post-anthropocentric design does not remove human responsibility by
+distributing agency; it increases the need to distinguish influence from
+accountability. Humans remain responsible for selecting boundaries,
+constructing infrastructures, interpreting feedback, and deciding which
+relations should be enabled.
+
+Postdigital and phygital discourses provide the contemporary cultural
+context for this entanglement. The postdigital names a condition in
+which digital technology has become ordinary, hybrid, and inseparable
+from material culture rather than obsolete (Cramer, 2014). It is
+socio-material and transdisciplinary rather than a clean opposition
+between digital and analog, technological and biological, or virtual and
+physical (Jandrić, 2023). Computation no longer appears as an external
+layer added to an otherwise analog practice; it participates in the
+organization of labor, information, perception, and fabrication.
+
+Phygital intelligence extends this condition through continuous exchange
+among spatial perception, computational modeling, artificial
+intelligence, fabrication feedback, and ecological awareness (Yan &
+Yuan, 2024). The term is useful because it emphasizes reciprocal
+movement between digital and physical states rather than a
+one-directional translation from model to object. Sensing, simulation,
+toolpathing, fabrication, and physical response can remain connected
+within an iterative environment.
+
+Authorship is consequently redistributed but not dissolved. The designer
+frames questions, selects boundaries, constructs procedures, interprets
+feedback, and remains accountable for consequences. Material, machine,
+environment, organism, collaborator, and community modify the process
+through their own capacities and constraints. Post-anthropocentric
+design therefore replaces sovereign authorship with relational
+responsibility: the deliberate construction of conditions in which
+heterogeneous agencies can participate without being treated as
+ethically interchangeable.
+
+This position directly affects the understanding of fabrication.
+Fabrication is not simply the physical realization of human intention,
+but a process through which intention is tested and transformed by
+material, machinic, environmental, biological, and cultural conditions.
+Computation becomes valuable not because it grants complete control over
+these agencies, but because it can make their relations operational and
+open to revision.
+
+## 2.2 Toward the Design-to-Fabrication Continuum
+
+Industrial production separates design from execution, computation can
+both challenge and reproduce that separation, open-source practices
+redistribute access to methods, and post-anthropocentric design expands
+the agencies recognized within making. Taken together, these positions
+require a framework capable of linking design intent, material behavior,
+machinic operation, ecological feedback, and knowledge circulation
+within one operational field. The design-to-fabrication continuum names
+this relational condition. It is not a seamless technical passage from
+digital model to fabricated object, but a feedback structure through
+which heterogeneous forms of knowledge and agency can alter one another.
+
+### 2.2.1 From Linear Pipeline to Feedback Continuum
+
+Conventional design-to-fabrication workflows are often represented as
+linear pipelines. A design is conceived, modeled, translated into
+fabrication data, executed by a machine, and evaluated as a finished
+result. Digital tools may increase the precision or complexity of each
+stage without changing the hierarchy of the sequence. Design remains
+upstream, fabrication downstream; information precedes matter; execution
+follows intention.
+
+This hierarchy extends a broader separation between thought and material
+action. Cartesian dualism provides one conceptual analogue: abstract
+intelligence is associated with mind, while bodily and material
+operations are treated as secondary execution. Industrial production
+institutionalized this divide by separating planning from labor.
+Contemporary computational workflows can reproduce it when digital
+models are treated as autonomous acts of design later imposed on passive
+matter.
+
+The problem is not that design must occur without planning or sequence.
+It is that the direction of influence remains one-way. When fabrication
+is positioned only at the end of the process, material behavior, machine
+limits, assembly difficulty, and environmental conditions enter as late
+corrections rather than as constitutive design information. The pipeline
+privileges the stability of intention over the capacity of the process
+to learn.
+
+A feedback continuum changes this relation. Design and fabrication
+remain distinguishable, but they are no longer independent stages.
+Geometry is shaped by material behavior; material behavior is
+interpreted through testing, scanning, or simulation; machine
+constraints modify orientation and sequence; fabrication outcomes
+produce new information; and documentation allows methods to be revised
+and transferred. Feedback operates throughout the process rather than
+only after completion.
+
+Cybernetic thinking provides an early conceptual basis for this
+circularity. Systems can regulate behavior through repeated exchanges of
+information rather than through one-directional command (Wiener, 1948).
+Applied to fabrication, this means that sensing, measurement,
+simulation, or human observation can return information from the
+physical process to the computational model. The machine is no longer
+positioned only at the end of a design chain; it becomes part of the
+environment through which design decisions are tested.
+
+Human-computer symbiosis further distinguishes feedback from simple
+automation. Computational systems are most productive when machine
+processing and human judgment complement one another rather than when
+one is assumed to replace the other (Licklider, 1960). Automation
+executes predefined operations efficiently. A feedback continuum instead
+organizes exchanges among human interpretation, algorithmic processing,
+material response, and machinic execution. The designer remains
+responsible, but that responsibility is exercised through ongoing
+adjustment rather than total prior specification.
+
+The status of the model also changes. In a pipeline, the model often
+functions as the origin of fabrication information and the authoritative
+representation of a finished object. In a continuum, it becomes
+provisional and relational. Environmental simulation, material testing,
+tolerance, robotic reach, tool orientation, scan data, and fabrication
+results can update it. The model is one active state within a larger
+process rather than a complete description that matter must reproduce.
+
+This is especially important for irregular materials and non-standard
+fabrication. The geometry of a tree fork, the viscosity of a bio-paste,
+the deformation of kerfed plywood, or the surface of a found substrate
+cannot be fully known through standardized assumptions. Scanning,
+calibration, test fabrication, and iterative adjustment therefore become
+design operations. They do not simply correct errors; they define what
+the design can become under actual conditions.
+
+Fabrication consequently operates as a mode of inquiry. Physical testing
+reveals resistance, machine limits, assembly difficulty, environmental
+effects, and unexpected opportunities. Such results expose the
+assumptions embedded in the computational model and can redirect
+subsequent decisions. Failure, tolerance, and adjustment acquire
+methodological value because they provide information that cannot be
+obtained through abstraction alone.
+
+A feedback continuum is necessarily situated. Available materials, local
+tools, climate, skill levels, software access, machine condition, and
+institutional support influence what can be designed and fabricated.
+Situatedness does not eliminate transferability. A method can circulate
+when its underlying logic is documented, but it must remain open enough
+to be recalibrated in response to different material and infrastructural
+conditions.
+
+The continuum therefore replaces the hierarchy of a one-directional
+pipeline with structured reciprocity. It does not promise frictionless
+continuity or the disappearance of stages. It establishes channels
+through which information can return, assumptions can be revised, and
+design can remain responsive as it moves between digital intention and
+material reality.
+
+### 2.2.2 Computation as Mediating Infrastructure
+
+Computation makes feedback operational by translating among domains that
+do not share the same forms of representation. Design intent may be
+geometric, qualitative, or performative; material behavior may be
+observed through images, forces, deformation, or viscosity; machines
+operate through coordinates, joint states, signals, and timing;
+environmental conditions involve spatial fields and temporal variation;
+documentation organizes procedural and institutional knowledge.
+Mediation structures exchanges among these heterogeneous forms without
+assuming that they can be reduced to a single objective.
+
+This role differs from representation, automation, and optimization.
+Representation describes or simulates a condition. Automation executes a
+defined procedure. Optimization searches for an improved result relative
+to specified criteria. Mediation determines how inputs, constraints, and
+feedback can influence one another. A material scan informing geometry,
+robotic reach modifying orientation, airflow analysis altering module
+porosity, or fabrication data revising an extrusion parameter are acts
+of mediation because information crosses domains and changes the
+workflow.
+
+Mediation does not eliminate abstraction. Every scan filters geometry;
+every model selects variables; every simulation requires boundary
+conditions; every interface privileges certain operations; and every
+repository structures what can be located and understood. Computational
+infrastructure must therefore be evaluated by what it makes visible,
+what it excludes, and who can modify its assumptions. The goal is not
+perfect equivalence between physical reality and data, but an
+accountable translation that remains open to correction.
+
+Cybernetics and human-computer symbiosis provide precedents for this
+relational role (Licklider, 1960; Wiener, 1948). Their significance lies
+less in historical terminology than in the shift from isolated tools
+toward interactive systems. The design-to-fabrication continuum extends
+this exchange beyond the human and computer to include matter, machine,
+environment, biological processes, institutions, and future users.
+
+Computation also operates as a layered infrastructure rather than a
+neutral desktop tool. Scripts, repositories, controllers, interfaces,
+platforms, networks, and databases organize who can participate, which
+operations are possible, and how information circulates (Bratton, 2016).
+A robotic workflow is therefore shaped not only by its geometric logic
+but also by software licenses, controller protocols, file formats,
+hardware drivers, network access, and institutional permissions.
+
+Procedural authorship reinforces this infrastructural role. Scripting
+allows designers to construct operational environments in which
+parameters, constraints, fabrication instructions, and feedback loops
+are explicitly related (Burry, 2011). The workflow itself becomes a
+design artifact. Yet procedural authorship does not guarantee openness:
+a script can be custom-built and still remain opaque, undocumented, or
+dependent on inaccessible software.
+
+Legibility is therefore a necessary condition of mediation. Black-boxed
+systems may produce sophisticated outputs while concealing decision
+logic, embedded constraints, data provenance, or failure modes. Such
+opacity reinstates the separation between users of results and
+participants in methods. It also weakens scientific accountability
+because results cannot be evaluated independently from the procedure
+that produced them.
+
+Open-source availability mitigates this problem only when code,
+interfaces, hardware relations, calibration procedures, material
+assumptions, and conceptual decisions are documented in forms that can
+be interpreted. A file may technically be open while remaining
+practically unusable. Legibility requires modular organization,
+explanatory diagrams, consistent terminology, examples, version
+histories, and records of failure as well as success.
+
+Material mediation translates physical behavior into operational
+knowledge without claiming complete equivalence. Scanned geometry,
+physical testing, simulation, tolerance, and fabrication failure can
+alter design decisions, but their computational representation remains
+selective. Grain becomes a directional field, deformation becomes
+measured displacement, viscosity becomes a setting or observed flow
+rate, and surface irregularity becomes a mesh. These translations are
+productive when they preserve enough difference to redirect the process
+rather than forcing material behavior into an idealized model.
+
+Machinic mediation brings kinematic and procedural constraints into the
+design environment. Reach, singularities, speed, orientation, payload,
+calibration accuracy, tool actuation, collision, and controller timing
+define the field of executable operations. When represented early, these
+conditions can generate design decisions rather than appear as
+late-stage obstructions. The machine becomes a co-defining element of
+the design space without being treated as an autonomous author.
+
+Environmental mediation similarly requires more than optimizing a single
+metric. Solar exposure, airflow, humidity, water, resource availability,
+maintenance, and energy demand may conflict across scales and
+timeframes. Computation supports ecological reasoning when it permits
+these relations and trade-offs to remain visible and comparable rather
+than collapsing them into one universal score. Simulation is useful not
+because it produces certainty, but because it makes assumptions and
+possible consequences available for iterative examination.
+
+Documentation extends mediation beyond the immediate act of fabrication.
+Diagrams, modular definitions, version control, hardware specifications,
+calibration notes, material recipes, and failure records connect a
+workflow to future users. They allow technical knowledge to circulate,
+acquire local modifications, and return to a shared body of methods.
+Computation consequently mediates not only between digital and physical
+states, but also between present and future practices.
+
+This temporal dimension is central to transferability. A workflow that
+functions once in a particular laboratory may still depend on
+undocumented conditions. For it to become a method, its dependencies
+must be made explicit enough that another user can identify what needs
+to be preserved, substituted, or recalibrated. Documentation,
+versioning, and modularity transform a situated experiment into a
+potentially extensible infrastructure without pretending that context
+can be removed.
+
+A computational workflow is intelligent in this framework when it
+sustains feedback, adaptation, legibility, and transfer. Intelligence
+resides in the organization of relations rather than solely in the
+designer, algorithm, machine, or material. The design-to-fabrication
+continuum is therefore not a seamless digital chain. It is an
+infrastructure for maintaining accountable negotiation among
+heterogeneous conditions.
+
+### 2.2.3 Design, Matter, Machine, and Ecology as Interdependent Agents
+
+The continuum can be described through four interdependent domains:
+design, matter, machine, and ecology. They do not enter sequentially.
+Each constrains and transforms the others, while computation organizes
+the exchanges through which those transformations become actionable.
+Their interdependence does not imply equivalence; each contributes a
+different form of capacity, constraint, and responsibility.
+
+Design provides intention, judgment, boundary setting, and evaluation.
+It remains a human and collective responsibility but no longer operates
+as sovereign command. Reflection-in-action describes how design
+decisions evolve through a conversation with the consequences of making
+(Schön, 1984). Computational fabrication extends this conversation
+through simulation, scanning, toolpath analysis, robotic testing,
+material observation, and shared workflows.
+
+The designer therefore acts less as the sole originator of a completed
+form than as the constructor of a field of relations. Decisions remain
+necessary: objectives are selected, constraints prioritized, data
+interpreted, and outcomes evaluated. Distributed agency does not relieve
+the designer of responsibility; it requires greater attention to how
+workflows authorize some influences and exclude others.
+
+Matter provides behavior and resistance. Grain, stiffness, flexibility,
+moisture, viscosity, shrinkage, thermal mass, growth, and irregular
+geometry influence both fabrication and performance. These properties
+are not obstacles to an otherwise complete design; they define
+capacities that can redirect geometry, sequence, tooling, and assembly
+(DeLanda, 2004). Material agency is therefore operational rather than
+metaphorical when physical behavior changes a subsequent design
+decision.
+
+Machinic agency further complicates the process. Robotic arms, CNC
+equipment, sensors, pumps, controllers, and end-effectors introduce
+spatial, kinematic, temporal, and signal-based conditions. Their
+behavior co-defines the field of realizable operations. A robotic arm
+does not possess responsibility in the same sense as a designer, but its
+reach, payload, calibration, speed, and tool orientation materially
+affect the outcome.
+
+Treating the machine as an interdependent agent prevents robotic
+constraints from being relegated to downstream programming. Tool access
+may alter geometry; controller limitations may alter sequence;
+end-effector behavior may alter material deposition; and calibration
+error may alter tolerance. When these conditions enter the computational
+model early, they become part of design reasoning rather than obstacles
+to be solved after formal decisions have been made.
+
+Ecology provides situated and long-term feedback. Climate, energy,
+material availability, biological processes, maintenance, waste, and
+cultural practice determine the conditions under which a technical
+workflow acquires consequence. Ecological agency cannot be reduced to a
+performance metric because it includes temporal and social relations
+that exceed the duration of fabrication. A process may perform well
+during production while generating maintenance burdens, displaced waste,
+or infrastructural dependencies later.
+
+Vernacular and biological systems demonstrate why ecological
+intelligence is distributed across time. Environmental knowledge can be
+embedded in cultural practices refined over generations, while organisms
+respond through growth, decay, adaptation, and reciprocal relations.
+Computation can help make portions of these processes legible, but it
+cannot exhaust their complexity or replace the situated knowledge
+through which they are understood.
+
+Interdependence changes the criteria of evaluation. A successful
+workflow cannot be assessed only through geometric quality or
+fabrication precision. It must also be evaluated by whether material
+behavior is represented adequately, machine constraints are productively
+integrated, ecological relations inform decisions, dependencies are
+explicit, and the method can be understood and adapted by others. The
+artifact is one result among several; protocols, calibration strategies,
+documentation, and feedback structures are also research outputs.
+
+This framework also clarifies the role of failure. In a linear pipeline,
+failure appears primarily as deviation from the intended result. In a
+continuum, failure can become information. A cracked component, unstable
+extrusion, unreachable target, distorted scan, excessive deformation, or
+unanticipated environmental result identifies a misalignment among
+intention, material behavior, machine capacity, and context.
+
+Failure becomes methodologically useful only when it changes a
+subsequent state. Recording an unsuccessful result is not sufficient;
+the workflow must provide a route through which that result can modify
+geometry, parameters, tooling, sequence, or evaluation criteria.
+Feedback therefore depends on both observation and reintegration.
+
+The continuum consequently shifts design from control toward
+correspondence. Correspondence does not abandon precision; it
+understands precision as situated, process-specific, and open to
+recalibration. The objective is not to make materials, machines, or
+environments conform completely to a prior model, but to construct
+workflows capable of responding rigorously to their behavior.
+
+For distributed fabrication, these relations must be explicit. Transfer
+requires knowledge of material assumptions, machine dependencies,
+environmental conditions, modifiable parameters, and necessary forms of
+feedback. A method can then circulate as a structure for situated
+negotiation rather than as a fixed recipe. Documentation makes these
+relations available for collective examination and adaptation.
+
+Design, matter, machine, and ecology therefore form an operative
+structure rather than four isolated categories. Design provides
+intention and judgment; matter provides behavior and resistance;
+machines provide operational capacity and constraint; ecology provides
+situated context and long-term consequence. Computation mediates among
+them, while open documentation determines whether those relations remain
+available for future interpretation and modification.
+
+## 2.3 Research Gap
+
+The literature establishes substantial work on industrial critique,
+ecological limits, computational design, robotic fabrication,
+open-source production, material agency, biofabrication, distributed
+authorship, and feedback. It also reveals persistent fragmentation.
+Digital fabrication research frequently prioritizes technical capacity,
+geometric complexity, or optimization without explaining how methods
+become transferable beyond specialized environments. Open-source
+research addresses access and sharing without always integrating
+material agency, ecological feedback, or machine-specific constraints.
+Post-anthropocentric and bio-design theory expands agency but does not
+consistently translate that expansion into reproducible fabrication
+procedures. Robotic fabrication demonstrates increasingly sophisticated
+machine–material interaction while often remaining dependent on
+proprietary tools, standardized materials, tacit expertise, or
+project-specific integration.
+
+The unresolved problem is therefore not the absence of research in any
+individual domain. It is the limited availability of integrated and
+accessible workflows that connect design intention, material behavior,
+machinic constraints, ecological conditions, and knowledge circulation
+as a continuous operational system. Existing approaches commonly remain
+divided between theory and method, computational exploration and
+material execution, open-source dissemination and ecological reasoning,
+or robotic control and situated material practice.
+
+Design-to-fabrication is consequently still represented either as a
+technical pipeline from digital model to artifact or as a collection of
+isolated experimental demonstrations. The first representation conceals
+feedback and situated negotiation; the second produces valuable projects
+without necessarily clarifying how their methods can accumulate,
+transfer, or be adapted by others. Technical innovation does not by
+itself establish a methodological framework.
+
+What remains underdeveloped is a transferable framework supported by
+practical workflows that make the relations among these domains
+explicit. Such a framework must accommodate material and environmental
+variability, expose machine and software dependencies, organize feedback
+across digital and physical states, and provide documentation sufficient
+for interpretation and modification. Transferability must be evaluated
+through the capacity for appropriation rather than through identical
+reproduction.
+
+The design-to-fabrication continuum addresses this gap as an open,
+feedback-based, and post-anthropocentric framework. Computation mediates
+among design judgment, material tendencies, machine limits,
+environmental demands, and the capacity of users to understand and adapt
+the method. The framework does not promise seamless integration or
+universal accessibility. It provides a structure through which
+dependencies, feedback, and points of negotiation can be made explicit.
+
+The proposed framework is tested through cumulative workflows rather
+than through one universal technical system. Ecological translation,
+bounded emergence, accessible fabrication, irregular material
+negotiation, robotic integration, and open dissemination each clarify a
+different limit of the same methodological problem. The research
+contribution therefore lies in connecting these domains operationally
+while retaining the differences, constraints, and situated conditions
+that prevent them from being reduced to a single optimized process.

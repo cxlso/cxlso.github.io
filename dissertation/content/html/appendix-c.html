@@ -1,0 +1,46 @@
+<h1 id="appendix-c--workflow-dependencies-and-reproducibility-matrix">Appendix C — Workflow Dependencies and Reproducibility Matrix</h1>
+<p>Table C.1 summarizes the principal software, hardware, material, and calibration dependencies of the experimental workflows and interludes developed in this dissertation. It provides a compact reproducibility guide by identifying the technical conditions required to reconstruct each workflow and the limitations that require recalibration or further validation.</p>
+<p><span class="anchor" id="_Toc234751742"></span>Table C.1: Open-source repositories and digital research outputs associated with the dissertation.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Workflow</strong></th>
+<th><strong>Related chapter</strong></th>
+<th><strong>Dependencies and reproducibility notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Breathing Modular Wall</td>
+<td>Chapter 4</td>
+<td>Rhino and Grasshopper support parametric geometry, matched-support generation, and non-planar toolpaths; airflow and solar simulations provide design-stage feedback; desktop 3D printing produces the temporary supports; and a dual-UR10e simulation coordinates extrusion and handling. Reconstruction requires recalibration of the support location, nozzle, bead width, layer spacing, and material rheology. Environmental performance remains simulation-based and requires full-scale thermal and airflow testing.</td>
+</tr>
+<tr class="even">
+<td>Actuated Aggregation Assemblies</td>
+<td>Interlude I</td>
+<td>Grasshopper, Kangaroo, and Karamba3D are used for aggregation, actuator-length constraints, and structural screening. Each tetrapod combines a 3D-printed node, an ESP32-C3 controller, four stepper-driven linear actuators, limit switches, and LiPo power. Digital configurations are screened before the modules are adjusted and manually locked. The system is a proof-of-concept rather than an autonomous or engineering-validated structure.</td>
+</tr>
+<tr class="odd">
+<td>Interlocking Rib-Bending Framework</td>
+<td>Chapter 5</td>
+<td>Rhino and Grasshopper coordinate SubD and mesh modeling, curvature analysis, adaptive kerfing, part labeling, flip milling, and OpenNest placement for fabrication on a three-axis CNC router. Reproduction requires material-specific kerf calibration, grain orientation, tool-diameter compensation, assembly tolerance, registration holes, and reliable two-sided machining. Independent reconstruction has not yet been systematically documented.</td>
+</tr>
+<tr class="even">
+<td>Crafting Tree Forks</td>
+<td>Chapter 6</td>
+<td>Smartphone photogrammetry, Rhino and Grasshopper, Karamba3D, a KUKA Agilus KR 10, a consumer router, a custom tool mount, and a low-cost timber fixture form the operational chain. Reconstruction depends on complete image coverage, mesh cleanup, catalogue organization, three-point registration, manual height measurement, robotic probing, and touchpoint verification. Structural analysis functions as comparative screening rather than engineering certification.</td>
+</tr>
+<tr class="odd">
+<td>Open-Source Robotic Infrastructure</td>
+<td>Interlude II</td>
+<td>Grasshopper-based robot programming, custom end-effectors, controller boxes, pneumatic components, Arduino or ESP32 interfaces, and robot analog and digital I/O provide reusable templates for motion and tool actuation. The repositories document toolpaths, signal flow, and hardware integration, but implementation remains dependent on robot model, controller, software versions, safety configuration, and locally available components.</td>
+</tr>
+<tr class="even">
+<td>Situated Robotic Fabrication</td>
+<td>Chapter 7</td>
+<td>Rhino and Grasshopper, Houdini, an Intel RealSense D435, KUKA|prc and mxAutomation, UR RTDE and the Vention URCap, ESP32 control, TB6600 drivers, a Beckhoff EL4004 module, a dual-auger extruder, and pressurized material tanks support scanning, registration, sequencing, and graded deposition. Reconstruction requires scan-probe calibration, robot-specific program logic, motor tuning, and material-specific extrusion tests. Feedback is program- and workflow-level; motor-speed commands approximate relative blending and do not measure volumetric mixture ratio.</td>
+</tr>
+</tbody>
+</table>
+<p>The matrix records the principal dependencies explicitly but does not imply that the workflows can be reproduced without situated judgment. Machine condition, software version, material behavior, safety requirements, and local technical expertise remain variable. Reproducibility therefore depends on preserving the logic of each workflow while recalibrating its operational parameters for a new context.</p>
+<nav class="document-nav"><button class="document-nav-button previous" data-doc="appendix-b">← Appendix B</button></nav>

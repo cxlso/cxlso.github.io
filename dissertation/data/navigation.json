@@ -1,0 +1,498 @@
+{
+  "toc": [
+    {
+      "part": "PART I — Theoretical and Methodological Framework",
+      "items": [
+        {
+          "slug": "chapter-1",
+          "label": "Chapter 1 — Introduction"
+        },
+        {
+          "slug": "chapter-2",
+          "label": "Chapter 2 — Literature Review and Theoretical Framework"
+        },
+        {
+          "slug": "chapter-3",
+          "label": "Chapter 3 — Research Methodology"
+        }
+      ]
+    },
+    {
+      "part": "PART II — Experimental and Theoretical Investigations",
+      "items": [
+        {
+          "slug": "chapter-4",
+          "label": "Chapter 4 — Ecological Intelligence and Vernacular Computation"
+        },
+        {
+          "slug": "interlude-1",
+          "label": "Interlude I — Morphogenesis at the Edge of Possibility"
+        },
+        {
+          "slug": "chapter-5",
+          "label": "Chapter 5 — Simplexity and CNC Fabrication: Low-Tech Material Intelligence"
+        },
+        {
+          "slug": "chapter-6",
+          "label": "Chapter 6 — Machinic Logic and Robot Material Practice"
+        },
+        {
+          "slug": "interlude-2",
+          "label": "Interlude II — Open-Source Robotic Ecologies as Technical Commons"
+        },
+        {
+          "slug": "chapter-7",
+          "label": "Chapter 7 — Situated Robotic Fabrication as Feedback Continuum"
+        }
+      ]
+    },
+    {
+      "part": "PART III — Synthesis, Discussion, and Conclusion",
+      "items": [
+        {
+          "slug": "chapter-8",
+          "label": "Chapter 8 — Discussion: Conditions, Tensions, and Horizons of the Design-to-Fabrication Continuum"
+        },
+        {
+          "slug": "chapter-9",
+          "label": "Chapter 9 — Conclusion and Future Work"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "slug": "title",
+      "title": "Toward Design-to-Fabrication Continuum for Open-Source Computational Robotic Ecologies in the Post-Anthropogenic Era",
+      "short_title": "Title Page",
+      "type": "title",
+      "sections": []
+    },
+    {
+      "slug": "abstract",
+      "title": "Abstract",
+      "short_title": "Abstract",
+      "type": "front",
+      "sections": []
+    },
+    {
+      "slug": "acknowledgment",
+      "title": "Acknowledgment",
+      "short_title": "Acknowledgment",
+      "type": "front",
+      "sections": []
+    },
+    {
+      "slug": "epigraph",
+      "title": "Epigraph",
+      "short_title": "Epigraph",
+      "type": "front",
+      "sections": []
+    },
+    {
+      "slug": "chapter-1",
+      "title": "Chapter 1 — Introduction",
+      "short_title": "Chapter 1",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "1.1",
+          "title": "Research Motivation"
+        },
+        {
+          "number": "1.2",
+          "title": "Computational Design and Fabrication Today"
+        },
+        {
+          "number": "1.3",
+          "title": "Research Problem and Dissertation Position"
+        },
+        {
+          "number": "1.4",
+          "title": "Research Questions"
+        },
+        {
+          "number": "1.5",
+          "title": "Research Objectives"
+        },
+        {
+          "number": "1.6",
+          "title": "Research Contributions"
+        },
+        {
+          "number": "1.7",
+          "title": "Dissertation Structure"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2",
+      "title": "Chapter 2 — Literature Review and Theoretical Framework",
+      "short_title": "Chapter 2",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "2.1",
+          "title": "Context"
+        },
+        {
+          "number": "2.1.1",
+          "title": "Industrial Production and Ecological Limits"
+        },
+        {
+          "number": "2.1.2",
+          "title": "Computational Design and Digital Fabrication"
+        },
+        {
+          "number": "2.1.3",
+          "title": "Open-source and Distributed Production"
+        },
+        {
+          "number": "2.1.4",
+          "title": "Post-Anthropocentric Design"
+        },
+        {
+          "number": "2.2",
+          "title": "Toward the Design-to-Fabrication Continuum"
+        },
+        {
+          "number": "2.2.1",
+          "title": "From Linear Pipeline to Feedback Continuum"
+        },
+        {
+          "number": "2.2.2",
+          "title": "Computation as Mediating Infrastructure"
+        },
+        {
+          "number": "2.2.3",
+          "title": "Design, Matter, Machine, and Ecology as Interdependent Agents"
+        },
+        {
+          "number": "2.3",
+          "title": "Research Gap"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3",
+      "title": "Chapter 3 — Research Methodology",
+      "short_title": "Chapter 3",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "3.1",
+          "title": "Practice-Based Research Through Experimentation and Prototyping"
+        },
+        {
+          "number": "3.2",
+          "title": "Experimental Workflows, Dissemination, and Evaluation"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4",
+      "title": "Chapter 4 — Ecological Intelligence and Vernacular Computation",
+      "short_title": "Chapter 4",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "4.1",
+          "title": "From Vernacular to Computational Logic"
+        },
+        {
+          "number": "4.2",
+          "title": "Operationalizing Vernacular Passive Cooling"
+        },
+        {
+          "number": "4.3",
+          "title": "The Breathing Modular Wall as Computational Environmental System"
+        },
+        {
+          "number": "4.4",
+          "title": "Environmental Simulation as Translational Feedback"
+        },
+        {
+          "number": "4.5",
+          "title": "Fabrication Preprocessing and Constructability"
+        },
+        {
+          "number": "4.6",
+          "title": "Contribution to the Design-to-Fabrication Continuum"
+        }
+      ]
+    },
+    {
+      "slug": "interlude-1",
+      "title": "Interlude I — Morphogenesis at the Edge of Possibility",
+      "short_title": "Interlude I",
+      "type": "interlude",
+      "sections": [
+        {
+          "number": "I.I",
+          "title": "From Form Generation to Morphogenetic Fields"
+        },
+        {
+          "number": "I.II",
+          "title": "Meta-Morphospace and Field of Emergence"
+        },
+        {
+          "number": "I.III",
+          "title": "Speculative Actuated Aggregation Assemblies"
+        },
+        {
+          "number": "I.IV",
+          "title": "Probing the Edge of Possibility"
+        },
+        {
+          "number": "I.V",
+          "title": "Transition: From Emergent Possibility to Machinic Constraint"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-5",
+      "title": "Chapter 5 — Simplexity and CNC Fabrication: Low-Tech Material Intelligence",
+      "short_title": "Chapter 5",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "5.1",
+          "title": "Simplexity as Fabrication Ethic"
+        },
+        {
+          "number": "5.2",
+          "title": "CNC as Pre-Robotic Machinic Logic"
+        },
+        {
+          "number": "5.3",
+          "title": "Topology-Derived Rib Structures"
+        },
+        {
+          "number": "5.4",
+          "title": "Kerfing, Bending, and Material Intelligence"
+        },
+        {
+          "number": "5.5",
+          "title": "Fabrication Computational Model for Nesting and Assembly Sequence"
+        },
+        {
+          "number": "5.6",
+          "title": "Contribution to the Design-to-Fabrication Continuum"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-6",
+      "title": "Chapter 6 — Machinic Logic and Robot Material Practice",
+      "short_title": "Chapter 6",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "6.1",
+          "title": "Machinic Logic Through Material Practice"
+        },
+        {
+          "number": "6.2",
+          "title": "Irregular Timber Against Industrial Standardization"
+        },
+        {
+          "number": "6.3",
+          "title": "Scanning, Cataloguing, and Digital Kit-of-Parts"
+        },
+        {
+          "number": "6.4",
+          "title": "Computational Joinery and Structural Viability"
+        },
+        {
+          "number": "6.5",
+          "title": "Calibration and Robotic Milling"
+        },
+        {
+          "number": "6.6",
+          "title": "Material as the Condition for Demystification"
+        },
+        {
+          "number": "6.7",
+          "title": "Contribution to the Design-to-Fabrication Continuum"
+        }
+      ]
+    },
+    {
+      "slug": "interlude-2",
+      "title": "Interlude II — Open-Source Robotic Ecologies as Technical Commons",
+      "short_title": "Interlude II",
+      "type": "interlude",
+      "sections": [
+        {
+          "number": "II.I",
+          "title": "From Robotic Fabrication to Robotic Infrastructure"
+        },
+        {
+          "number": "II.II",
+          "title": "End-Effectors, Controllers, and Signal Flow"
+        },
+        {
+          "number": "II.III",
+          "title": "Toolpath Libraries and Shared Methods"
+        },
+        {
+          "number": "II.IV",
+          "title": "GitHub, Documentation, and Replicability"
+        },
+        {
+          "number": "II.V",
+          "title": "Transition: From Open Protocols to Adaptive Feedback Systems"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-7",
+      "title": "Chapter 7 — Situated Robotic Fabrication as Feedback Continuum",
+      "short_title": "Chapter 7",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "7.1",
+          "title": "From Linear Robotic Fabrication to Continuous Feedback"
+        },
+        {
+          "number": "7.2",
+          "title": "Scan-Probe Registration and Situated Calibration"
+        },
+        {
+          "number": "7.3",
+          "title": "Direct Mesh-to-Toolpath Modeling"
+        },
+        {
+          "number": "7.4",
+          "title": "Robotic Sequencing Through RTDE and mxAutomation"
+        },
+        {
+          "number": "7.5",
+          "title": "Graded Non-Planar Bio-Material Deposition"
+        },
+        {
+          "number": "7.6",
+          "title": "Contribution to the Design-to-Fabrication Continuum"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-8",
+      "title": "Chapter 8 — Discussion: Conditions, Tensions, and Horizons of the Design-to-Fabrication Continuum",
+      "short_title": "Chapter 8",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "8.1",
+          "title": "Methodological Conditions of the Continuum"
+        },
+        {
+          "number": "8.1.1",
+          "title": "From Experimental Sequence to Cumulative Framework"
+        },
+        {
+          "number": "8.1.2",
+          "title": "The Continuum as Methodological Reorientation"
+        },
+        {
+          "number": "8.1.3",
+          "title": "Negotiation Rather Than Optimization"
+        },
+        {
+          "number": "8.1.4",
+          "title": "Bounded Emergence and Material Accountability"
+        },
+        {
+          "number": "8.2",
+          "title": "Infrastructural and Cultural Conditions of Access"
+        },
+        {
+          "number": "8.2.1",
+          "title": "Demystification and the Means of Production"
+        },
+        {
+          "number": "8.2.2",
+          "title": "Workshops, Documentation, and Dissemination as Evaluation"
+        },
+        {
+          "number": "8.2.3",
+          "title": "Openness, Appropriation, and Authorship"
+        },
+        {
+          "number": "8.2.4",
+          "title": "Technical Commons and Partial Decentralization"
+        },
+        {
+          "number": "8.3",
+          "title": "Political, Ecological, and Computational Horizons"
+        },
+        {
+          "number": "8.3.1",
+          "title": "Civic Infrastructure and Protocol Sovereignty"
+        },
+        {
+          "number": "8.3.2",
+          "title": "Blockchain, Versioning, and Decentralized Indexing"
+        },
+        {
+          "number": "8.3.3",
+          "title": "Ecological Contradictions of Digital Fabrication"
+        },
+        {
+          "number": "8.3.4",
+          "title": "AI, Autonomy, and Constrained Computation"
+        }
+      ]
+    },
+    {
+      "slug": "chapter-9",
+      "title": "Chapter 9 — Conclusion and Future Work",
+      "short_title": "Chapter 9",
+      "type": "chapter",
+      "sections": [
+        {
+          "number": "9.1",
+          "title": "Conclusion"
+        },
+        {
+          "number": "9.2",
+          "title": "Research Contributions"
+        },
+        {
+          "number": "9.3",
+          "title": "Limitations"
+        },
+        {
+          "number": "9.4",
+          "title": "Future Work"
+        },
+        {
+          "number": "9.5",
+          "title": "Final Statement"
+        }
+      ]
+    },
+    {
+      "slug": "appendix-a",
+      "title": "Appendix A — Essay on Decentralized Indexing and the Scales of Civilization",
+      "short_title": "Appendix A",
+      "type": "appendix",
+      "sections": []
+    },
+    {
+      "slug": "appendix-b",
+      "title": "Appendix B — Open-Source Repositories and Digital Research Outputs",
+      "short_title": "Appendix B",
+      "type": "appendix",
+      "sections": []
+    },
+    {
+      "slug": "appendix-c",
+      "title": "Appendix C — Workflow Dependencies and Reproducibility Matrix",
+      "short_title": "Appendix C",
+      "type": "appendix",
+      "sections": []
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "number": "1.1",
+    "caption": "Composite visualization of the design-to-fabrication continuum as a relational field connecting computation, sensing, material conditions, and robotic operation.",
+    "file": "figure-1-1.jpeg"
+  },
+  {
+    "number": "1.2",
+    "caption": "Dymaxion Kinetic Vector 6 Structure, R. Buckminster Fuller, December 15, 1947. Geometric and structural study combining dimensional calculations, vector relationships, and construction principles. © Estate of R. Buckminster Fuller.",
+    "file": "figure-1-2.jpeg"
+  },
+  {
+    "number": "1.3",
+    "caption": "ICD/ITKE Research Pavilion 2015–16, University of Stuttgart. The project integrates computational design, material behavior, structural logic, and robotic fabrication within a continuous research process.",
+    "file": "figure-1-3.jpeg"
+  },
+  {
+    "number": "2.1",
+    "caption": "Literature-review network developed for this dissertation. The diagram organizes the reviewed sources across five interconnected thematic fields: phygital practices, computational exploration, symbiotic material ecologies, decentralized governance and commons, and ethics and philosophical frameworks. Node classifications distinguish selected, primary, and secondary references.",
+    "file": "figure-2-1.jpeg"
+  },
+  {
+    "number": "2.2",
+    "caption": "Adolph Menzel, The Iron Rolling Mill (Modern Cyclopes), 1872–1875. Industrial labor within a mechanized ironworks. Alte Nationalgalerie, Berlin.",
+    "file": "figure-2-2.jpeg"
+  },
+  {
+    "number": "2.3",
+    "caption": "Stock-and-flow diagram of the World3 model, illustrating the interconnected feedback relationships among population, industrial production, agriculture, nonrenewable resources, and pollution. Source: Meadows et al. (1972).",
+    "file": "figure-2-3.jpeg"
+  },
+  {
+    "number": "2.4",
+    "caption": "Early customizable file-to-fabrication production. Objectile, Untitled, 1998. Left: computational model developed by Bernard Cache and Patrick Beaucé in TopSolid 5 through the manipulation of parametric equations. Right: the corresponding CNC-fabricated wood panel. Bernard Cache fonds, Canadian Centre for Architecture, Montréal; collection FRAC Centre-Val de Loire. © Bernard Cache.",
+    "file": "figure-2-4.jpeg"
+  },
+  {
+    "number": "2.5",
+    "caption": "Cooperative robotic assembly of a differentiated cross-laminated timber pod for Semiramis, Gramazio Kohler Research, 2020–2022. Source: Gramazio Kohler Research, ETH Zurich.",
+    "file": "figure-2-5.jpeg"
+  },
+  {
+    "number": "2.6",
+    "caption": "Global distribution of Fab Labs, illustrating both the expansion of shared digital fabrication infrastructures and their uneven geographic distribution. Source: FabLabs.io.",
+    "file": "figure-2-6.jpeg"
+  },
+  {
+    "number": "2.7",
+    "caption": "Stan Allen, diagrammatic studies from “Field Conditions,” 1997, illustrating how local rules, repetition, aggregation, and deformation produce heterogeneous spatial organizations. Source: Allen (1997).",
+    "file": "figure-2-7.jpeg"
+  },
+  {
+    "number": "2.8",
+    "caption": "Construction of the ZCB Bamboo Pavilion, Kristof Crolla, 2015. The project exemplifies simplexity by coupling computational form-finding with material variability, manual assembly, and Cantonese bamboo scaffolding craft. Source: CUHK School of Architecture.",
+    "file": "figure-2-8.jpeg"
+  },
+  {
+    "number": "2.9",
+    "caption": "bioMATTERS (Nancy Diniz and Frank Melendez), MYCO-CLAY. The 3D-printed clay-and-mycelium biocomposite demonstrates how computational fabrication can scaffold biological growth, positioning living matter as an active participant in material formation. Source: bioMATTERS.",
+    "file": "figure-2-9.jpeg"
+  },
+  {
+    "number": "3.1",
+    "caption": "Design-to-fabrication methodological framework. The framework develops through a recursive cycle of framework development, testing, open-source sharing, and reintegration into a broader global knowledge ecology.",
+    "file": "figure-3-1.jpeg"
+  },
+  {
+    "number": "3.2",
+    "caption": "Experimental workflows, transfer, and dissemination. The diagram abstracts the methodological movement from computational design and fabrication workflows toward operational experimentation, transfer, and dissemination. While not a complete catalogue of all experiments, it shows how workflows are developed, tested, documented, and evaluated through workshops, courses, and open-source dissemination.",
+    "file": "figure-3-2.jpg"
+  },
+  {
+    "number": "4.1",
+    "caption": "Translation of vernacular environmental logic into a computational system. Environmental principles derived from the Iranian windcatcher and qanat are abstracted into parametric variables that generate modular architectural variations.",
+    "file": "figure-4-1.jpg"
+  },
+  {
+    "number": "4.2",
+    "caption": "Translation of the Iranian windcatcher/qanat system into a modular wall assembly. The traditional horizontal relation between windcatcher, underground water channel, airflow, and interior cooling is reconfigured as a vertical wall module with a water core and porous air-capturing façade.",
+    "file": "figure-4-2.jpeg"
+  },
+  {
+    "number": "4.3",
+    "caption": "Collection of five modular block types derived from the base 30 × 30 cm unit. The block variations allow the wall system to produce different curvatures, airflow relationships, and assembly configurations.",
+    "file": "figure-4-3.jpeg"
+  },
+  {
+    "number": "4.4",
+    "caption": "Modular assembly and connection logic. The blocks interlock through convex and concave interfaces and are stabilized through bolted connections and tab-based alignment across consecutive units.",
+    "file": "figure-4-4.jpeg"
+  },
+  {
+    "number": "4.5",
+    "caption": "Assembly variations generated from the modular block system. The configurations demonstrate vertical curvature, horizontal curvature, and more dynamic aggregations produced through the combination of five block types.",
+    "file": "figure-4-5.jpeg"
+  },
+  {
+    "number": "4.6",
+    "caption": "Solar radiation analysis of the modular wall system. The simulation shows how small-scale overhangs reduce direct solar exposure and contribute to passive heat dissipation across different configurations.",
+    "file": "figure-4-6.jpeg"
+  },
+  {
+    "number": "4.7",
+    "caption": "Airflow analysis of the modular wall system. The simulation indicates air movement through the module cavities toward the water core and identifies the intended zones of convective and evaporative exchange.",
+    "file": "figure-4-7.jpeg"
+  },
+  {
+    "number": "4.8",
+    "caption": "Support structure generation for non-planar robotic extrusion. A point array is projected onto the supported surface and converted into a patch geometry, producing a custom support for the five façade panel variations.",
+    "file": "figure-4-8.jpeg"
+  },
+  {
+    "number": "4.9",
+    "caption": "Non-planar 3D-printing toolpath components. A: five base layers used to stabilize the print; B: thickness added to the base paths; C: vertical concentric toolpathing used after the base layers; D: thickness added to the vertical paths.",
+    "file": "figure-4-9.jpeg"
+  },
+  {
+    "number": "4.10",
+    "caption": "Dual-arm robotic fabrication workflow. One UR10e arm extrudes the façade panel onto the support structure, while the second arm removes the completed part and places it on an organizer rack for subsequent assembly.",
+    "file": "figure-4-10.jpeg"
+  },
+  {
+    "number": "I.I",
+    "caption": "Two complementary models of morphogenesis. Top: meta-morphospace and emergent field. Bottom: each domain as an N-dimensional morphospace, highlighting how meta-morphospace parameters correspond to emergent rule-variables.",
+    "file": "figure-i-i.jpeg"
+  },
+  {
+    "number": "I.II",
+    "caption": "Speculative actuated aggregation assemblies. Left: aggregated structural configurations generated through computational assembly logic. Center: actuated tetrapod module with independently adjustable struts. Right: mechanical and electronic components of the module, including custom linear actuators, motor assemblies, embedded control hardware, and battery-powered components.",
+    "file": "figure-i-ii.jpeg"
+  },
+  {
+    "number": "I.III",
+    "caption": "Symmetrical aggregation as emergence protocol. Structurally viable iteration generated through calibrated randomness within bounded member-length range.",
+    "file": "figure-i-iii.jpeg"
+  },
+  {
+    "number": "I.IV",
+    "caption": "Correlation between meta-morphospace coordinates and realized structural iterations. Tested configurations, validated through Karamba, are distinguished from collapsing iterations, illustrating the restricted subset of structurally viable possibilities within the broader space.",
+    "file": "figure-i-iv.jpeg"
+  },
+  {
+    "number": "5.1",
+    "caption": "General 2D-to-3D workflow translating computational surface geometry into CNC-cut, bending-active rib structures. Adapted from the author’s previous study on topology-derived interlocking bent rib fabrication.",
+    "file": "figure-5-1.jpg"
+  },
+  {
+    "number": "5.2",
+    "caption": "Vector deformation of a structured grid under different loading conditions, establishing the geometric basis for the interlocking rib system.",
+    "file": "figure-5-2.jpeg"
+  },
+  {
+    "number": "5.3",
+    "caption": "Topology-derived 2D-to-3D generative grammar and physical rib models showing the translation from mesh organization to interlocking spatial structures.",
+    "file": "figure-5-3.jpeg"
+  },
+  {
+    "number": "5.4",
+    "caption": "Adaptive kerf pattern preview showing different density and spread settings used to tune plywood flexibility according to curvature demand.",
+    "file": "figure-5-4.jpeg"
+  },
+  {
+    "number": "5.5",
+    "caption": "Flap generation logic for segmenting oversized ribs and generating reinforced lap connections within standard sheet dimensions.",
+    "file": "figure-5-5.jpeg"
+  },
+  {
+    "number": "5.6",
+    "caption": "Open-source Grasshopper definition flowchart.",
+    "file": "figure-5-6.jpeg"
+  },
+  {
+    "number": "5.7",
+    "caption": "Ribs color-coded by parent and baked on Side A and Side B.",
+    "file": "figure-5-7.jpeg"
+  },
+  {
+    "number": "5.8",
+    "caption": "Final half-scale bending-active rib prototype and close-up views of kerfed ribs, lap connections, and interlocking assembly details.",
+    "file": "figure-5-8.jpeg"
+  },
+  {
+    "number": "6.1",
+    "caption": "Workshop pedagogical workflow linking material exploration, digital cataloguing, computational joinery, robotic calibration, milling, and assembly. The diagram frames machinic logic as a distributed process rather than as an isolated act of robotic execution.",
+    "file": "figure-6-1.jpeg"
+  },
+  {
+    "number": "6.2",
+    "caption": "Photogrammetry process from smartphone capture to reconstruction and mesh cataloguing. The workflow translates irregular timber forks into digital meshes while retaining the material specificity needed for later joinery generation and robotic milling.",
+    "file": "figure-6-2.jpeg"
+  },
+  {
+    "number": "6.3",
+    "caption": "Layer/sublayer data structure showing meshes, curve skeletons, and calibration planes.",
+    "file": "figure-6-3.jpeg"
+  },
+  {
+    "number": "6.4",
+    "caption": "Participant assemblies compared with Karamba3D structural simulations.",
+    "file": "figure-6-4.jpeg"
+  },
+  {
+    "number": "6.5",
+    "caption": "Lap-joint toolpath generation: contour outlining, zigzag pocketing, and final geometry.",
+    "file": "figure-6-5.jpeg"
+  },
+  {
+    "number": "6.6",
+    "caption": "Robotic workflow: calibration, touchpoint verification, and milling execution.",
+    "file": "figure-6-6.jpeg"
+  },
+  {
+    "number": "6.7",
+    "caption": "Selected catalogue components, exploded assembly, and milling/assembly photographs.",
+    "file": "figure-6-7.jpeg"
+  },
+  {
+    "number": "6.8",
+    "caption": "Final workshop assembly and participant group photo.",
+    "file": "figure-6-8.jpeg"
+  },
+  {
+    "number": "II.I",
+    "caption": "Top: templated robotic fabrication pipeline enabling customizable and shareable workflows. Bottom: two implementations released as open-source templates on GitHub.",
+    "file": "figure-ii-i.jpeg"
+  },
+  {
+    "number": "II.II",
+    "caption": "Custom end-effectors developed through the open-source framework. Top left: vacuum gripper; top right: handheld router mount; bottom right: pneumatic gripper; bottom left: combined clay extruder and 3D scanner.",
+    "file": "figure-ii-ii.jpeg"
+  },
+  {
+    "number": "II.III",
+    "caption": "Custom unified controller box design.",
+    "file": "figure-ii-iii.jpeg"
+  },
+  {
+    "number": "II.IV",
+    "caption": "Program-generation framework implemented as a unified Grasshopper interface for robot motion and end-effector actuation.",
+    "file": "figure-ii-iv.jpeg"
+  },
+  {
+    "number": "II.V",
+    "caption": "Extrusion toolpathing definitions developed and tested through clay deposition, including discontinuous extrusion jumps, non-planar tool orientation, and variable-speed control.",
+    "file": "figure-ii-v.jpeg"
+  },
+  {
+    "number": "II.VI",
+    "caption": "Pick-and-place toolpathing sequence coordinating approach, grasping, a 15-degree alignment rotation, insertion, and release.",
+    "file": "figure-ii-vi.jpeg"
+  },
+  {
+    "number": "7.1",
+    "caption": "Scan–probe–print feedback workflow. The user selects either a scanning or probing sequence. Through mxAutomation and KUKA\\|prc, the robot sends motion programs, receives live TCP feedback, captures the substrate through the RealSense camera, detects physical markers, generates probing targets, and loops until the RealSense tool frame is calibrated before moving to the printing workflow.",
+    "file": "figure-7-1.jpeg"
+  },
+  {
+    "number": "7.2",
+    "caption": "Sequential scan-to-print workflow across multiple substrates. Eye-in-hand scanning captures different rock and log substrates, which are transferred through a Grasshopper–Houdini bridge for graded toolpath generation and then returned to Grasshopper as fabrication-ready robot targets for dual-material non-planar printing.",
+    "file": "figure-7-2.jpeg"
+  },
+  {
+    "number": "7.3",
+    "caption": "Simulation and real-time robotic feedback interface. The computational model maintains both simulated and real-time representations of robot motion, allowing toolpath sequences, home positions, and live robot states to be visualized within the design environment.",
+    "file": "figure-7-3.jpeg"
+  },
+  {
+    "number": "7.4",
+    "caption": "Dual-extruder and RealSense end-effector. The custom end-effector integrates two auger-driven bio-paste extruders with an Intel RealSense D435 depth camera. The transparent body allows material flow and mixing behavior to be visually monitored during fabrication.",
+    "file": "figure-7-4.jpeg"
+  },
+  {
+    "number": "7.5",
+    "caption": "Robotic setup for dual-material non-planar deposition. The setup combines a KUKA robotic arm, two pressurized feeding tanks, pneumatic regulators, feeding hoses, a RealSense D435 camera, and a dual-material extrusion end-effector for graded deposition on irregular substrates.",
+    "file": "figure-7-5.jpeg"
+  },
+  {
+    "number": "7.6",
+    "caption": "Graded non-planar toolpath simulation and printed outcome. Texture-derived intensity values are translated into blend-ratio values along the toolpath, controlling the relative extrusion speeds of the two auger motors and producing a graded clay and wood-dust deposition on the scanned substrate.",
+    "file": "figure-7-6.jpeg"
+  }
+]

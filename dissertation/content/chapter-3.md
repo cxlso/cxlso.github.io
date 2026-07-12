@@ -1,0 +1,221 @@
+# Chapter 3 — Research Methodology
+
+The research adopts a practice-based, multi-method approach in which
+computational development, material experimentation, fabrication
+testing, prototyping, workshops, and open-source documentation operate
+as connected forms of inquiry. Method is not treated as a fixed
+procedure established before experimentation. It develops through
+repeated exchanges among design intent, material response, machine
+behavior, environmental conditions, and the capacity of others to
+understand and adapt the resulting workflow.
+
+The primary unit of analysis is therefore not the finished artifact
+alone, but the design-to-fabrication workflow that produces it. Each
+workflow records how information is generated, translated, tested,
+revised, and communicated across computational and physical states.
+Artifacts, scripts, simulations, toolpaths, machine configurations,
+calibration procedures, material tests, assembly protocols, failure
+records, and documentation are treated as complementary forms of
+evidence. Together, they allow the research to evaluate not only whether
+a fabrication process functions, but also how its assumptions become
+visible and whether its logic can be transferred beyond the conditions
+of its initial development.
+
+## 3.1 Practice-Based Research Through Experimentation and Prototyping
+
+The design-to-fabrication continuum is investigated through
+research-through-making. Each experimental workflow functions as a
+design probe directed at a specific relation among computation,
+material, fabrication, ecology, and access. The purpose of a probe is
+not to verify a predetermined formal solution. It is to expose how a
+design proposition changes when it encounters physical behavior, machine
+constraints, resource conditions, environmental performance, and the
+practical requirements of construction.
+
+The methodological approach combines computational system development,
+environmental and structural simulation, material experimentation, CNC
+and robotic fabrication, hardware integration, prototyping, and
+pedagogical testing. These methods are not applied uniformly. They are
+selected according to the problem posed by each workflow. The breathing
+modular wall requires the translation of passive environmental
+principles into parametric geometry, environmental analysis, modular
+assembly, and fabrication preprocessing. The topology-derived rib system
+investigates mesh organization, adaptive kerfing, CNC cutting, nesting,
+bending, and assembly sequence. The irregular-timber workflow combines
+photogrammetry, digital cataloguing, computational joinery, structural
+analysis, calibration, and robotic milling. The situated robotic
+fabrication workflow integrates scanning, registration, mesh-to-toolpath
+modeling, controller communication, live machine feedback, and graded
+non-planar deposition.
+
+This variation is methodologically intentional. A single standardized
+procedure would obscure the situated conditions that each experiment is
+designed to reveal. Comparability is instead established through a
+common analytical structure: each workflow identifies its inputs,
+computational operations, material and machinic constraints, fabrication
+procedures, feedback mechanisms, outputs, and forms of dissemination.
+This structure permits comparison without assuming that ecological
+simulation, CNC fabrication, timber milling, and robotic extrusion
+should be evaluated through identical technical criteria.
+
+Computation functions as an operational mediator within these
+experiments. Simulation, geometric modeling, toolpath generation,
+machine control, and sensing translate among domains that cannot be
+represented through one model alone. Computational outputs are
+repeatedly tested against material behavior, machine limits, fabrication
+tolerances, available tools, and resource conditions. The fabricated
+artifact is therefore treated as a provisional research state rather
+than the terminal validation of a digital design.
+
+Evidence is generated at several levels. Computational evidence includes
+parametric definitions, scripts, simulations, toolpaths, and machine
+programs. Material evidence includes deformation, surface response,
+extrusion stability, structural behavior, tolerance, and assembly
+performance. Machinic evidence includes calibration, reachability,
+controller communication, tool actuation, sequencing, and execution
+error. Process evidence includes photographs, diagrams, failure records,
+workshop observations, and changes made between iterations. Documentary
+evidence includes repositories, instructions, hardware descriptions,
+material recipes, and other records required to reconstruct or modify
+the workflow.
+
+Feedback operates both within and across experiments. Within a workflow,
+material or fabrication outcomes modify subsequent geometric,
+computational, or technical decisions. A simulation result may alter a
+module, a failed joint may alter toolpath generation, a scan may
+redefine the reference geometry, and a deposition result may change
+material or motion parameters. Feedback is methodologically significant
+only when it produces such a change; observation without reintegration
+does not constitute a continuous loop.
+
+Across workflows, methods and concepts are transferred and reformulated.
+Environmental feedback establishes computation as a translational
+medium. Morphogenetic exploration clarifies the role of bounded
+possibility. CNC fabrication demonstrates how computational complexity
+can be reconciled with accessible machinery and material behavior.
+Irregular-timber processing introduces scanning, cataloguing,
+calibration, and direct engagement with non-standard matter. Open-source
+robotic integration then connects these developments within a more
+continuous sensing, modeling, and execution environment. The sequence is
+cumulative without implying that each later workflow supersedes the
+earlier ones.
+
+The recurring methodological cycle consists of framework development,
+situated testing, documentation and dissemination, and reintegration
+into subsequent work (Figure 3.1). This cycle resists the assumption
+that a method is complete when a prototype is fabricated. Testing
+exposes technical and conceptual limitations; documentation reveals
+tacit dependencies; dissemination allows the method to be examined
+outside its original development context; and the resulting observations
+inform later workflows.
+
+Four broad criteria guide evaluation across the experimental sequence.
+First, operational integration concerns whether the computational,
+material, and fabrication stages connect sufficiently to produce and
+revise an outcome. Second, feedback responsiveness concerns whether
+observed material behavior, machine constraints, or fabrication results
+alter a subsequent state of the workflow. Third, methodological
+legibility and transferability concerns whether the procedure,
+dependencies, modifiable elements, and limits are documented clearly
+enough to support interpretation and adaptation by others. Fourth,
+situated ecological relevance concerns whether resource availability,
+environmental conditions, material provenance, and local fabrication
+circumstances influence the method rather than being treated only as
+external limitations. These criteria are comparative and qualitative
+rather than standardized performance metrics; their role is to make the
+basis of evaluation explicit across heterogeneous experiments.
+
+<figure id="figure-3-1" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-3-1.jpeg" data-figure-src="figure/figure-3-1.jpeg" data-figure-number="Figure 3.1." data-figure-caption="Design-to-fabrication methodological framework. The framework develops through a recursive cycle of framework development, testing, open-source sharing, and reintegration into a broader global knowledge ecology.">
+    <img src="../figure/figure-3-1.jpeg" alt="Design-to-fabrication methodological framework. The framework develops through a recursive cycle of framework development, testing, open-source sharing, and reintegration into a broader global knowledge ecology." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 3.1.</strong> Design-to-fabrication methodological framework. The framework develops through a recursive cycle of framework development, testing, open-source sharing, and reintegration into a broader global knowledge ecology.</figcaption>
+</figure>
+
+## 3.2 Experimental Workflows, Dissemination, and Evaluation
+
+A workflow is defined as a structured relation among inputs,
+computational operations, material and environmental constraints,
+fabrication procedures, feedback, and documentation. The artifact is one
+outcome within this relation. Scripts, diagrams, calibration strategies,
+toolpath procedures, hardware configurations, material settings,
+assembly sequences, and records of unsuccessful trials are also research
+outputs because they make the process available for analysis,
+comparison, and reuse.
+
+The experimental sequence addresses four principal methodological
+relations. Ecological translation examines how passive and vernacular
+environmental principles can become computationally explicit without
+being reduced to formal imitation. Computational simplexity tests how
+geometric complexity can be reconciled with accessible fabrication,
+material deformation, and assembly constraints. Machinic and material
+negotiation investigates how scanning, calibration, irregular matter,
+and robotic processing can participate in design decisions. Situated
+robotic feedback extends these relations into a recurrent
+scan–model–toolpath–execute loop integrating sensing, non-planar
+deposition, controller communication, and live machine information.
+
+The two interludes isolate theoretical thresholds within this sequence.
+Interlude I examines the movement from open-ended morphogenetic
+possibility toward bounded structural and material viability. Interlude
+II examines the transition from isolated robotic operations toward
+shareable technical infrastructure. Their methodological role is
+analytical rather than merely transitional: they articulate conceptual
+conditions revealed by the experiments that cannot be explained through
+technical description alone.
+
+Dissemination is incorporated into the research process rather than
+treated as a post-project communication phase. Documentation tests
+whether the logic of a workflow can be externalized. Preparing diagrams,
+instructions, repositories, hardware descriptions, or fabrication
+parameters exposes where a method remains dependent on tacit expertise,
+undocumented software configurations, machine-specific knowledge, or
+implicit material assumptions. A workflow that operates only in the
+presence of its original developer may be technically successful but
+remains methodologically incomplete as a transferable system.
+
+Workshops and teaching environments provide situated, formative
+evaluation. Participants reveal which instructions are legible, where
+transitions between software and machinery fail, which operations
+require specialist intervention, and how procedures change when applied
+by different users. Their questions, adaptations, and difficulties
+provide evidence about the clarity and practical flexibility of the
+method. These settings are not treated as controlled usability studies
+or as statistically generalizable proof of accessibility. They provide
+qualitative evidence of where transfer is possible, where additional
+explanation is required, and where the workflow remains dependent on
+expert mediation.
+
+Open-source repositories extend this evaluative process by allowing
+scripts, Grasshopper definitions, robotic integration methods, diagrams,
+and fabrication protocols to be inspected, reproduced, corrected,
+forked, or expanded. Publication alone is not considered evidence that
+appropriation has occurred. It establishes inspectability and creates
+the technical conditions through which reuse can be attempted. Claims of
+transferability are therefore limited to the clarity, modularity,
+documented dependencies, and demonstrated pedagogical use of the
+workflow unless independent adoption or modification can be verified.
+
+Evaluation also includes unsuccessful and partial outcomes. Fabrication
+failure, unstable material behavior, incomplete automation, software
+incompatibility, machine-specific constraints, or reliance on manual
+intervention are not excluded from the methodology. They identify the
+boundary conditions of the workflow and clarify which relations remain
+unresolved. Scientific value lies not in presenting a frictionless
+process, but in documenting how and why a procedure succeeds, changes,
+or breaks down under particular conditions.
+
+Figure 3.2 summarizes the methodological movement from computational
+development to operational testing, transfer, and dissemination. It is
+not a catalogue of every experiment or a claim that all workflows follow
+an identical order. Rather, it represents the shared research logic
+through which computational and fabrication procedures are developed,
+exposed to physical conditions, documented, tested through collective
+engagement, and returned to the broader framework.
+
+<figure id="figure-3-2" class="dissertation-figure">
+  <a class="figure-link" href="../figure/figure-3-2.jpg" data-figure-src="figure/figure-3-2.jpg" data-figure-number="Figure 3.2." data-figure-caption="Experimental workflows, transfer, and dissemination. The diagram abstracts the methodological movement from computational design and fabrication workflows toward operational experimentation, transfer, and dissemination. While not a complete catalogue of all experiments, it shows how workflows are developed, tested, documented, and evaluated through workshops, courses, and open-source dissemination.">
+    <img src="../figure/figure-3-2.jpg" alt="Experimental workflows, transfer, and dissemination. The diagram abstracts the methodological movement from computational design and fabrication workflows toward operational experimentation, transfer, and dissemination. While not a complete catalogue of all experiments, it shows how workflows are developed, tested, documented, and evaluated through workshops, courses, and open-source dissemination." loading="lazy" />
+  </a>
+  <figcaption><strong>Figure 3.2.</strong> Experimental workflows, transfer, and dissemination. The diagram abstracts the methodological movement from computational design and fabrication workflows toward operational experimentation, transfer, and dissemination. While not a complete catalogue of all experiments, it shows how workflows are developed, tested, documented, and evaluated through workshops, courses, and open-source dissemination.</figcaption>
+</figure>
