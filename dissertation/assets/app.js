@@ -6,6 +6,7 @@ const state = {
   documents: new Map(),
   scrollPositions: new Map(),
   activeSections: [],
+  citationPopups: new Map(),
 };
 
 const el = {};
@@ -25,7 +26,6 @@ async function init() {
     leftArrow: document.getElementById('leftArrow'),
     rightArrow: document.getElementById('rightArrow'),
     homeTitle: document.getElementById('homeTitle'),
-    popup: document.getElementById('citationPopup'),
     progressControl: document.getElementById('progressControl'),
     progressRail: document.getElementById('progressRail'),
     progressDot: document.getElementById('progressDot'),
@@ -44,6 +44,7 @@ async function init() {
   navData.documents.forEach(d => state.documents.set(d.slug, d));
   refs.forEach(r => state.references.set(r.id, r));
   el.bibliographyContent.innerHTML = bibHtml;
+  bindBibliographyLinks();
   buildToc(navData.toc);
   bindEvents();
 
@@ -61,7 +62,7 @@ function buildToc(groups) {
     const part = document.createElement('div');
     part.className = 'toc-part';
     part.textContent = group.part;
-    section.append(part);
+    if (group.part) section.append(part);
     group.items.forEach(item => {
       const button = document.createElement('button');
       button.className = 'toc-item';
@@ -79,6 +80,7 @@ async function loadDocument(slug, pushHistory = true) {
   closeCitationPopup();
   const html = await fetch(`content/html/${slug}.html`).then(r => r.text());
   state.currentDoc = slug;
+  document.body.classList.toggle('title-page-active', slug === 'title');
   el.readerContent.innerHTML = html;
   const doc = state.documents.get(slug);
   el.footerChapter.textContent = doc.title;
@@ -118,8 +120,20 @@ function bindDynamicContent() {
 }
 
 function openCitationPopup(target) {
+  if (state.citationPopups.has(target)) return;
   const ids = (target.dataset.refIds || '').split(',').filter(Boolean);
-  el.popup.innerHTML = '';
+  const popup = document.createElement('div');
+  popup.className = 'citation-popup';
+  popup.setAttribute('role', 'dialog');
+  popup.setAttribute('aria-label', 'Citation details');
+  target.classList.add('selected');
+  state.citationPopups.set(target, popup);
+  el.readerContent.append(popup);
+  const connector = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  connector.classList.add('citation-connector');
+  connector.setAttribute('aria-hidden', 'true');
+  popup.append(connector);
+  const buttons = [];
   ids.forEach(id => {
     const ref = state.references.get(id);
     if (!ref) return;
@@ -127,22 +141,111 @@ function openCitationPopup(target) {
     button.type = 'button';
     button.textContent = ref.display;
     button.addEventListener('click', () => openReference(id));
-    el.popup.append(button);
+    popup.append(button);
+    buttons.push(button);
   });
-  if (!el.popup.children.length) return;
-  el.popup.classList.add('visible');
+  if (!buttons.length) {
+    target.classList.remove('selected');
+    state.citationPopups.delete(target);
+    popup.remove();
+    return;
+  }
+  popup.classList.add('visible');
   const rect = target.getBoundingClientRect();
-  const popRect = el.popup.getBoundingClientRect();
-  let left = rect.left;
-  let top = rect.bottom + 8;
-  if (left + popRect.width > innerWidth - 12) left = innerWidth - popRect.width - 12;
-  if (left < 12) left = 12;
-  if (top + popRect.height > innerHeight - 12) top = rect.top - popRect.height - 8;
-  el.popup.style.left = `${left}px`;
-  el.popup.style.top = `${Math.max(12, top)}px`;
+  const contentRect = el.readerContent.getBoundingClientRect();
+  const anchor = {
+    left: rect.left - contentRect.left,
+    right: rect.right - contentRect.left,
+    y: rect.top - contentRect.top + rect.height / 2,
+  };
+  const fragments = [...target.getClientRects()].map(fragment => ({
+    left: fragment.left - contentRect.left,
+    right: fragment.right - contentRect.left,
+    top: fragment.top - contentRect.top,
+    bottom: fragment.bottom - contentRect.top,
+  }));
+  const firstFragment = fragments[0] || { left: anchor.left, right: anchor.right, top: anchor.y, bottom: anchor.y };
+  const lastFragment = fragments[fragments.length - 1] || firstFragment;
+  const labelWidth = Math.min(320, innerWidth - 32);
+  const minGap = innerWidth <= 899 ? 28 : 46;
+  const rightFits = contentRect.left + anchor.right + minGap + labelWidth <= innerWidth - 16;
+  const leftFits = contentRect.left + anchor.left - minGap - labelWidth >= 16;
+  const referenceCenter = contentRect.left + (anchor.left + anchor.right) / 2;
+  const preferRight = referenceCenter >= innerWidth / 2;
+  const routes = [
+    { side: 'right', corner: 'top', bend: -1 },
+    { side: 'left', corner: 'bottom', bend: 1 },
+    { side: 'right', corner: 'bottom', bend: 1 },
+    { side: 'left', corner: 'top', bend: -1 },
+  ];
+  const seededFraction = seed => {
+    let hash = 2166136261;
+    for (const character of seed) hash = Math.imul(hash ^ character.charCodeAt(0), 16777619);
+    return (hash >>> 0) / 4294967295;
+  };
+
+  buttons.forEach((button, index) => {
+    const route = routes[index % routes.length];
+    const seed = `${state.currentDoc}:${target.textContent}:${ids[index]}:${index}`;
+    const distanceVariation = seededFraction(`${seed}:distance`);
+    const heightVariation = seededFraction(`${seed}:height`);
+    const curveVariation = seededFraction(`${seed}:curve`);
+    const preferredSide = preferRight ? 'right' : 'left';
+    const alternateSide = preferRight ? 'left' : 'right';
+    let side = buttons.length > 1 && index % 2 === 1 ? alternateSide : preferredSide;
+    if (side === 'right' && !rightFits && leftFits) side = 'left';
+    if (side === 'left' && !leftFits && rightFits) side = 'right';
+    const gap = minGap + distanceVariation * (innerWidth <= 899 ? 22 : 54);
+    const verticalDistance = 54 + heightVariation * 58 + Math.floor(index / 4) * 18;
+    const x = side === 'right' ? anchor.right + gap : anchor.left - gap - labelWidth;
+    button.style.left = `${x}px`;
+    button.style.top = `${anchor.y + route.bend * verticalDistance}px`;
+    requestAnimationFrame(() => {
+      const buttonY = parseFloat(button.style.top) - button.offsetHeight / 2;
+      button.style.top = `${buttonY}px`;
+      const endX = side === 'right' ? x : x + button.offsetWidth;
+      const endY = buttonY + button.offsetHeight / 2;
+      const sourceFragment = route.corner === 'top' ? firstFragment : lastFragment;
+      const startX = side === 'right' ? sourceFragment.right : sourceFragment.left;
+      const startY = route.corner === 'top' ? sourceFragment.top : sourceFragment.bottom;
+      const dx = endX - startX;
+      const dy = endY - startY;
+      const referenceTightness = .42 + curveVariation * .24;
+      const bubbleTightness = .34 + (1 - curveVariation) * .24;
+      const control1X = startX + dx * referenceTightness;
+      const control1Y = startY;
+      const control2X = endX - dx * bubbleTightness;
+      const control2Y = endY;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', `M ${startX} ${startY} C ${control1X} ${control1Y}, ${control2X} ${control2Y}, ${endX} ${endY}`);
+      path.setAttribute('fill', 'none');
+      path.setAttribute('stroke', '#000');
+      path.setAttribute('stroke-width', '2');
+      path.setAttribute('vector-effect', 'non-scaling-stroke');
+      connector.append(path);
+    });
+  });
 }
 
-function closeCitationPopup() { el.popup.classList.remove('visible'); }
+function closeCitationPopup() {
+  state.citationPopups.forEach((popup, target) => {
+    target.classList.remove('selected');
+    popup.remove();
+  });
+  state.citationPopups.clear();
+}
+
+function bindBibliographyLinks() {
+  const visited = new Set(JSON.parse(localStorage.getItem('bibliography-links') || '[]'));
+  el.bibliographyContent.querySelectorAll('a[href]').forEach(link => {
+    if (visited.has(link.href)) link.classList.add('was-visited');
+    link.addEventListener('click', () => {
+      link.classList.add('was-visited');
+      visited.add(link.href);
+      localStorage.setItem('bibliography-links', JSON.stringify([...visited]));
+    });
+  });
+}
 
 function openReference(id) {
   closeCitationPopup();
@@ -187,12 +290,24 @@ function updateTocActive() {
   document.querySelectorAll('.toc-item').forEach(x => x.classList.toggle('active', x.dataset.doc === state.currentDoc));
 }
 
-function updateFooterSection() {
+function getCurrentSectionIndex() {
   const headings = state.activeSections;
-  if (!headings.length) { el.footerSection.textContent = ''; return; }
+  if (!headings.length) return -1;
   const y = el.readerScroll.scrollTop + 140;
   let idx = 0;
   headings.forEach((h, i) => { if (h.offsetTop <= y) idx = i; });
+  return idx;
+}
+
+function updateFooterSection() {
+  const headings = state.activeSections;
+  const idx = getCurrentSectionIndex();
+  if (idx < 0) {
+    el.footerSection.textContent = '';
+    el.footerSection.disabled = true;
+    return;
+  }
+  el.footerSection.disabled = false;
   el.footerSection.textContent = `Section ${idx + 1} / ${headings.length}`;
 }
 
@@ -239,6 +354,13 @@ function bindSwipe() {
 
 function bindEvents() {
   el.homeTitle.addEventListener('click', async () => { await loadDocument('title'); setScreen(1); });
+  el.footerChapter.addEventListener('click', () => { el.readerScroll.scrollTop = 0; });
+  el.footerSection.addEventListener('click', () => {
+    const index = getCurrentSectionIndex();
+    if (index < 0) return;
+    const heading = state.activeSections[index];
+    el.readerScroll.scrollTop = Math.max(0, el.readerContent.offsetTop + heading.offsetTop - 24);
+  });
   el.leftArrow.addEventListener('click', () => setScreen(state.screen === 2 ? 1 : 0));
   el.rightArrow.addEventListener('click', () => setScreen(state.screen === 0 ? 1 : 2));
   el.tocNav.addEventListener('click', async e => {
@@ -248,7 +370,7 @@ function bindEvents() {
     setScreen(1);
   });
   el.readerScroll.addEventListener('scroll', updateProgress, {passive: true});
-  document.addEventListener('click', e => { if (!e.target.closest('.citation-popup, .citation-callout')) closeCitationPopup(); });
+  el.readerContent.addEventListener('click', e => { if (!e.target.closest('.citation-popup, .citation-callout')) closeCitationPopup(); });
   el.closeFigure.addEventListener('click', () => el.figureDialog.close());
   el.figureDialog.addEventListener('click', e => { if (e.target === el.figureDialog) el.figureDialog.close(); });
   addEventListener('keydown', e => { if (e.key === 'Escape') closeCitationPopup(); });

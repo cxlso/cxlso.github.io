@@ -7,12 +7,12 @@
   <title>Design-to-Fabrication Continuum — Celso Urroz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <button id="homeTitle" class="site-title" aria-label="Return to the title page">Toward Design-to-Fabrication Continuum</button>
+    <button id="homeTitle" class="site-title" aria-label="Return to the title page">Toward Design-to-Fabrication Continuum for Open-Source Computational Robotic Ecologies in the Post-Anthropogenic Era</button>
   </header>
 
   <div id="viewport" class="viewport">
@@ -29,8 +29,8 @@
           <article id="readerContent" class="reader-content" aria-live="polite"></article>
         </main>
         <footer id="readerFooter" class="reader-footer">
-          <span id="footerChapter" class="footer-chapter"></span>
-          <span id="footerSection" class="footer-section"></span>
+          <button id="footerChapter" class="footer-chapter" type="button" aria-label="Return to the beginning of this chapter"></button>
+          <button id="footerSection" class="footer-section" type="button" aria-label="Return to the beginning of the current section"></button>
         </footer>
         <div id="progressControl" class="progress-control" aria-label="Reading progress">
           <div id="progressRail" class="progress-rail"><button id="progressDot" class="progress-dot" aria-label="Drag to scroll"></button></div>
@@ -47,8 +47,6 @@
 
   <button id="leftArrow" class="screen-arrow screen-arrow-left" aria-label="Open table of contents">‹</button>
   <button id="rightArrow" class="screen-arrow screen-arrow-right" aria-label="Open bibliography">›</button>
-  <div id="citationPopup" class="citation-popup" role="dialog" aria-label="Citation details"></div>
-
   <dialog id="figureDialog" class="figure-dialog">
     <button id="closeFigure" class="close-figure" aria-label="Close figure">×</button>
     <div class="figure-dialog-inner">

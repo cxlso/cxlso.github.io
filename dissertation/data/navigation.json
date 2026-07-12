@@ -1,6 +1,23 @@
 {
   "toc": [
     {
+      "part": "",
+      "items": [
+        {
+          "slug": "abstract",
+          "label": "Abstract"
+        },
+        {
+          "slug": "acknowledgment",
+          "label": "Acknowledgment"
+        },
+        {
+          "slug": "epigraph",
+          "label": "Epigraph"
+        }
+      ]
+    },
+    {
       "part": "PART I — Theoretical and Methodological Framework",
       "items": [
         {
@@ -56,6 +73,23 @@
         {
           "slug": "chapter-9",
           "label": "Chapter 9 — Conclusion and Future Work"
+        }
+      ]
+    },
+    {
+      "part": "Appendices",
+      "items": [
+        {
+          "slug": "appendix-a",
+          "label": "Appendix A \u2014 Essay on Decentralized Indexing and the Scales of Civilization"
+        },
+        {
+          "slug": "appendix-b",
+          "label": "Appendix B \u2014 Open-Source Repositories and Digital Research Outputs"
+        },
+        {
+          "slug": "appendix-c",
+          "label": "Appendix C \u2014 Workflow Dependencies and Reproducibility Matrix"
         }
       ]
     }

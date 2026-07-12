@@ -36,11 +36,11 @@ Edit the variables at the beginning of `assets/style.css`:
   --panel: rgba(0, 0, 0, 0.86);
   --corner: 8px;
   --reading-width: 760px;
-  --body-size: 18px;
+  --body-size: 16px;
 }
 ```
 
-The initial style follows the visual language of the literature graph: Funnel Display, white background, black controls, dark translucent information panels, rounded 8 px corners, short 0.2-second interface transitions, and a thin vertical rail with a circular thumb.
+The initial style follows the visual language of the literature graph: Funnel Display Light, white background, black controls, floating black citation callouts, short interface transitions, and a long vertical rail aligned beside the reading column.
 
 ## Update from a later DOCX
 
