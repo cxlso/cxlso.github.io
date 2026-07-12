@@ -10,6 +10,7 @@ const state = {
 };
 
 const el = {};
+const mobileCitationMedia = window.matchMedia('(max-width: 899px)');
 
 async function init() {
   Object.assign(el, {
@@ -97,6 +98,26 @@ async function loadDocument(slug, pushHistory = true) {
   if (pushHistory) history.pushState({doc: slug}, '', `#${slug}`);
 }
 
+function getCitationIds(target) {
+  return (target.dataset.refIds || '')
+    .split(',')
+    .map(id => id.trim())
+    .filter(id => id && state.references.has(id));
+}
+
+function activateCitation(target) {
+  const ids = getCitationIds(target);
+  if (!ids.length) return;
+
+  if (mobileCitationMedia.matches) {
+    closeCitationPopup();
+    openReference(ids[0]);
+    return;
+  }
+
+  openCitationPopup(target);
+}
+
 function bindDynamicContent() {
   el.readerContent.querySelectorAll('[data-doc]').forEach(button => {
     button.addEventListener('click', async () => {
@@ -105,8 +126,16 @@ function bindDynamicContent() {
     });
   });
   el.readerContent.querySelectorAll('.citation-callout').forEach(c => {
-    c.addEventListener('click', e => { e.stopPropagation(); openCitationPopup(c); });
-    c.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCitationPopup(c); } });
+    c.addEventListener('click', e => {
+      e.stopPropagation();
+      activateCitation(c);
+    });
+    c.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        activateCitation(c);
+      }
+    });
   });
   el.readerContent.querySelectorAll('.figure-link').forEach(link => {
     link.addEventListener('click', e => {
@@ -120,8 +149,8 @@ function bindDynamicContent() {
 }
 
 function openCitationPopup(target) {
-  if (state.citationPopups.has(target)) return;
-  const ids = (target.dataset.refIds || '').split(',').filter(Boolean);
+  if (mobileCitationMedia.matches || state.citationPopups.has(target)) return;
+  const ids = getCitationIds(target);
   const popup = document.createElement('div');
   popup.className = 'citation-popup';
   popup.setAttribute('role', 'dialog');
@@ -167,7 +196,7 @@ function openCitationPopup(target) {
   const firstFragment = fragments[0] || { left: anchor.left, right: anchor.right, top: anchor.y, bottom: anchor.y };
   const lastFragment = fragments[fragments.length - 1] || firstFragment;
   const labelWidth = Math.min(320, innerWidth - 32);
-  const minGap = innerWidth <= 899 ? 28 : 46;
+  const minGap = 46;
   const rightFits = contentRect.left + anchor.right + minGap + labelWidth <= innerWidth - 16;
   const leftFits = contentRect.left + anchor.left - minGap - labelWidth >= 16;
   const referenceCenter = contentRect.left + (anchor.left + anchor.right) / 2;
@@ -195,7 +224,7 @@ function openCitationPopup(target) {
     let side = buttons.length > 1 && index % 2 === 1 ? alternateSide : preferredSide;
     if (side === 'right' && !rightFits && leftFits) side = 'left';
     if (side === 'left' && !leftFits && rightFits) side = 'right';
-    const gap = minGap + distanceVariation * (innerWidth <= 899 ? 22 : 54);
+    const gap = minGap + distanceVariation * 54;
     const verticalDistance = 54 + heightVariation * 58 + Math.floor(index / 4) * 18;
     const x = side === 'right' ? anchor.right + gap : anchor.left - gap - labelWidth;
     button.style.left = `${x}px`;
@@ -374,7 +403,23 @@ function bindEvents() {
   el.closeFigure.addEventListener('click', () => el.figureDialog.close());
   el.figureDialog.addEventListener('click', e => { if (e.target === el.figureDialog) el.figureDialog.close(); });
   addEventListener('keydown', e => { if (e.key === 'Escape') closeCitationPopup(); });
-  addEventListener('popstate', async () => { const slug = location.hash.replace(/^#/, '') || 'title'; if (state.documents.has(slug)) { await loadDocument(slug, false); setScreen(1); } });
+  addEventListener('popstate', async () => {
+    const slug = location.hash.replace(/^#/, '') || 'title';
+    if (state.documents.has(slug)) {
+      await loadDocument(slug, false);
+      setScreen(1);
+    }
+  });
+
+  const closePopupOnMobile = event => {
+    if (event.matches) closeCitationPopup();
+  };
+  if (mobileCitationMedia.addEventListener) {
+    mobileCitationMedia.addEventListener('change', closePopupOnMobile);
+  } else {
+    mobileCitationMedia.addListener(closePopupOnMobile);
+  }
+
   bindProgressDrag();
   bindSwipe();
 }
