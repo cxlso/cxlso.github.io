@@ -1,19 +1,11 @@
 <style>
-.reader-content > .title-page-heading {
-  font-weight: 700;
-}
-
-.title-page-byline a,
-.title-page-meta a strong {
+.title-page-byline a {
   color: inherit;
-  font-weight: 600;
   text-decoration: none;
 }
 
 .title-page-byline a:hover,
-.title-page-byline a:focus-visible,
-.title-page-meta a:hover,
-.title-page-meta a:focus-visible {
+.title-page-byline a:focus-visible {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
