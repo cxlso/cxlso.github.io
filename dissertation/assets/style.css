@@ -118,8 +118,28 @@ button { color: inherit; }
 .reader-content th, .reader-content td { border: 1px solid #000; padding: 9px 11px; vertical-align: top; }
 .appendix-c-table th:nth-child(2), .appendix-c-table td:nth-child(2) { width: 140px; min-width: 140px; }
 
-.reader-content > .title-page-heading { margin-bottom: 1.25rem; }
-.title-page-byline { text-align: left; }
+.reader-content > .title-page-heading {
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.title-page-byline {
+  text-align: left;
+  font-weight: 400;
+}
+
+.title-page-byline a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.title-page-byline a:hover,
+.title-page-byline a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .title-page-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin: 8vh 0; font-size: var(--body-size); font-weight: 300; line-height: var(--body-leading); }
 .title-page-meta p { text-align: left; }
 .title-page-meta strong { font-weight: 300; }
