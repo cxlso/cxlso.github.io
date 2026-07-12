@@ -55,7 +55,7 @@ button { color: inherit; }
   color: #000;
   font-family: var(--font-ui);
   font-size: 12.5px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.15;
   letter-spacing: 0;
   text-align: left;
@@ -97,7 +97,7 @@ button { color: inherit; }
   background: transparent;
   cursor: pointer;
   font-size: clamp(15px, 1.5vw, 20px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
   text-decoration: none;
   text-underline-offset: 4px;
@@ -106,9 +106,9 @@ button { color: inherit; }
 
 .reader-scroll { padding: var(--reader-top) var(--reader-x) calc(var(--footer-height) + var(--reader-bottom)); }
 .reader-content { position: relative; width: min(var(--reading-width), 100%); margin: 0 auto; font-size: var(--body-size); font-weight: 300; line-height: var(--body-leading); }
-.reader-content > h1 { font-size: clamp(32px, 4vw, 56px); font-weight: 300; line-height: 1.06; letter-spacing: 0; margin: 7vh 0 52px; }
+.reader-content > h1 { font-size: clamp(32px, 4vw, 56px); font-weight: 400; line-height: 1.06; letter-spacing: 0; margin: 7vh 0 52px; }
 .reader-content h2 { font-size: clamp(23px, 2.3vw, 32px); font-weight: 400; line-height: 1.16; margin: 72px 0 22px; scroll-margin-top: 96px; }
-.reader-content h3 { font-size: clamp(18px, 1.7vw, 24px); font-weight: 400; line-height: 1.22; margin: 46px 0 18px; scroll-margin-top: 96px; }
+.reader-content h3 { font-size: clamp(18px, 1.7vw, 24px); font-weight: 300; line-height: 1.22; margin: 46px 0 18px; scroll-margin-top: 96px; }
 .reader-content p { margin: 0 0 1.25em; text-align: justify; }
 .reader-content strong, .reader-content b { font-weight: 400; }
 .reader-content blockquote { margin: 40px 0; padding-left: 22px; border-left: 1px solid #000; font-size: 1.04em; }
@@ -120,7 +120,7 @@ button { color: inherit; }
 
 .reader-content > .title-page-heading {
   margin-bottom: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .title-page-byline {
