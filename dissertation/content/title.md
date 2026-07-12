@@ -1,16 +1,3 @@
-<style>
-.title-page-byline a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.title-page-byline a:hover,
-.title-page-byline a:focus-visible {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-</style>
-
 # Toward Design-to-Fabrication Continuum for Open-Source Computational Robotic Ecologies in the Post-Anthropogenic Era
 
 <div class="title-page-meta">
