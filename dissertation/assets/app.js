@@ -125,6 +125,12 @@ function bindDynamicContent() {
       setScreen(1);
     });
   });
+  el.readerContent.querySelectorAll('[data-screen]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      setScreen(Number(link.dataset.screen));
+    });
+  });
   el.readerContent.querySelectorAll('.citation-callout').forEach(c => {
     c.addEventListener('click', e => {
       e.stopPropagation();
@@ -140,6 +146,10 @@ function bindDynamicContent() {
   el.readerContent.querySelectorAll('.figure-link').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
+      if (link.dataset.destination === 'litgraph') {
+        setScreen(3);
+        return;
+      }
       el.figureImage.src = link.dataset.figureSrc;
       el.figureImage.alt = link.dataset.figureCaption || '';
       el.figureCaption.textContent = `${link.dataset.figureNumber} ${link.dataset.figureCaption}`;
@@ -293,9 +303,9 @@ function openReference(id) {
 }
 
 function setScreen(index, animate = true) {
-  state.screen = Math.max(0, Math.min(2, index));
+  state.screen = Math.max(0, Math.min(3, index));
   if (!animate) el.track.style.transition = 'none';
-  el.track.style.transform = `translate3d(${-state.screen * 33.333333}%,0,0)`;
+  el.track.style.transform = `translate3d(${-state.screen * 25}%,0,0)`;
   if (!animate) requestAnimationFrame(() => el.track.style.transition = '');
   updateArrows();
   updateFooterVisibility();
@@ -304,9 +314,11 @@ function setScreen(index, animate = true) {
 
 function updateArrows() {
   el.leftArrow.classList.toggle('hidden', state.screen === 0);
-  el.rightArrow.classList.toggle('hidden', state.screen === 2);
-  el.leftArrow.setAttribute('aria-label', state.screen === 2 ? 'Return to reading' : 'Open table of contents');
-  el.rightArrow.setAttribute('aria-label', state.screen === 0 ? 'Return to reading' : 'Open bibliography');
+  el.rightArrow.classList.toggle('hidden', state.screen === 3);
+  const leftLabels = ['Open table of contents', 'Open table of contents', 'Return to reading', 'Return to bibliography'];
+  const rightLabels = ['Return to reading', 'Open bibliography', 'Open literature graph', 'Open literature graph'];
+  el.leftArrow.setAttribute('aria-label', leftLabels[state.screen]);
+  el.rightArrow.setAttribute('aria-label', rightLabels[state.screen]);
 }
 
 function updateFooterVisibility() {
@@ -364,16 +376,19 @@ function bindProgressDrag() {
 function bindSwipe() {
   let startX = 0, startY = 0, active = false;
   el.viewport.addEventListener('pointerdown', e => {
+    if (state.screen === 3) return;
     if (e.target.closest('button, a, .citation-callout, input, dialog')) return;
     startX = e.clientX; startY = e.clientY; active = true;
   });
   el.viewport.addEventListener('pointerup', e => {
+    if (state.screen === 3) { active = false; return; }
     if (!active) return;
     active = false;
     const dx = e.clientX - startX, dy = e.clientY - startY;
     if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.25) setScreen(state.screen + (dx < 0 ? 1 : -1));
   });
   el.viewport.addEventListener('wheel', e => {
+    if (state.screen === 3) return;
     if (Math.abs(e.deltaX) > 50 && Math.abs(e.deltaX) > Math.abs(e.deltaY) * 1.4) {
       e.preventDefault();
       setScreen(state.screen + (e.deltaX > 0 ? 1 : -1));
@@ -390,8 +405,8 @@ function bindEvents() {
     const heading = state.activeSections[index];
     el.readerScroll.scrollTop = Math.max(0, el.readerContent.offsetTop + heading.offsetTop - 24);
   });
-  el.leftArrow.addEventListener('click', () => setScreen(state.screen === 2 ? 1 : 0));
-  el.rightArrow.addEventListener('click', () => setScreen(state.screen === 0 ? 1 : 2));
+  el.leftArrow.addEventListener('click', () => setScreen(state.screen - 1));
+  el.rightArrow.addEventListener('click', () => setScreen(state.screen + 1));
   el.tocNav.addEventListener('click', async e => {
     const button = e.target.closest('[data-doc]');
     if (!button) return;

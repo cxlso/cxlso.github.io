@@ -6,6 +6,7 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="saveGraph.js"></script>
+  <script>if (window.self !== window.top) document.documentElement.classList.add('embedded');</script>
 
   <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;700&display=swap" rel="stylesheet">
 
@@ -48,6 +49,8 @@
       font-size: 14px;
       z-index: 100;
     }
+
+    .embedded .save-button { display: none; }
 
     line.link { cursor: pointer; stroke: #000000; }
 

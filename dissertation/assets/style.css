@@ -68,13 +68,14 @@ button { color: inherit; }
 .title-page-active .viewport { inset: 0; }
 .screen-track {
   height: 100%;
-  width: 300%;
+  width: 400%;
   display: flex;
-  transform: translate3d(-33.333333%,0,0);
+  transform: translate3d(-25%,0,0);
   transition: transform var(--transition);
   will-change: transform;
 }
-.screen { position: relative; width: 33.333333%; height: 100%; flex: 0 0 33.333333%; overflow: hidden; background: var(--background); }
+.screen { position: relative; width: 25%; height: 100%; flex: 0 0 25%; overflow: hidden; background: var(--background); }
+.litgraph-frame { display: block; width: 100%; height: 100%; border: 0; background: #fff; touch-action: auto; }
 .side-panel-scroll, .reader-scroll {
   height: 100%;
   overflow-y: auto;
@@ -160,6 +161,7 @@ button { color: inherit; }
 
 .title-page-badges { display: flex; flex-wrap: wrap; gap: 8px; }
 .title-page-badges a { display: inline-flex; }
+.title-page-shield { display: inline-flex; border: 0; padding: 0; background: transparent; cursor: pointer; }
 .title-page-badges img { display: block; height: 20px; width: auto; }
 .document-nav-button {
   background: #fff;
